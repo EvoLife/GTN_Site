@@ -175,8 +175,16 @@
       "subtitle": "Completa el formulario a continuación y te responderemos en 24 horas.",
       "name": "Nombre",
       "namePlaceholder": "Tu nombre",
-      "email": "Email",
-      "emailPlaceholder": "tu@email.com",
+      "telegram": "Usuario de Telegram",
+      "telegramPlaceholder": "@usuario",
+      "whatsapp": "Número de WhatsApp",
+      "whatsappPlaceholder": "+34 600 000 000",
+      "linkedin": "Perfil de LinkedIn",
+      "linkedinPlaceholder": "https://linkedin.com/in/usuario",
+      "hintContact": "Indica al menos un medio de contacto: Telegram, WhatsApp o LinkedIn.",
+      "validation": {
+        "contactRequired": "Añade al menos un contacto: Telegram, WhatsApp o LinkedIn."
+      },
       "subject": "Asunto",
       "subjectPlaceholder": "¿De qué se trata?",
       "message": "Mensaje",

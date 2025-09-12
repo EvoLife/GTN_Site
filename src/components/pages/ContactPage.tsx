@@ -11,16 +11,22 @@ export function ContactPage() {
   const { t } = useLanguage();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState('idle');
+  const [validationError, setValidationError] = useState<string | null>(null);
 
-  const sendToTelegram = async (type, data) => {
+  const sendToTelegram = async (type: string, data: any) => {
     const TELEGRAM_BOT_TOKEN = '7608359591:AAHf7uO_sdSblv4Dy3MoDquECHOyxEh8lzA';
     const TELEGRAM_CHAT_ID = '48195187';
     
     let message = '';
     if (type === 'contact') {
+      const contacts: string[] = [];
+      if (data.telegram) contacts.push(`💬 *Telegram:* ${data.telegram}`);
+      if (data.whatsapp) contacts.push(`📱 *WhatsApp:* ${data.whatsapp}`);
+      if (data.linkedin) contacts.push(`🔗 *LinkedIn:* ${data.linkedin}`);
+
       message = `📨 *Новое сообщение через форму контактов*\n\n` +
         `👤 *Имя:* ${data.name}\n` +
-        `📧 *Email:* ${data.email}\n` +
+        (contacts.length ? contacts.join('\n') + '\n' : '') +
         `📋 *Тема:* ${data.subject}\n\n` +
         `💬 *Сообщение:*\n${data.message}`;
     }
@@ -40,23 +46,33 @@ export function ContactPage() {
     }
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus('idle');
+    setValidationError(null);
 
-    const formData = new FormData(e.target);
+    const formData = new FormData(e.currentTarget);
     const data = {
       name: formData.get('name'),
-      email: formData.get('email'),
+      telegram: formData.get('telegram'),
+      whatsapp: formData.get('whatsapp'),
+      linkedin: formData.get('linkedin'),
       subject: formData.get('subject'),
       message: formData.get('message'),
     };
 
+    const hasContact = Boolean((data.telegram && String(data.telegram).trim()) || (data.whatsapp && String(data.whatsapp).trim()) || (data.linkedin && String(data.linkedin).trim()));
+    if (!hasContact) {
+      setValidationError(t('contact.form.validation.contactRequired'));
+      setIsSubmitting(false);
+      return;
+    }
+
     try {
       await sendToTelegram('contact', data);
       setSubmitStatus('success');
-      e.target.reset();
+      (e.target as HTMLFormElement).reset();
     } catch (error) {
       console.error('Error submitting form:', error);
       setSubmitStatus('error');
@@ -162,8 +178,24 @@ export function ContactPage() {
                     <Input id="name" name="name" required placeholder={t('contact.form.namePlaceholder')} />
                   </div>
                   <div>
-                    <Label htmlFor="email">{t('contact.form.email')}</Label>
-                    <Input id="email" name="email" type="email" required placeholder={t('contact.form.emailPlaceholder')} />
+                    <Label>{t('contact.form.hintContact')}</Label>
+                    <div className="text-xs text-foreground-tertiary">{t('contact.form.hintContact')}</div>
+                  </div>
+                </div>
+
+                {/* Contact Methods */}
+                <div className="grid md:grid-cols-3 gap-4">
+                  <div>
+                    <Label htmlFor="telegram">{t('contact.form.telegram')}</Label>
+                    <Input id="telegram" name="telegram" placeholder={t('contact.form.telegramPlaceholder')} />
+                  </div>
+                  <div>
+                    <Label htmlFor="whatsapp">{t('contact.form.whatsapp')}</Label>
+                    <Input id="whatsapp" name="whatsapp" placeholder={t('contact.form.whatsappPlaceholder')} />
+                  </div>
+                  <div>
+                    <Label htmlFor="linkedin">{t('contact.form.linkedin')}</Label>
+                    <Input id="linkedin" name="linkedin" type="url" placeholder={t('contact.form.linkedinPlaceholder')} />
                   </div>
                 </div>
 
@@ -182,6 +214,12 @@ export function ContactPage() {
                     rows={6}
                   />
                 </div>
+
+                {validationError && (
+                  <div className="text-amber-700 bg-amber-50 border border-amber-200 rounded p-3 text-sm text-center">
+                    {validationError}
+                  </div>
+                )}
 
                 <Button type="submit" className="w-full" size="lg" disabled={isSubmitting}>
                   {isSubmitting ? 'Отправляется...' : t('contact.form.submit')}
