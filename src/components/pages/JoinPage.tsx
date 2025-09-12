@@ -13,6 +13,7 @@ export function JoinPage() {
   const { t, get } = useLanguage();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [validationError, setValidationError] = useState<string | null>(null);
 
   const sendToTelegram = async (type: string, data: any) => {
     const TELEGRAM_BOT_TOKEN = '7608359591:AAHf7uO_sdSblv4Dy3MoDquECHOyxEh8lzA';
@@ -20,9 +21,14 @@ export function JoinPage() {
     
     let message = '';
     if (type === 'application') {
+      const contacts: string[] = [];
+      if (data.telegram) contacts.push(`💬 *Telegram:* ${data.telegram}`);
+      if (data.whatsapp) contacts.push(`📱 *WhatsApp:* ${data.whatsapp}`);
+      if (data.linkedin) contacts.push(`🔗 *LinkedIn:* ${data.linkedin}`);
+
       message = `🚀 *Новая заявка на участие в GTN*\n\n` +
         `👤 *Имя:* ${data.firstName} ${data.lastName}\n` +
-        `📧 *Email:* ${data.email}\n` +
+        (contacts.length ? contacts.join('\n') + '\n' : '') +
         `📍 *Местоположение:* ${data.location}\n` +
         `💼 *Роль:* ${data.role}\n` +
         `🔗 *Портфолио:* ${data.portfolio || 'Не указано'}\n\n` +
@@ -50,19 +56,30 @@ export function JoinPage() {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus('idle');
+    setValidationError(null);
 
     const formData = new FormData(e.currentTarget);
     const data = {
       firstName: formData.get('firstName'),
       lastName: formData.get('lastName'),
-      email: formData.get('email'),
       location: formData.get('location'),
       role: formData.get('role'),
       portfolio: formData.get('portfolio'),
       build: formData.get('build'),
       contribute: formData.get('contribute'),
       why: formData.get('why'),
+      telegram: formData.get('telegram'),
+      whatsapp: formData.get('whatsapp'),
+      linkedin: formData.get('linkedin'),
     };
+
+    // Validate at least one contact method
+    const hasContact = Boolean((data.telegram && String(data.telegram).trim()) || (data.whatsapp && String(data.whatsapp).trim()) || (data.linkedin && String(data.linkedin).trim()));
+    if (!hasContact) {
+      setValidationError(t('join.form.validation.contactRequired'));
+      setIsSubmitting(false);
+      return;
+    }
 
     try {
       await sendToTelegram('application', data);
@@ -474,17 +491,38 @@ export function JoinPage() {
                   </div>
                 </div>
 
-                <div>
-                  <Label htmlFor="email" className="text-foreground">{t('join.form.labels.email')}</Label>
-                  <Input 
-                    id="email" 
-                    name="email"
-                    type="email" 
-                    placeholder={t('join.form.placeholders.email')}
-                    className="mt-1 surface-2 border-input-border focus:border-primary"
-                    required
-                  />
+                {/* Contact Methods */}
+                <div className="grid md:grid-cols-3 gap-4">
+                  <div>
+                    <Label htmlFor="telegram" className="text-foreground">{t('join.form.labels.telegram')}</Label>
+                    <Input
+                      id="telegram"
+                      name="telegram"
+                      placeholder={t('join.form.placeholders.telegram')}
+                      className="mt-1 surface-2 border-input-border focus:border-primary"
+                    />
+                  </div>
+                  <div>
+                    <Label htmlFor="whatsapp" className="text-foreground">{t('join.form.labels.whatsapp')}</Label>
+                    <Input
+                      id="whatsapp"
+                      name="whatsapp"
+                      placeholder={t('join.form.placeholders.whatsapp')}
+                      className="mt-1 surface-2 border-input-border focus:border-primary"
+                    />
+                  </div>
+                  <div>
+                    <Label htmlFor="linkedin" className="text-foreground">{t('join.form.labels.linkedin')}</Label>
+                    <Input
+                      id="linkedin"
+                      name="linkedin"
+                      type="url"
+                      placeholder={t('join.form.placeholders.linkedin')}
+                      className="mt-1 surface-2 border-input-border focus:border-primary"
+                    />
+                  </div>
                 </div>
+                <p className="text-xs text-foreground-tertiary">{t('join.form.hintContact')}</p>
 
                 <div>
                   <Label htmlFor="location" className="text-foreground">{t('join.form.labels.location')}</Label>
@@ -571,6 +609,12 @@ export function JoinPage() {
                     <p className="text-red-800 text-sm font-medium">
                       ❌ Произошла ошибка при отправке заявки. Пожалуйста, попробуйте еще раз.
                     </p>
+                  </div>
+                )}
+
+                {validationError && (
+                  <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
+                    <p className="text-amber-800 text-sm font-medium">{validationError}</p>
                   </div>
                 )}
 
