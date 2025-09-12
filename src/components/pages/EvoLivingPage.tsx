@@ -332,7 +332,7 @@ export function EvoLivingPage({ onNavigate }: EvoLivingPageProps) {
           <div className="max-w-4xl mx-auto space-y-8 pt-20 md:pt-32 lg:pt-40 pb-56 sm:pb-64 md:pb-72 lg:pb-80">
             {/* Main Headline */}
             <div className="space-y-6">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight" style={{ fontFamily: 'var(--font-headline)' }}>
+              <h1 className="text-2xl md:text-3xl lg:text-4xl leading-tight tracking-tight" style={{ fontFamily: 'var(--font-headline)' }}>
                 <span className="block mb-3">{t('evo.hero.title1')}</span>
                 <span className="block">{t('evo.hero.title2')}</span>
               </h1>
