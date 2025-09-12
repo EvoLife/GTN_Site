@@ -46,8 +46,7 @@
     "cta": {
       "title": "Support the Mission",
       "buttons": {
-        "visionDeck": "Download Vision Deck",
-        "investmentRoadmap": "View Investment Roadmap",
+        "roadmap": "Roadmap",
         "partnership": "Propose Strategic Partnership"
       }
     },

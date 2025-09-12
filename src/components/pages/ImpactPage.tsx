@@ -16,8 +16,8 @@ export function ImpactPage({ onNavigate }: ImpactPageProps) {
 
   return (
     <div className="min-h-screen surface-1">
-      {/* Hero Section */}
-      <section className="py-16 md:py-24 surface-2">
+      {/* Hero Section - HIDDEN */}
+      {/* <section className="py-16 md:py-24 surface-2">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl text-foreground mb-6">{t('impact.hero.title')}</h1>
@@ -36,10 +36,10 @@ export function ImpactPage({ onNavigate }: ImpactPageProps) {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      {/* Global Hub Map Section */}
-      <GlobalHubMap />
+      {/* Global Hub Map Section - HIDDEN */}
+      {/* <GlobalHubMap /> */}
 
       {/* GTN Growth Path */}
       <section className="py-20 surface-1">
@@ -245,26 +245,19 @@ export function ImpactPage({ onNavigate }: ImpactPageProps) {
               <h3 className="text-2xl font-semibold text-foreground mb-8">{t('impact.cta.title')}</h3>
               <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-4xl mx-auto">
                 <Button 
-                  variant="default"
-                  className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow-dark"
-                  size="lg"
-                >
-                  <ExternalLink className="mr-2" size={16} />
-                  {t('impact.cta.buttons.visionDeck')}
-                </Button>
-                <Button 
                   variant="outline" 
                   className="border-accent text-accent hover:bg-accent hover:text-accent-foreground shadow-glow-copper"
                   size="lg"
                   onClick={() => onNavigate('investment-roadmap')}
                 >
                   <ExternalLink className="mr-2" size={16} />
-                  {t('impact.cta.buttons.investmentRoadmap')}
+                  {t('impact.cta.buttons.roadmap')}
                 </Button>
                 <Button 
                   variant="outline" 
                   className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground shadow-brand-dark"
                   size="lg"
+                  onClick={() => onNavigate('contact')}
                 >
                   <ExternalLink className="mr-2" size={16} />
                   {t('impact.cta.buttons.partnership')}
@@ -275,8 +268,8 @@ export function ImpactPage({ onNavigate }: ImpactPageProps) {
         </div>
       </section>
 
-      {/* Downloads */}
-      <section className="py-20 gradient-brand-dark">
+      {/* Downloads - HIDDEN */}
+      {/* <section className="py-20 gradient-brand-dark">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl text-ivory mb-6">{t('impact.downloads.title')}</h2>
@@ -307,7 +300,7 @@ export function ImpactPage({ onNavigate }: ImpactPageProps) {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

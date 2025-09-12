@@ -46,8 +46,7 @@
     "cta": {
       "title": "Поддержать миссию",
       "buttons": {
-        "visionDeck": "Скачать Vision Deck",
-        "investmentRoadmap": "Инвестиционный роадмап",
+        "roadmap": "Этапы",
         "partnership": "Предложить стратегическое партнёрство"
       }
     },

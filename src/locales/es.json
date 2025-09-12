@@ -132,9 +132,8 @@
     "cta": {
       "title": "Apoya la misión",
       "buttons": {
-        "visionDeck": "Descargar Vision Deck",
-        "investmentRoadmap": "Ver Investment Roadmap",
-        "partnership": "Proponer alianza estratégica"
+        "roadmap": "Hoja de ruta",
+        "partnership": "Proponer asociación estratégica"
       }
     },
     "downloads": {
