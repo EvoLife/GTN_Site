@@ -1,0 +1,1 @@
+Removing EventsPage.tsx as it's no longer needed

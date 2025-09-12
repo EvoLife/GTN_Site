@@ -1,0 +1,597 @@
+import { Button } from '../ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../ui/card';
+import { Input } from '../ui/input';
+import { Textarea } from '../ui/textarea';
+import { Label } from '../ui/label';
+import { Badge } from '../ui/badge';
+import { Separator } from '../ui/separator';
+import { Check, Users, Building2, BarChart3, Target, Clock, MessageSquare, Bot, Search, Wrench, HandHeart, Rocket, Home, Vote } from 'lucide-react';
+import { useLanguage } from '../i18n/LanguageContext';
+import { useState } from 'react';
+
+export function JoinPage() {
+  const { t, get } = useLanguage();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  const sendToTelegram = async (type: string, data: any) => {
+    const TELEGRAM_BOT_TOKEN = '7608359591:AAHf7uO_sdSblv4Dy3MoDquECHOyxEh8lzA';
+    const TELEGRAM_CHAT_ID = '48195187';
+    
+    let message = '';
+    if (type === 'application') {
+      message = `🚀 *Новая заявка на участие в GTN*\n\n` +
+        `👤 *Имя:* ${data.firstName} ${data.lastName}\n` +
+        `📧 *Email:* ${data.email}\n` +
+        `📍 *Местоположение:* ${data.location}\n` +
+        `💼 *Роль:* ${data.role}\n` +
+        `🔗 *Портфолио:* ${data.portfolio || 'Не указано'}\n\n` +
+        `🎯 *Что хочет создавать:*\n${data.build}\n\n` +
+        `💡 *Как будет способствовать:*\n${data.contribute}\n\n` +
+        `❓ *Почему GTN:*\n${data.why}`;
+    }
+
+    const response = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        chat_id: TELEGRAM_CHAT_ID,
+        text: message,
+        parse_mode: 'Markdown',
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error('Failed to send message to Telegram');
+    }
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      firstName: formData.get('firstName'),
+      lastName: formData.get('lastName'),
+      email: formData.get('email'),
+      location: formData.get('location'),
+      role: formData.get('role'),
+      portfolio: formData.get('portfolio'),
+      build: formData.get('build'),
+      contribute: formData.get('contribute'),
+      why: formData.get('why'),
+    };
+
+    try {
+      await sendToTelegram('application', data);
+      setSubmitStatus('success');
+      (e.target as HTMLFormElement).reset();
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+  const inviteCards = get<any>('join.invite.cards') || [];
+  const inviteTypes = inviteCards.map((c: any) => ({ title: c?.title, description: c?.desc }));
+
+  const ecosystemToolsData = get<any>('join.ecosystem.tools') || [];
+  const ecosystemTools = [
+    { icon: Users, title: ecosystemToolsData[0]?.title, subtitle: ecosystemToolsData[0]?.subtitle, description: ecosystemToolsData[0]?.desc },
+    { icon: Building2, title: ecosystemToolsData[1]?.title, subtitle: ecosystemToolsData[1]?.subtitle, description: ecosystemToolsData[1]?.desc },
+    { icon: BarChart3, title: ecosystemToolsData[2]?.title, subtitle: ecosystemToolsData[2]?.subtitle, description: ecosystemToolsData[2]?.desc },
+  ];
+
+  const timeline = (get<any>('join.selection.timeline') || []).map((i: any) => ({ step: i?.step, time: i?.time, description: i?.desc }));
+
+  return (
+    <div className="min-h-screen surface-1">
+      {/* Hero Section */}
+      <section className="py-16 md:py-24 surface-2">
+        <div className="container">
+          <div className="max-w-3xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl text-foreground mb-6">{t('join.hero.title')}</h1>
+            <p className="text-xl text-foreground-secondary mb-8">
+              {t('join.hero.subtitle')}
+            </p>
+            <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-2">
+              <a 
+                href="https://my.gtn.life/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-sm text-primary font-medium hover:text-primary-light transition-colors duration-200"
+              >
+                {t('join.hero.cta')}
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Video Section */}
+      <section className="py-16 surface-1">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="relative w-full" style={{ aspectRatio: '16/9' }}>
+              <iframe
+                src="https://www.youtube.com/embed/Yj7Zkcdy-8Y"
+                title="GTN Introduction Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="absolute inset-0 w-full h-full rounded-gtn-lg border border-card-border shadow-brand-dark"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Who We Invite */}
+      <section className="py-16 surface-1">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl text-foreground mb-4">{t('join.invite.title')}</h2>
+              <p className="text-xl text-foreground-secondary">
+                {t('join.invite.subtitle')}
+              </p>
+            </div>
+
+            {/* First row - 2 cards */}
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              {inviteTypes.slice(0, 2).map((type, index) => (
+                <Card key={index} className="p-8 surface-2 border-card-border rounded-gtn-lg hover:shadow-brand-dark transition-all duration-300">
+                  <div className="space-y-4">
+                    <h3 className="text-xl font-semibold text-foreground">{type.title}</h3>
+                    <p className="text-foreground-secondary leading-relaxed">{type.description}</p>
+                  </div>
+                </Card>
+              ))}
+            </div>
+            
+            {/* Second row - 3 cards */}
+            <div className="grid md:grid-cols-3 gap-8">
+              {inviteTypes.slice(2, 5).map((type, index) => (
+                <Card key={index + 2} className="p-8 surface-2 border-card-border rounded-gtn-lg hover:shadow-brand-dark transition-all duration-300">
+                  <div className="space-y-4">
+                    <h3 className="text-xl font-semibold text-foreground">{type.title}</h3>
+                    <p className="text-foreground-secondary leading-relaxed">{type.description}</p>
+                  </div>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Possibilities - What You Get */}
+      <section className="py-20 surface-2">
+        <div className="container">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl text-foreground mb-6">{t('join.possibilities.title')}</h2>
+              <p className="text-xl text-foreground-secondary mb-8">
+                {t('join.possibilities.subtitle')}
+              </p>
+            </div>
+
+            {/* Three Equal Sections */}
+            <div className="grid lg:grid-cols-3 gap-8 mb-16">
+              
+              {/* 1. Inside GTN, You Get Access To */}
+              <Card className="p-8 surface-1 border-card-border rounded-gtn-lg hover:shadow-brand-dark transition-all duration-300">
+                <div className="text-center mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-accent/20 border border-primary/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Users className="text-primary" size={32} />
+                  </div>
+                  <h3 className="text-[28px] leading-tight text-foreground mb-4 text-center max-w-[240px] mx-auto">{t('join.possibilities.inside.title')}</h3>
+                </div>
+
+                <div className="space-y-4 mb-6">
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">{t('join.possibilities.inside.clarity.title')}</h4>
+                    <p className="text-foreground-secondary text-sm">{t('join.possibilities.inside.clarity.desc')}</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">{t('join.possibilities.inside.collab.title')}</h4>
+                    <p className="text-foreground-secondary text-sm">{t('join.possibilities.inside.collab.desc')}</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">{t('join.possibilities.inside.projects.title')}</h4>
+                    <p className="text-foreground-secondary text-sm">{t('join.possibilities.inside.projects.desc')}</p>
+                  </div>
+                </div>
+
+                <div className="bg-primary/10 border border-primary/20 rounded-lg p-4">
+                  <p className="text-primary font-medium text-center">{t('join.possibilities.inside.cta')}</p>
+                </div>
+              </Card>
+
+              {/* 2. A Personalized Growth System */}
+              <Card className="p-8 surface-1 border-card-border rounded-gtn-lg hover:shadow-brand-dark transition-all duration-300">
+                <div className="text-center mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-accent/20 border border-primary/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Bot className="text-primary" size={32} />
+                  </div>
+                  <h3 className="text-[28px] leading-tight text-foreground mb-4 text-center max-w-[220px] mx-auto">{t('join.possibilities.growth.title')}</h3>
+                </div>
+
+                <div className="space-y-4 mb-6">
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">{t('join.possibilities.growth.aiMentor.title')}</h4>
+                    <p className="text-foreground-secondary text-sm">{t('join.possibilities.growth.aiMentor.desc')}</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">{t('join.possibilities.growth.matching.title')}</h4>
+                    <p className="text-foreground-secondary text-sm">{t('join.possibilities.growth.matching.desc')}</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">{t('join.possibilities.growth.evolution.title')}</h4>
+                    <p className="text-foreground-secondary text-sm">{t('join.possibilities.growth.evolution.desc')}</p>
+                  </div>
+                </div>
+
+                <div className="bg-accent/10 border border-accent/20 rounded-lg p-4">
+                  <p className="text-accent font-medium text-center">{t('join.possibilities.growth.cta')}</p>
+                </div>
+              </Card>
+
+              {/* 3. Opportunity to Contribute */}
+              <Card className="p-8 surface-1 border-card-border rounded-gtn-lg hover:shadow-brand-dark transition-all duration-300">
+                <div className="text-center mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-accent/20 border border-primary/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <HandHeart className="text-primary" size={32} />
+                  </div>
+                  <h3 className="text-xl md:text-2xl text-foreground mb-4 text-[28px]">{t('join.possibilities.contribute.title')}</h3>
+                </div>
+
+                <div className="space-y-4 mb-6">
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">{t('join.possibilities.contribute.cocreate.title')}</h4>
+                    <p className="text-foreground-secondary text-sm">{t('join.possibilities.contribute.cocreate.desc')}</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">{t('join.possibilities.contribute.ownership.title')}</h4>
+                    <p className="text-foreground-secondary text-sm">{t('join.possibilities.contribute.ownership.desc')}</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">{t('join.possibilities.contribute.impact.title')}</h4>
+                    <p className="text-foreground-secondary text-sm">{t('join.possibilities.contribute.impact.desc')}</p>
+                  </div>
+                </div>
+
+                <div className="bg-secondary/10 border border-secondary/20 rounded-lg p-4">
+                  <p className="text-ivory font-medium text-center">{t('join.possibilities.contribute.cta')}</p>
+                </div>
+              </Card>
+            </div>
+
+            {/* Summary Statement */}
+            <div className="text-center">
+              <div className="bg-gradient-to-br from-primary/10 to-accent/10 border border-primary/20 rounded-gtn-lg p-8 max-w-4xl mx-auto">
+                <p className="text-xl text-foreground-secondary leading-relaxed mb-4">{t('join.possibilities.summary.l1')}</p>
+                <p className="text-2xl text-primary font-semibold">{t('join.possibilities.summary.l2')}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Ecosystem Tools */}
+      <section className="py-20 surface-1">
+        <div className="container">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl text-foreground mb-6">{t('join.ecosystem.title')}</h2>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 mb-16">
+              {ecosystemTools.map((tool, index) => {
+                const IconComponent = tool.icon;
+                return (
+                  <Card key={index} className="p-8 surface-2 border-card-border rounded-gtn-lg hover:shadow-brand-dark transition-all duration-300">
+                    <div className="text-center mb-6">
+                      <div className="flex justify-center mb-6">
+                        <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-accent/20 border border-primary/30 rounded-full flex items-center justify-center">
+                          <IconComponent className="text-primary" size={32} />
+                        </div>
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-semibold text-foreground mb-2">{tool.title}</h3>
+                        <p className="text-primary font-medium mb-3">{tool.subtitle}</p>
+                        <p className="text-foreground-secondary leading-relaxed">{tool.description}</p>
+                      </div>
+                    </div>
+                  </Card>
+                );
+              })}
+            </div>
+
+            <div className="text-center">
+              <p className="text-foreground-secondary text-lg italic">{t('join.ecosystem.note')}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What You Step Into */}
+      <section className="py-20 surface-2">
+        <div className="container">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl text-foreground mb-6">{t('join.stepInto.title')}</h2>
+              <p className="text-xl text-foreground-secondary">
+                {t('join.stepInto.subtitle')}
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+              <Card className="p-6 surface-1 border-card-border rounded-gtn-lg text-center hover:shadow-brand-dark transition-all duration-300">
+                <div className="flex justify-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-accent/20 border border-primary/30 rounded-full flex items-center justify-center">
+                    <Search className="text-primary" size={24} />
+                  </div>
+                </div>
+                <h3 className="font-semibold text-foreground mb-3">{t('join.stepInto.cards.0.title')}</h3>
+                <p className="text-sm text-foreground-secondary">{t('join.stepInto.cards.0.desc')}</p>
+              </Card>
+
+              <Card className="p-6 surface-1 border-card-border rounded-gtn-lg text-center hover:shadow-brand-dark transition-all duration-300">
+                <div className="flex justify-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-accent/20 border border-primary/30 rounded-full flex items-center justify-center">
+                    <Wrench className="text-primary" size={24} />
+                  </div>
+                </div>
+                <h3 className="font-semibold text-foreground mb-3">{t('join.stepInto.cards.1.title')}</h3>
+                <p className="text-sm text-foreground-secondary">{t('join.stepInto.cards.1.desc')}</p>
+              </Card>
+
+              <Card className="p-6 surface-1 border-card-border rounded-gtn-lg text-center hover:shadow-brand-dark transition-all duration-300">
+                <div className="flex justify-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-accent/20 border border-primary/30 rounded-full flex items-center justify-center">
+                    <HandHeart className="text-primary" size={24} />
+                  </div>
+                </div>
+                <h3 className="font-semibold text-foreground mb-3">{t('join.stepInto.cards.2.title')}</h3>
+                <p className="text-sm text-foreground-secondary">{t('join.stepInto.cards.2.desc')}</p>
+              </Card>
+
+              <Card className="p-6 surface-1 border-card-border rounded-gtn-lg text-center hover:shadow-brand-dark transition-all duration-300">
+                <div className="flex justify-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-accent/20 border border-primary/30 rounded-full flex items-center justify-center">
+                    <Rocket className="text-primary" size={24} />
+                  </div>
+                </div>
+                <h3 className="font-semibold text-foreground mb-3">{t('join.stepInto.cards.3.title')}</h3>
+                <p className="text-sm text-foreground-secondary">{t('join.stepInto.cards.3.desc')}</p>
+              </Card>
+
+              <Card className="p-6 surface-1 border-card-border rounded-gtn-lg text-center hover:shadow-brand-dark transition-all duration-300">
+                <div className="flex justify-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-accent/20 border border-primary/30 rounded-full flex items-center justify-center">
+                    <Home className="text-primary" size={24} />
+                  </div>
+                </div>
+                <h3 className="font-semibold text-foreground mb-3">{t('join.stepInto.cards.4.title')}</h3>
+                <p className="text-sm text-foreground-secondary">{t('join.stepInto.cards.4.desc')}</p>
+              </Card>
+
+              <Card className="p-6 surface-1 border-card-border rounded-gtn-lg text-center hover:shadow-brand-dark transition-all duration-300">
+                <div className="flex justify-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-accent/20 border border-primary/30 rounded-full flex items-center justify-center">
+                    <Vote className="text-primary" size={24} />
+                  </div>
+                </div>
+                <h3 className="font-semibold text-foreground mb-3">{t('join.stepInto.cards.5.title')}</h3>
+                <p className="text-sm text-foreground-secondary">{t('join.stepInto.cards.5.desc')}</p>
+              </Card>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-gradient-to-br from-primary/10 to-accent/10 border border-primary/20 rounded-gtn-lg p-8">
+                <p className="text-xl text-foreground-secondary leading-relaxed mb-4">{t('join.stepInto.summary.l1')}</p>
+                <p className="text-2xl text-primary font-semibold">{t('join.stepInto.summary.l2')}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How Selection Works - Minimal */}
+      <section className="py-12 surface-1">
+        <div className="container">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-8">
+              <h2 className="text-2xl md:text-3xl text-foreground mb-2">{t('join.selection.title')}</h2>
+              <p className="text-foreground-secondary">{t('join.selection.subtitle')}</p>
+            </div>
+
+            {/* Horizontal Timeline */}
+            <div className="relative">
+              {/* Timeline line */}
+              <div className="hidden md:block absolute top-6 left-0 right-0 h-0.5 bg-border"></div>
+              
+              <div className="grid md:grid-cols-5 gap-6 relative">
+                {timeline.map((item, index) => (
+                  <div key={index} className="text-center relative">
+                    {/* Step circle */}
+                    <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-semibold text-sm mx-auto mb-4 relative z-10 border-4 border-surface-1">
+                      {index + 1}
+                    </div>
+                    
+                    {/* Content */}
+                    <div className="space-y-2">
+                      <h3 className="font-semibold text-foreground text-sm">{item.step}</h3>
+                      <div className="flex items-center justify-center">
+                        <Badge variant="outline" className="text-xs border-foreground-tertiary text-foreground-tertiary">
+                          <Clock size={10} className="mr-1" />
+                          {item.time}
+                        </Badge>
+                      </div>
+                      <p className="text-xs text-foreground-secondary leading-snug">{item.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Application Form */}
+      <section className="py-16 surface-2" id="apply">
+        <div className="container">
+          <div className="max-w-2xl mx-auto">
+            <Card className="surface-1 border-card-border rounded-gtn-lg shadow-brand-dark">
+              <CardHeader className="text-center">
+                <CardTitle className="text-2xl text-foreground">{t('join.form.title')}</CardTitle>
+                <CardDescription className="text-foreground-secondary">{t('join.form.subtitle')}</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <Label htmlFor="firstName" className="text-foreground">{t('join.form.labels.firstName')}</Label>
+                    <Input 
+                      id="firstName" 
+                      name="firstName"
+                      placeholder={t('join.form.placeholders.firstName')}
+                      className="mt-1 surface-2 border-input-border focus:border-primary"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <Label htmlFor="lastName" className="text-foreground">{t('join.form.labels.lastName')}</Label>
+                    <Input 
+                      id="lastName" 
+                      name="lastName"
+                      placeholder={t('join.form.placeholders.lastName')}
+                      className="mt-1 surface-2 border-input-border focus:border-primary"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <Label htmlFor="email" className="text-foreground">{t('join.form.labels.email')}</Label>
+                  <Input 
+                    id="email" 
+                    name="email"
+                    type="email" 
+                    placeholder={t('join.form.placeholders.email')}
+                    className="mt-1 surface-2 border-input-border focus:border-primary"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <Label htmlFor="location" className="text-foreground">{t('join.form.labels.location')}</Label>
+                  <Input 
+                    id="location" 
+                    name="location"
+                    placeholder={t('join.form.placeholders.location')}
+                    className="mt-1 surface-2 border-input-border focus:border-primary"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <Label htmlFor="role" className="text-foreground">{t('join.form.labels.role')}</Label>
+                  <Input 
+                    id="role" 
+                    name="role"
+                    placeholder={t('join.form.placeholders.role')}
+                    className="mt-1 surface-2 border-input-border focus:border-primary"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <Label htmlFor="portfolio" className="text-foreground">{t('join.form.labels.portfolio')}</Label>
+                  <Input 
+                    id="portfolio" 
+                    name="portfolio"
+                    type="url"
+                    placeholder={t('join.form.placeholders.portfolio')}
+                    className="mt-1 surface-2 border-input-border focus:border-primary"
+                  />
+                </div>
+
+                <Separator className="bg-card-border" />
+
+                <div>
+                  <Label htmlFor="build" className="text-foreground">{t('join.form.labels.build')}</Label>
+                  <Textarea 
+                    id="build" 
+                    name="build"
+                    placeholder={t('join.form.placeholders.build')}
+                    rows={4}
+                    className="mt-1 surface-2 border-input-border focus:border-primary resize-none"
+                    required
+                  />
+                  <p className="text-xs text-foreground-tertiary mt-1">{t('join.form.hint')}</p>
+                </div>
+
+                <div>
+                  <Label htmlFor="contribute" className="text-foreground">{t('join.form.labels.contribute')}</Label>
+                  <Textarea 
+                    id="contribute" 
+                    name="contribute"
+                    placeholder={t('join.form.placeholders.contribute')}
+                    rows={3}
+                    className="mt-1 surface-2 border-input-border focus:border-primary resize-none"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <Label htmlFor="why" className="text-foreground">{t('join.form.labels.why')}</Label>
+                  <Textarea 
+                    id="why" 
+                    name="why"
+                    placeholder={t('join.form.placeholders.why')}
+                    rows={3}
+                    className="mt-1 surface-2 border-input-border focus:border-primary resize-none"
+                    required
+                  />
+                </div>
+
+                {submitStatus === 'success' && (
+                  <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+                    <p className="text-green-800 text-sm font-medium">
+                      ✅ Заявка успешно отправлена! Мы свяжемся с вами в ближайшее время.
+                    </p>
+                  </div>
+                )}
+
+                {submitStatus === 'error' && (
+                  <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+                    <p className="text-red-800 text-sm font-medium">
+                      ❌ Произошла ошибка при отправке заявки. Пожалуйста, попробуйте еще раз.
+                    </p>
+                  </div>
+                )}
+
+                <Button 
+                  type="submit" 
+                  disabled={isSubmitting}
+                  className="w-full bg-accent hover:bg-accent/90 text-accent-foreground py-3 shadow-glow-copper disabled:opacity-50"
+                  style={{ minHeight: '44px' }}
+                >
+                  {isSubmitting ? 'Отправка...' : t('join.form.submit')}
+                </Button>
+
+                <div className="text-center pt-4">
+                  <p className="text-sm text-foreground-secondary">{t('join.form.disclaimer')}</p>
+                </div>
+                </form>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}

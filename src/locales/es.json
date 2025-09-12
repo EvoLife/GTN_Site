@@ -1,0 +1,435 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "evoLiving": "Evo Living",
+    "impact": "Impacto",
+    "contact": "Contacto"
+  },
+  "evo": {
+    "hero": {
+      "title1": "La Comunidad",
+      "title2": "Evo de GTN",
+      "subtitle": "GTN es más que un espacio: es un contenedor para vivir, trabajar y evolucionar en alineación."
+    },
+    "banner": {
+      "p1": "Diseñamos entornos donde tus talentos innatos se cultivan, tu bienestar está apoyado y tu contribución importa para quienes te rodean.",
+      "p2": "Cada elemento está creado para sostener foco profundo, conexión real y crecimiento sostenible — personal y colectivo."
+    },
+    "howDesign": {
+      "title": "Cómo diseñamos para la evolución humana",
+      "subtitle": "Los espacios de GTN se crean conscientemente para apoyar tu claridad, conexión y contribución. Cada decisión de diseño tiene propósito.",
+      "quote": "\"La arquitectura se guía por la neuroestética, el ritmo y la calma — cada detalle te ayuda a sentirte seguro, presente y enfocado. El entorno nunca es fijo; crece con su gente mediante diseño modular y ciclos de feedback comunitario.\""
+    },
+    "tech": {
+      "title": "Tecnologías regenerativas de bienestar habilitadas por IA",
+      "subtitle": "Sistemas inteligentes para entornos sanos y adaptativos",
+      "items": [
+        {"title": "IA para calidad del aire interior", "desc": "Sensado y filtración autónomos que usan IA para detectar y neutralizar COV, PM2.5, CO2, ajustando la purificación según ocupación y condiciones exteriores."},
+        {"title": "Iluminación biophilic inteligente", "desc": "Iluminación humano‑céntrica controlada por IA que adapta temperatura de color, intensidad y dirección según ritmos circadianos, sueño y biometría en tiempo real."},
+        {"title": "Confort térmico dinámico", "desc": "Climatización inteligente que aprende preferencias personales y ocupación por zonas para optimizar temperatura, humedad y flujo de aire — comodidad y eficiencia energética."},
+        {"title": "Sistemas de agua regenerativa", "desc": "Filtración, remineralización y monitoreo de uso integrados con IA para alta calidad de hidratación, menos desperdicio y recordatorios de consumo saludable."},
+        {"title": "Paisajes sonoros neuroadaptativos", "desc": "IA que genera ambientes sonoros personalizados — acústicas naturales o ruido blanco — para foco, relajación o sueño, adaptándose en tiempo real al estado del usuario."},
+        {"title": "Blindaje predictivo EMF", "desc": "Zonificación con IA que monitorea exposición EMF y activa escudos o alertas al entrar en zonas de alta exposición — favoreciendo el bienestar cognitivo y neurológico."},
+        {"title": "Inteligencia de materiales", "desc": "Sensores embebidos en pisos, muros y acabados que rastrean emisiones, humedad, COV y biodegradabilidad — con alertas o acciones auto‑limpiantes."},
+        {"title": "Panel integral de bienestar", "desc": "Plataforma centralizada que integra aire, agua, luz, ruido, EMF, ocupación y energía — con reportes personalizados y recomendaciones de optimización."}
+      ]
+    },
+    "eco": {
+      "title": "Eco‑Comunidad GTN",
+      "subTitle": "Diseñada alrededor de la plenitud humana",
+      "p1": "En GTN, cada espacio se crea con propósito — para apoyar cómo vives, creces y te conectas.",
+      "p2": "Porque evolucionar no es solo construir el futuro — es expresar juntos quiénes somos de verdad."
+    },
+    "buttons": {
+      "viewDetails": "Ver detalles",
+      "hideDetails": "Ocultar detalles"
+    },
+    "cta": {
+      "title": "¿Listo para experimentar Evo Living?",
+      "desc": "Únete a una comunidad de constructores conscientes que crean espacios regenerativos para la evolución humana y la salud del planeta.",
+      "apply": "Solicitar residencia",
+      "learnMore": "Saber más"
+    },
+    "designPrinciples": [
+      {"title": "Diseño centrado en talento", "desc": "Espacios organizados por cómo pensamos, interactuamos y creamos — apoyando ritmos de trabajo y estilos cognitivos distintos.", "color": "primary"},
+      {"title": "Materiales regenerativos", "desc": "Materiales biofílicos que nutren cuerpo y planeta — madera, arcilla, piedra y hempcrete en armonía con el entorno.", "color": "accent"},
+      {"title": "Infraestructura consciente", "desc": "Luz, aire, acústica y flujos equilibrados para el sistema nervioso — cada detalle sostiene presencia y enfoque.", "color": "secondary"},
+      {"title": "Evolución adaptativa", "desc": "Arquitectura modular y bucles de feedback comunitario — espacios que crecen con su gente, nunca fijos.", "color": "primary"},
+      {"title": "Diseño neuroestético", "desc": "Arquitectura guiada por la respuesta del cerebro a la belleza, el ritmo y la calma — espacios que se sienten correctos de forma intuitiva.", "color": "accent"},
+      {"title": "Artesanía consciente", "desc": "Cada elemento hecho con intención — de geometría sagrada a frecuencias sonoras que elevan la conciencia.", "color": "secondary"}
+    ],
+    "spaceCategories": [
+      {"title": "Dónde vives", "spaces": [
+        {"title": "Villas privadas", "desc": "Para residentes de largo plazo y fundadores. Casas individuales o co‑propiedad, diseñadas para claridad, privacidad y foco profundo.", "details": "Vive en alineación con la naturaleza, el espacio y contigo — con acceso a la comunidad cuando elijas. Hogares que reflejan tu ritmo, no lo rompen."},
+        {"title": "Residencias de co‑living", "desc": "Para contribuyentes activos y equipos ágiles. Suites privadas con áreas comunes, lounges y zonas creativas.", "details": "Equilibrio entre espacio personal y energía de colaboración — ideal para profesionales, creativos y residentes iniciales."},
+        {"title": "Alojamiento de invitados", "desc": "Para estancias cortas, retiros e inmersiones de aprendizaje.", "details": "Mentores y visitantes en micro‑apartamentos regenerativos o domos de huéspedes con los mismos valores de diseño que los hogares permanentes."}
+      ]},
+      {"title": "Dónde te recuperas", "spaces": [
+        {"title": "Domo de sanación para meditación y quietud", "desc": "Espacio sagrado para descanso profundo, respiración y claridad interna.", "details": ""},
+        {"title": "Spa, sauna y piscina", "desc": "Terapias regenerativas que restablecen el equilibrio del cuerpo y la mente.", "details": ""},
+        {"title": "Santuarios de naturaleza y senderos", "desc": "Inmersión silenciosa en paisajes vivos — diseñada para reiniciar el sistema nervioso.", "details": ""}
+      ]},
+      {"title": "Dónde perteneces", "spaces": [
+        {"title": "Co‑working consciente y estudios creativos", "desc": "Espacios para construir y crear en flujo — con personas alineadas.", "details": ""},
+        {"title": "Centro de maestría del talento y hub de inventores", "desc": "Entornos donde tus dones se desarrollan, comparten y escalan.", "details": ""},
+        {"title": "Plaza comunitaria, mercado y granja urbana", "desc": "Espacios vibrantes para la vida diaria, el diálogo y una economía honesta.", "details": ""}
+      ]},
+      {"title": "Dónde te nutres", "spaces": [
+        {"title": "Restaurante de huerto a mesa", "desc": "Cocina consciente con ingredientes cultivados in‑situ y servidos con cuidado.", "details": ""},
+        {"title": "Estudio de cocina saludable", "desc": "Espacio de aprendizaje donde la comida es un ritual sanador.", "details": ""},
+        {"title": "Invernaderos y huertos regenerativos", "desc": "Sistemas de ciclo cerrado que alimentan la tierra, la mesa y la comunidad.", "details": ""}
+      ]},
+      {"title": "Dónde crecen juntos", "spaces": [
+        {"title": "Parque infantil, guardería y zonas familiares", "desc": "Diseñado para asombro, seguridad y libertad de explorar.", "details": ""},
+        {"title": "Programas multi‑generacionales", "desc": "Aprendizaje, movimiento y rituales compartidos a cualquier edad.", "details": ""},
+        {"title": "Pabellón multi‑generacional", "desc": "Espacio abierto para rituales, comidas, relatos y creación conjunta — flexible y alegre.", "details": ""}
+      ]},
+      {"title": "Dónde creas significado", "spaces": [
+        {"title": "Calles de arte comunitario", "desc": "Murales, instalaciones y expresiones vivas que reflejan la voz colectiva de GTN.", "details": ""},
+        {"title": "Espacios de meditación al aire libre", "desc": "Santuarios a cielo abierto para silencio, sonido sanador y conexión con la tierra.", "details": ""},
+        {"title": "Biblioteca y archivos culturales de GTN", "desc": "Colección viva de sabiduría, arte y evolución — compartida, creciente y preservada por la comunidad.", "details": ""}
+      ]}
+    ]
+  },
+  "impact": {
+    "hero": {
+      "title": "Impacto y Gobernanza",
+      "subtitle": "Métricas abiertas, gobernanza transparente y resultados medibles. Confianza a través de transparencia radical.",
+      "buttons": {
+        "downloadReport": "Descargar informe 2024",
+        "liveDashboard": "Panel en vivo"
+      }
+    },
+    "growth": {
+      "title": "GTN: el camino de nuestro crecimiento colectivo",
+      "subtitle": "De comunidad digital a infraestructura global distribuida — nuestra ruta paso a paso hacia un network state funcional y alineado por propósito.",
+      "phases": [
+        {"phase": "Fase 1", "period": "(2018–2023)", "title": "Comunidad global", "description": "Foco: desarrollo interior y alineación con propósito", "milestone": "Comunidad Evolution Life, herramientas de meditación y bienestar, 155.000+ miembros tempranos", "status": "completed"},
+        {"phase": "Fase 2", "period": "(2023–2025)", "title": "Herramientas y sistemas", "description": "Foco: herramientas digitales para crecimiento personal y trabajo alineado", "milestone": "Prototipos de mentor y terapeuta con IA, plataformas de desarrollo personal, incubadora Evolution Business", "status": "completed"},
+        {"phase": "Fase 3", "period": "(2025–2026)", "title": "Lanzamiento del ecosistema", "description": "Foco: plataforma de talento, proyectos e identidad digital", "milestone": "Pasaporte GTN y perfil de talento, flujos de onboarding de proyectos, coordinación DAO", "status": "current"},
+        {"phase": "Fase 4", "period": "(2026–2029)", "title": "Infraestructura física", "description": "Foco: comunidades regenerativas y hubs híbridos", "milestone": "Pilotos Evo Living (Indonesia, Portugal), residencia basada en talento, alianzas internacionales", "status": "upcoming"},
+        {"phase": "Fase 5", "period": "(2030+)", "title": "Sistema vivo", "description": "Foco: soberanía integral y colaboración global", "milestone": "Hubs GTN en regiones, modelos de co‑propiedad, infraestructura de network state reconocida", "status": "future"}
+      ],
+      "statusLabels": {
+        "completed": "Completado",
+        "current": "Fase actual",
+        "upcoming": "Próximamente",
+        "future": "Visión futura"
+      },
+      "milestoneLabel": "Hitos clave"
+    },
+    "networkState": {
+      "title": "¿Qué hace real a GTN como network state?",
+      "p1": "GTN se alinea activamente con los criterios de The Network State y la Convención de Montevideo sobre derechos y deberes de los estados.",
+      "p2": "Construimos la estructura, herramientas y participación necesarias para funcionar como una civilización distribuida y alineada por propósito.",
+      "cards": [
+        {"stdTitle": "Estándar internacional", "itemTitle": "Población permanente", "stdDesc": "Comunidad estable con vínculo continuo con el estado.", "implTitle": "Implementación GTN", "implDesc": "155K+ miembros en 127 países, onboarding digital activo", "badge": "Activo y en crecimiento"},
+        {"stdTitle": "Estándar internacional", "itemTitle": "Territorio definido", "stdDesc": "Espacio físico con límites y jurisdicción claros.", "implTitle": "Implementación GTN", "implDesc": "Pilotos Evo Living en Indonesia y Portugal", "badge": "Hubs físicos establecidos"},
+        {"stdTitle": "Estándar internacional", "itemTitle": "Estructura de gobierno", "stdDesc": "Sistema organizado de gobernanza y ley.", "implTitle": "Implementación GTN", "implDesc": "Pasaportes GTN, gobernanza DAO, roles por proyecto", "badge": "En desarrollo"},
+        {"stdTitle": "Estándar internacional", "itemTitle": "Capacidad diplomática", "stdDesc": "Habilidad para relacionarse con otros estados.", "implTitle": "Implementación GTN", "implDesc": "Presencia en cumbres globales; alianzas estratégicas", "badge": "Compromiso activo"}
+      ]
+    },
+    "cta": {
+      "title": "Apoya la misión",
+      "buttons": {
+        "visionDeck": "Descargar Vision Deck",
+        "investmentRoadmap": "Ver Investment Roadmap",
+        "partnership": "Proponer alianza estratégica"
+      }
+    },
+    "downloads": {
+      "title": "Recursos e informes",
+      "subtitle": "Descarga documentos de gobernanza, reportes financieros y evaluaciones de impacto.",
+      "items": [
+        {"title": "Informe de Impacto 2024", "subtitle": "Evaluación anual"},
+        {"title": "Notas de Gobernanza", "subtitle": "Marcos de decisión"}
+      ]
+    },
+    "map": {
+      "title": "Red Global de Hubs",
+      "subtitle": "Hubs regenerativos estratégicos en continentes, conectados por propósito compartido e innovación colaborativa.",
+      "status": "Red Activa",
+      "locations": {
+        "canada": {"name": "Canadá", "desc": "Hub Alberta"},
+        "indonesia": {"name": "Indonesia", "desc": "Bali Evo Living"},
+        "europe": {"name": "Europa", "desc": "Red Multi-Hub"},
+        "uae": {"name": "EAU", "desc": "Puerta de Dubai"},
+        "kazakhstan": {"name": "Kazajistán", "desc": "Hub Asia Central"}
+      }
+    }
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "Ponte en contacto con nuestro equipo. Nos encantaría escucharte y explorar cómo podemos trabajar juntos.",
+    "proposal": {
+      "title": "¿Proponer un proyecto?",
+      "description": "¿Tienes un proyecto alineado con la misión de GTN? Usa el formulario y escribe \"Propuesta de Proyecto\" en el asunto. Cuéntanos tu idea — ¡y te contactaremos!"
+    },
+    "info": {
+      "email": "Email",
+      "telegram": "Telegram",
+      "linkedin": "LinkedIn"
+    },
+    "form": {
+      "title": "Envíanos un mensaje",
+      "subtitle": "Completa el formulario a continuación y te responderemos en 24 horas.",
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "email": "Email",
+      "emailPlaceholder": "tu@email.com",
+      "subject": "Asunto",
+      "subjectPlaceholder": "¿De qué se trata?",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntanos más sobre tu consulta...",
+      "submit": "Enviar mensaje"
+    }
+  },
+  "cta": {
+    "join": "Unirse"
+  },
+  "mobile": {
+    "apply": "Aplicar"
+  },
+  "footer": {
+    "community": "Comunidad",
+    "workImpact": "Trabajo e Impacto",
+    "connect": "Conectar",
+    "joinGtn": "Unirse a GTN",
+    "evoLiving": "Evo Living",
+    "impactGov": "Impacto y Gobernanza",
+    "getInTouch": "Ponerse en contacto",
+    "pressMedia": "Prensa y Medios",
+    "privacyPolicy": "Política de Privacidad",
+    "description": "GTN es un network state emergente — construyendo iniciativas regenerativas a través de redes por invitación que alinean talento, herramientas y lugares para un impacto significativo. Nos dirigimos hacia el reconocimiento formal a través de ciudadanía digital, infraestructura física y soberanía económica.",
+    "copyright": "© 2025 Global Talent Nation by Evolution.life LLC"
+  },
+  "home": {
+    "hero": {
+      "title1": "Creamos un ecosistema de proyectos",
+      "title2": "y una comunidad unida por una visión y valores compartidos.",
+      "subtitle": "GTN es una red por invitación donde emprendedores, expertos y creadores colaboran para construir soluciones sostenibles con impacto duradero.",
+      "ctaApply": "Enviar solicitud",
+      "ctaPropose": "Proponer un proyecto"
+    },
+    "stats": {
+      "members": "Miembros de la comunidad Evolution",
+      "countries": "Países alcanzados con nuestras herramientas",
+      "talents": "Talentos perfilados y desarrollados",
+      "events": "Eventos y diálogos de la comunidad"
+    },
+    "video": {
+      "title": "Mira nuestra historia",
+      "desc": "Descubre cómo GTN construye iniciativas regenerativas y conecta talento con propósito en todo el mundo.",
+      "overlayTitle": "Construyendo iniciativas regenerativas",
+      "overlaySub": "Nuestra historia y la misión de GTN • 1 minuto",
+      "ctaApply": "Unirse a GTN",
+      "ctaLearn": "Saber más"
+    },
+    "whoWeAre": {
+      "title": "Quiénes somos",
+      "p1": "Somos una red global de constructores, profesionales y creadores — unidos por una misión compartida: desarrollar iniciativas significativas, equipos alineados y comunidades regenerativas. GTN conecta personas, conocimiento y herramientas para ayudarte a crecer tus ideas, construir con otros y liderar en una nueva economía.",
+      "highlight": "Esto no es solo una plataforma. Es un ecosistema en funcionamiento — donde el talento con propósito crea valor real."
+    },
+    "foundation": {
+      "title": "Nuestros fundamentos",
+      "subtitle": "Valores que guían nuestra red y definen cómo construimos juntos.",
+      "items": [
+        {"title": "Verdad y autoconciencia", "desc": "Todos tenemos fortalezas innatas. Creamos espacios que te ayudan a ver las tuyas — y usarlas con propósito."},
+        {"title": "Apoyo por encima del estatus", "desc": "Valoramos la contribución, no las credenciales. Crecemos ayudándonos unos a otros a tener éxito."},
+        {"title": "Regeneración", "desc": "Todo lo que hacemos — desde nuestros hogares hasta nuestros hábitos — busca restaurar el equilibrio entre las personas y el planeta."},
+        {"title": "Tecnología al servicio", "desc": "La IA y la innovación son herramientas — pero la misión es humana. Usamos la tecnología para ampliar lo real, no para reemplazarlo."},
+        {"title": "Comunidad honesta", "desc": "GTN se basa en la confianza, la transparencia y la responsabilidad compartida. No hay jerarquía — solo resonancia."},
+        {"title": "Creación con propósito", "desc": "Creemos que la vida no es algo que se consume — es algo que se crea. En GTN, cada acción aporta a un mundo mejor."}
+      ]
+    },
+    "initiatives": {
+      "title": "Iniciativas actuales",
+      "subtitle": "Proyectos reales que construyen la economía regenerativa.",
+      "heroTitle": "Construyendo iniciativas regenerativas",
+      "heroDesc": "Nuestras iniciativas van desde espacios comunitarios físicos hasta tecnología blockchain, diseñadas para crear impacto sostenible y alinear el aporte individual con la prosperidad colectiva.",
+      "statusLabel": {
+        "active": "Activo",
+        "building": "En desarrollo",
+        "partnership": "Alianza",
+        "future": "Futuro"
+      },
+      "ctaPropose": "Proponer un proyecto"
+    },
+    "invite": {
+      "title": "A quién invitamos",
+      "subtitle": "Buscamos personas comprometidas a crear soluciones regenerativas y contribuir al crecimiento colectivo.",
+      "items": [
+        {"title": "Constructores regenerativos", "desc": "Emprendedores e innovadores que quieren crear iniciativas que restauran en lugar de extraer."},
+        {"title": "Profesionales con propósito", "desc": "Especialistas que buscan alinear sus habilidades con impacto real y crecimiento colaborativo."},
+        {"title": "Aprendices conscientes", "desc": "Personas comprometidas con el desarrollo personal, el pensamiento sistémico y la evolución colectiva."}
+      ]
+    },
+    "journey": {
+      "title": "Ruta de desarrollo",
+      "subtitle": "Progresión estructurada desde la solicitud hasta el liderazgo organizacional.",
+      "steps": [
+        {"title": "Solicitud y onboarding", "items": ["Enviar solicitud","Recibir GTN Passport","Completar perfil de talento y diagnósticos","Identificar el nivel actual de desarrollo"]},
+        {"title": "Elegir tu ruta de crecimiento", "items": ["Elegir dirección de desarrollo","Unirse a un equipo, proyecto o ruta experta","Definir metas y hitos"]},
+        {"title": "Contribución al proyecto", "items": ["Asumir roles en proyectos activos de GTN","Desarrollar habilidades en equipos reales","Demostrar valor con resultados"]},
+        {"title": "Liderazgo y mentoría", "items": ["Liderar equipos de proyecto","Apoyar el crecimiento de otros","Participar en el desarrollo mutuo"]},
+        {"title": "Liderazgo organizacional", "items": ["Asumir roles estratégicos en el desarrollo de GTN","Co-crear nuevas iniciativas","Contribuir al crecimiento y la gobernanza del ecosistema"]}
+      ]
+    },
+    "cta": {
+      "startApplication": "Comenzar solicitud"
+    },
+    "possibilities": {
+      "title": "Posibilidades",
+      "subtitle": "Lo que se vuelve posible al unirte a una red de creadores alineados por valores.",
+      "introTitle": "Desbloquea tu potencial",
+      "introP1": "GTN no es solo una red: es un catalizador de transformación. Cuando el talento con propósito se une con recursos compartidos y valores alineados, lo extraordinario se vuelve posible.",
+      "introP2": "Desde co-crear iniciativas regenerativas hasta acceder a oportunidades globales, tu camino en GTN abre puertas que no imaginabas.",
+      "cards": [
+        {"title": "Co-crear iniciativas regenerativas", "description": "Únete o lanza proyectos que generen impacto positivo con modelos de negocio sostenibles."},
+        {"title": "Construir equipos alineados", "description": "Conecta con profesionales afines que compartan tus valores y complementen tus habilidades."},
+        {"title": "Acceso a recursos y conocimiento", "description": "Aprovecha la experiencia colectiva, oportunidades de financiación e infraestructura para acelerar tu visión."},
+        {"title": "Desarrollar liderazgo", "description": "Crece con una progresión estructurada: de contribuidor a líder de equipo y referente organizacional."}
+      ]
+    },
+    "ecosystem": {
+      "title": "No ofrecemos servicios — construimos tu ecosistema",
+      "lead": "GTN no es consultoría ni un proveedor de servicios. Es un ecosistema vivo donde los miembros co-crean, contribuyen y crecen juntos. En lugar de venderte soluciones, te invitamos a construirlas con nosotros. En lugar de clientes, tenemos co-creadores. En lugar de transacciones, logramos transformaciones.",
+      "features": [
+        {"title": "Plataforma de desarrollo de talento", "description": "Herramientas con IA para identificar tus fortalezas y asignarte a roles y proyectos óptimos."},
+        {"title": "Comunidad global", "description": "Conecta con más de 158K miembros en 127 países que trabajan en soluciones regenerativas."},
+        {"title": "Red de hubs físicos", "description": "Acceso a espacios optimizados para el bienestar y el trabajo profundo en ciudades clave."},
+        {"title": "Sistema de intercambio de valor", "description": "Registro transparente de contribuciones con compensación justa y distribución de equity."}
+      ]
+    },
+    "selection": {
+      "title": "Cómo funciona la selección",
+      "subtitle": "Nuestro proceso por invitación asegura alineación con nuestros valores y misión, y revela dónde puedes aportar mayor valor a la red.",
+      "steps": [
+        {"title": "Revisión de solicitud", "description": "Evaluamos tu experiencia, alineación de valores y potencial de contribución a la red."},
+        {"title": "Entrevista de valores", "description": "Conversación profunda sobre tu visión y objetivos, y su alineación con principios regenerativos."},
+        {"title": "Evaluación de habilidades", "description": "Comprendemos tus talentos únicos y cómo pueden aportar a nuestro ecosistema."},
+        {"title": "Integración a la comunidad", "description": "Onboarding gradual con mentoría para asegurar una integración exitosa a la red."}
+      ],
+      "closing": "¿Listo para comenzar? El proceso suele tardar 2–3 semanas desde el envío hasta la decisión.",
+      "ctaBegin": "Iniciar proceso de solicitud"
+    },
+    "initiativesCards": [
+      {"name": "Evo Living", "description": "Diseño y prototipado de comunidades evolutivas y espacios alineados con la naturaleza para una vida consciente y colaborativa.", "statusCode": "active"},
+      {"name": "GTN Tokenomics", "description": "$GTN — moneda de la red para pagos y gobernanza. $TALENT — pasaporte NFT personal para identidad y contribución del miembro.", "statusCode": "building"},
+      {"name": "Talent Management System", "description": "Estructuración de equipos según roles naturales — no currículums. Sistema para identificar, alinear y desplegar talento en iniciativas de GTN.", "statusCode": "building"},
+      {"name": "GTN Life Platform", "description": "Ecosistema con IA para el desarrollo personal y de equipos: Avatar IA, diagnóstico de talento y herramientas para crecimiento basado en roles.", "statusCode": "building"}
+    ]
+  },
+  "join": {
+    "hero": {
+      "title": "Solicitar unirse a GTN",
+      "subtitle": "La invitación se basa en valores y contribución. Buscamos constructores que quieran crear sistemas regenerativos juntos.",
+      "cta": "Unirse a la red GTN Life"
+    },
+    "invite": {
+      "title": "A quién invitamos",
+      "subtitle": "Para personas listas para alinear su talento con un propósito",
+      "cards": [
+        {"title": "Emprendedores visionarios", "desc": "Estás construyendo algo que importa — y buscas socios alineados, no solo capital. GTN te conecta con talento, recursos y co-propiedad."},
+        {"title": "Inversionistas de impacto", "desc": "No vienes a financiar ideas — vienes a hacer crecer ecosistemas. GTN ofrece co-propiedad en iniciativas regenerativas con resultados medibles."},
+        {"title": "Especialistas y creadores", "desc": "Eres diseñador, tecnólogo, sanador o arquitecto — y quieres que tu trabajo signifique más. GTN te ayuda a encontrar equipos y roles según tus talentos innatos."},
+        {"title": "Fundadores de comunidades", "desc": "Construyes espacios, cultura o sistemas — y quieres prototipar el futuro. GTN te da personas, estructura y herramientas para crear tu versión de la evolución."},
+        {"title": "Pioneros de vida consciente", "desc": "Quieres vivir y trabajar en alineación — en una eco-comunidad con valores compartidos. En GTN, la vida se convierte en tu proyecto más auténtico."}
+      ]
+    },
+    "possibilities": {
+      "title": "Posibilidades",
+      "subtitle": "Acceso a pares, espacios y sistemas diseñados para acelerar el impacto regenerativo.",
+      "inside": {
+        "title": "Dentro de GTN, obtienes acceso a",
+        "clarity": {"title": "Claridad de dirección", "desc": "Descubre para qué estás construido naturalmente y por qué ciertos caminos se sienten alineados."},
+        "collab": {"title": "Colaboración alineada", "desc": "Únete a equipos según la resonancia del talento, no solo currículums."},
+        "projects": {"title": "Proyectos regenerativos", "desc": "Trabaja en iniciativas significativas que generan impacto positivo duradero."},
+        "cta": "Deja de preguntar «¿Dónde encajo?» y empieza a vivir en alineación."
+      },
+      "growth": {
+        "title": "Un sistema de crecimiento personalizado",
+        "aiMentor": {"title": "Mentores de IA personales", "desc": "Acompañamiento 24/7 para auto-reflexión, toma de decisiones e integración en equipos."},
+        "matching": {"title": "Matching basado en talento", "desc": "Conecta con proyectos y personas según tus fortalezas naturales."},
+        "evolution": {"title": "Evolución continua", "desc": "Herramientas que se adaptan a medida que creces y contribuyes más a la comunidad."},
+        "cta": "Crecimiento guiado por tu verdad interior, no por expectativas externas."
+      },
+      "contribute": {
+        "title": "Oportunidad de contribuir",
+        "cocreate": {"title": "Co-crear, no consumir", "desc": "Da forma activa a la comunidad con contribuciones significativas."},
+        "ownership": {"title": "Propiedad compartida", "desc": "Gánate tu lugar y participa en la gobernanza y los resultados colectivos."},
+        "impact": {"title": "Impacto con propósito", "desc": "Canaliza tus dones únicos hacia sistemas e iniciativas regenerativas."},
+        "cta": "Tu contribución crea valor compartido para todos."
+      },
+      "summary": {
+        "l1": "Esta es tu invitación — no solo para unirte a algo,",
+        "l2": "sino para convertirte en quien siempre sentiste posible."
+      }
+    },
+    "ecosystem": {
+      "title": "No ofrecemos servicios — construimos tu ecosistema",
+      "tools": [
+        {"title": "Evolution Life", "subtitle": "Despierta tus talentos esenciales", "desc": "Tus fortalezas internas, aclaradas. Tu dirección, iluminada. Un viaje de auto-descubrimiento — guiado por insights personalizados y herramientas diarias de crecimiento."},
+        {"title": "Business Evolution", "subtitle": "Forma el equipo correcto, no cualquier equipo", "desc": "Crea equipos alineados según roles naturales — no currículums. Aquí el propósito colectivo se convierte en resultados reales."},
+        {"title": "GTN Life", "subtitle": "Conecta con trabajo que se siente como hogar", "desc": "Haz match con proyectos, socios y caminos que encajan con tu esencia — no solo con tus habilidades."}
+      ],
+      "note": "Estas herramientas no definen tu camino. Lo amplifican — apoyando quién eres de verdad."
+    },
+    "stepInto": {
+      "title": "A qué entras cuando te unes a GTN",
+      "subtitle": "Es más que acceso. Es un nuevo marco para vivir, crear y prosperar — como tu yo más alineado.",
+      "cards": [
+        {"title": "Un pasaporte al auto-descubrimiento", "desc": "Descubrirás los talentos con los que naciste — y los roles donde floreces."},
+        {"title": "Herramientas para crecer con claridad", "desc": "Desde mentores de IA hasta rutas de desarrollo a medida, nunca estás solo en tu evolución."},
+        {"title": "Una comunidad que refleja tus valores", "desc": "Encontrarás personas que hablan tu idioma — y necesitan lo que tú aportas de forma única."},
+        {"title": "Proyectos, roles y propiedad", "desc": "Trabaja en equipos alineados. Lanza tu propia iniciativa. Gánate tu lugar y comparte resultados."},
+        {"title": "Un lugar al que pertenecer — online y en tierra", "desc": "Vive y co-crea en eco-comunidades diseñadas para vida consciente y colaboración."},
+        {"title": "Una voz en lo que construimos", "desc": "Nuestra gobernanza es colectiva. Tú defines la dirección, votas lo importante y cuidas los recursos compartidos."}
+      ],
+      "summary": {
+        "l1": "Esta es tu invitación — no solo para unirte a algo,",
+        "l2": "sino para convertirte en quien siempre sentiste posible."
+      }
+    },
+    "selection": {
+      "title": "Cómo funciona la selección",
+      "subtitle": "Un proceso cuidadoso diseñado para asegurar encaje mutuo y compromiso compartido.",
+      "timeline": [
+        {"step": "Revisión de solicitud", "time": "3–5 días", "desc": "Filtro inicial basado en alineación de valores y potencial de contribución"},
+        {"step": "Entrevista en video", "time": "30 minutos", "desc": "Conversación con un miembro actual sobre tu trayectoria e intereses"},
+        {"step": "Periodo de prueba en comunidad", "time": "2 semanas", "desc": "Acceso a la comunidad online y hub local por un periodo de prueba"},
+        {"step": "Votación de miembros", "time": "1 semana", "desc": "Los miembros revisan tus aportes del periodo y votan por la membresía"},
+        {"step": "Bienvenida", "time": "Continuo", "desc": "Acceso completo a comunidad, hubs y participación en gobernanza"}
+      ]
+    },
+    "form": {
+      "title": "Formulario de solicitud",
+      "subtitle": "Cuéntanos sobre ti y lo que quieres construir. Te responderemos en 3–5 días.",
+      "labels": {
+        "firstName": "Nombre",
+        "lastName": "Apellido",
+        "email": "Email",
+        "location": "Ubicación actual",
+        "role": "Rol/Enfoque actual",
+        "portfolio": "Portafolio/Enlace de trabajo (opcional)",
+        "build": "¿Qué quieres construir?",
+        "contribute": "¿Cómo vas a contribuir?",
+        "why": "¿Por qué GTN?"
+      },
+      "placeholders": {
+        "firstName": "Escribe tu nombre",
+        "lastName": "Escribe tu apellido",
+        "email": "tu@email.com",
+        "location": "Ciudad, País",
+        "role": "p. ej. Product Manager, Investigador, Emprendedor",
+        "portfolio": "https://...",
+        "build": "Describe el proyecto o sistema regenerativo que quieres crear...",
+        "contribute": "¿Qué habilidades, recursos o perspectivas aportarás a la comunidad?",
+        "why": "¿Qué te atrae de nuestro enfoque y comunidad?"
+      },
+      "hint": "Enfócate en el impacto y en tu enfoque único",
+      "submit": "Enviar solicitud",
+      "disclaimer": "Al postular, aceptas nuestro código de cuidado y compromiso con prácticas regenerativas."
+    }
+  }
+}
