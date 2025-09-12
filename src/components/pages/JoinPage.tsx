@@ -597,7 +597,7 @@ export function JoinPage() {
                 {submitStatus === 'success' && (
                   <div className="bg-green-50 border border-green-200 rounded-lg p-4">
                     <p className="text-green-800 text-sm font-medium">
-                      ✅ Заявка успешно отправлена! Мы свяжемся с вами в ближайшее время.
+                      {t('join.form.messages.success')}
                     </p>
                   </div>
                 )}
@@ -605,7 +605,7 @@ export function JoinPage() {
                 {submitStatus === 'error' && (
                   <div className="bg-red-50 border border-red-200 rounded-lg p-4">
                     <p className="text-red-800 text-sm font-medium">
-                      ❌ Произошла ошибка при отправке заявки. Пожалуйста, попробуйте еще раз.
+                      {t('join.form.messages.error')}
                     </p>
                   </div>
                 )}
@@ -622,7 +622,7 @@ export function JoinPage() {
                   className="w-full bg-accent hover:bg-accent/90 text-accent-foreground py-3 shadow-glow-copper disabled:opacity-50"
                   style={{ minHeight: '44px' }}
                 >
-                  {isSubmitting ? 'Отправка...' : t('join.form.submit')}
+                  {isSubmitting ? t('join.form.messages.submitting') : t('join.form.submit')}
                 </Button>
 
                 <div className="text-center pt-4">

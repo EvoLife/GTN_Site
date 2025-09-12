@@ -447,7 +447,12 @@
       },
       "hint": "Enfócate en el impacto y en tu enfoque único",
       "submit": "Enviar solicitud",
-      "disclaimer": "Al postular, aceptas nuestro código de cuidado y compromiso con prácticas regenerativas."
+      "disclaimer": "Al postular, aceptas nuestro código de cuidado y compromiso con prácticas regenerativas.",
+      "messages": {
+        "success": "✅ ¡Solicitud enviada exitosamente! Te contactaremos pronto.",
+        "error": "❌ Error al enviar la solicitud. Por favor, inténtalo de nuevo.",
+        "submitting": "Enviando..."
+      }
     }
   }
 }

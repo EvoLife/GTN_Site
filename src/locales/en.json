@@ -278,7 +278,12 @@
       },
       "hint": "Focus on impact and your unique approach",
       "submit": "Submit Application",
-      "disclaimer": "By applying, you agree to our code of care and commitment to regenerative practices."
+      "disclaimer": "By applying, you agree to our code of care and commitment to regenerative practices.",
+      "messages": {
+        "success": "✅ Application submitted successfully! We'll get back to you soon.",
+        "error": "❌ Error submitting application. Please try again.",
+        "submitting": "Submitting..."
+      }
     }
   },
   "contact": {
