@@ -25,11 +25,11 @@
       "subtitle": "Sistemas inteligentes para entornos sanos y adaptativos",
       "items": [
         {"title": "IA para calidad del aire interior", "desc": "Sensado y filtración autónomos que usan IA para detectar y neutralizar COV, PM2.5, CO2, ajustando la purificación según ocupación y condiciones exteriores."},
-        {"title": "Iluminación biophilic inteligente", "desc": "Iluminación humano‑céntrica controlada por IA que adapta temperatura de color, intensidad y dirección según ritmos circadianos, sueño y biometría en tiempo real."},
+        {"title": "Iluminación inteligente", "desc": "Iluminación humano‑céntrica controlada por IA que adapta temperatura de color, intensidad y dirección según ritmos circadianos, sueño y biometría en tiempo real."},
         {"title": "Confort térmico dinámico", "desc": "Climatización inteligente que aprende preferencias personales y ocupación por zonas para optimizar temperatura, humedad y flujo de aire — comodidad y eficiencia energética."},
         {"title": "Sistemas de agua regenerativa", "desc": "Filtración, remineralización y monitoreo de uso integrados con IA para alta calidad de hidratación, menos desperdicio y recordatorios de consumo saludable."},
         {"title": "Paisajes sonoros neuroadaptativos", "desc": "IA que genera ambientes sonoros personalizados — acústicas naturales o ruido blanco — para foco, relajación o sueño, adaptándose en tiempo real al estado del usuario."},
-        {"title": "Blindaje predictivo EMF", "desc": "Zonificación con IA que monitorea exposición EMF y activa escudos o alertas al entrar en zonas de alta exposición — favoreciendo el bienestar cognitivo y neurológico."},
+        {"title": "Protección EMF", "desc": "Sistema de protección EMF (campos electromagnéticos) — para preservar la claridad mental y la salud del sistema nervioso."},
         {"title": "Inteligencia de materiales", "desc": "Sensores embebidos en pisos, muros y acabados que rastrean emisiones, humedad, COV y biodegradabilidad — con alertas o acciones auto‑limpiantes."},
         {"title": "Panel integral de bienestar", "desc": "Plataforma centralizada que integra aire, agua, luz, ruido, EMF, ocupación y energía — con reportes personalizados y recomendaciones de optimización."}
       ]
@@ -52,7 +52,7 @@
     },
     "designPrinciples": [
       {"title": "Diseño centrado en talento", "desc": "Espacios organizados por cómo pensamos, interactuamos y creamos — apoyando ritmos de trabajo y estilos cognitivos distintos.", "color": "primary"},
-      {"title": "Materiales regenerativos", "desc": "Materiales biofílicos que nutren cuerpo y planeta — madera, arcilla, piedra y hempcrete en armonía con el entorno.", "color": "accent"},
+      {"title": "Materiales ecológicos", "desc": "Usamos madera, arcilla, piedra y hempcrete — materiales que cuidan tu salud y la ecología del planeta.", "color": "accent"},
       {"title": "Infraestructura consciente", "desc": "Luz, aire, acústica y flujos equilibrados para el sistema nervioso — cada detalle sostiene presencia y enfoque.", "color": "secondary"},
       {"title": "Evolución adaptativa", "desc": "Arquitectura modular y bucles de feedback comunitario — espacios que crecen con su gente, nunca fijos.", "color": "primary"},
       {"title": "Diseño neuroestético", "desc": "Arquitectura guiada por la respuesta del cerebro a la belleza, el ritmo y la calma — espacios que se sienten correctos de forma intuitiva.", "color": "accent"},

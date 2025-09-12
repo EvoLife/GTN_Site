@@ -106,7 +106,7 @@
     },
     "designPrinciples": [
       {"title": "Talent-Centric Design", "desc": "Spaces organized by how people think, interact, and create — supporting different working rhythms and cognitive styles.", "color": "primary"},
-      {"title": "Regenerative Materials", "desc": "Biophilic materials that nourish body and planet — wood, clay, stone, and hempcrete in harmony with environment.", "color": "accent"},
+      {"title": "Eco-Friendly Materials", "desc": "We use wood, clay, stone, and hempcrete — materials that care for your health and the planet's ecology.", "color": "accent"},
       {"title": "Mindful Infrastructure", "desc": "Light, air, acoustics, and flow engineered for nervous system balance — every detail supports presence and focus.", "color": "secondary"},
       {"title": "Adaptive Evolution", "desc": "Modular architecture and community feedback loops ensure spaces grow with their people — never fixed, always evolving.", "color": "primary"},
       {"title": "Neuroaesthetic Design", "desc": "Architecture guided by how the brain responds to beauty, rhythm, and calm — spaces that feel intuitively right.", "color": "accent"},
@@ -117,11 +117,11 @@
       "subtitle": "Smart Systems for Healthy, Adaptive Environments",
       "items": [
         {"title": "AI-Guided Indoor Air Quality Monitoring", "desc": "Autonomous air sensing and filtration systems that use AI to detect and neutralize VOCs, PM2.5, CO2, and adjust purification rates based on occupancy and outdoor conditions."},
-        {"title": "Biophilic Smart Lighting", "desc": "AI-controlled human-centric lighting that adapts color temperature, intensity, and direction based on circadian rhythms, sleep cycles, and real-time biometric data."},
+        {"title": "Smart Lighting", "desc": "AI-controlled human-centric lighting that adapts color temperature, intensity, and direction based on circadian rhythms, sleep cycles, and real-time biometric data."},
         {"title": "Dynamic Thermal Comfort Management", "desc": "Smart climate systems that learn personal preferences and zone-based occupancy trends to optimize temperature, humidity, and airflow—boosting both comfort and energy efficiency."},
         {"title": "Regenerative Water Systems", "desc": "AI-integrated water filtration, remineralization, and usage monitoring that ensure high hydration quality, reduce waste, and support behavioral hydration nudges."},
         {"title": "Neuroadaptive Soundscaping", "desc": "AI systems that generate personalized sound environments—like nature acoustics or white noise—to enhance focus, relaxation, or sleep, adapting in real-time to user states."},
-        {"title": "Predictive EMF Shielding", "desc": "AI zoning systems that monitor EMF exposure and autonomously activate shielding or alert users when entering high-exposure areas—promoting cognitive and neurological well-being."},
+        {"title": "EMF Protection", "desc": "EMF (electromagnetic field) protection system — to preserve mental clarity and nervous system health."},
         {"title": "Materials Intelligence", "desc": "Embedded sensors in floors, walls, and finishes that track off-gassing, moisture, VOC emissions, and biodegradability—triggering alerts or auto-cleaning actions as needed."},
         {"title": "AI-Driven Wellness Dashboard", "desc": "A centralized platform integrating all building systems—air, water, lighting, noise, EMF, occupancy, and energy use—offering personalized health reports and environment optimization suggestions."}
       ]
