@@ -204,15 +204,6 @@
         "l2": "but to become someone you've always felt possible."
       }
     },
-    "ecosystem": {
-      "title": "We Don't Offer Services - We Build Your Ecosystem",
-      "tools": [
-        {"title": "Evolution Life", "subtitle": "Awaken Your Core Talents", "desc": "Your inner strengths, clarified. Your direction, illuminated. A journey of self-discovery — guided by personalized insights and daily growth tools."},
-        {"title": "Business Evolution", "subtitle": "Build the Right Team, Not Just Any Team", "desc": "Create aligned teams based on natural roles - not resumes. This is where collective purpose turns into real-world results."},
-        {"title": "GTN Life", "subtitle": "Connect to Work That Feels Like Home", "desc": "Match with projects, partners, and pathways that fit your soul — not just your skills."}
-      ],
-      "note": "These tools don't define your journey. They amplify it - by supporting who you truly are."
-    },
     "stepInto": {
       "title": "What You Step Into When You Join GTN",
       "subtitle": "This is more than access. It's a new framework for living, creating, and thriving — as your most aligned self.",
@@ -421,16 +412,6 @@
         {"title": "Build with Aligned Teams", "description": "Connect with like-minded professionals who share your values and complement your skills."},
         {"title": "Access Resources & Knowledge", "description": "Leverage collective expertise, funding opportunities, and infrastructure to accelerate your vision."},
         {"title": "Develop Leadership Skills", "description": "Grow through structured progression from contributor to team leader to organizational steward."}
-      ]
-    },
-    "ecosystem": {
-      "title": "We Don't Offer Services — We Build Your Ecosystem",
-      "lead": "GTN isn't a consultancy or service provider. We're a living ecosystem where members co-create, contribute, and grow together. Instead of selling you solutions, we invite you to help build them. Instead of clients, we have co-creators. Instead of transactions, we have transformations.",
-      "features": [
-        {"title": "Talent Development Platform", "description": "AI-powered tools to identify your strengths and match you with optimal roles and projects."},
-        {"title": "Talent Identification System", "description": "Connect with 158K+ members across 127 countries working on regenerative solutions."},
-        {"title": "Physical Hub Network", "description": "Access to wellness-optimized spaces in major cities designed for deep work and collaboration."},
-        {"title": "Value Exchange System", "description": "Transparent contribution tracking with fair compensation and equity distribution."}
       ]
     },
     "selection": {

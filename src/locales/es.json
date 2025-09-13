@@ -298,16 +298,6 @@
         {"title": "Desarrollar liderazgo", "description": "Crece con una progresión estructurada: de contribuidor a líder de equipo y referente organizacional."}
       ]
     },
-    "ecosystem": {
-      "title": "No ofrecemos servicios — construimos tu ecosistema",
-      "lead": "GTN no es consultoría ni un proveedor de servicios. Es un ecosistema vivo donde los miembros co-crean, contribuyen y crecen juntos. En lugar de venderte soluciones, te invitamos a construirlas con nosotros. En lugar de clientes, tenemos co-creadores. En lugar de transacciones, logramos transformaciones.",
-      "features": [
-        {"title": "Plataforma de desarrollo de talento", "description": "Herramientas con IA para identificar tus fortalezas y asignarte a roles y proyectos óptimos."},
-        {"title": "Sistema de identificación de talentos", "description": "Conecta con más de 158K miembros en 127 países que trabajan en soluciones regenerativas."},
-        {"title": "Red de hubs físicos", "description": "Acceso a espacios optimizados para el bienestar y el trabajo profundo en ciudades clave."},
-        {"title": "Sistema de intercambio de valor", "description": "Registro transparente de contribuciones con compensación justa y distribución de equity."}
-      ]
-    },
     "selection": {
       "title": "Cómo funciona la selección",
       "subtitle": "Nuestro proceso por invitación asegura alineación con nuestros valores y misión, y revela dónde puedes aportar mayor valor a la red.",
@@ -368,36 +358,35 @@
         "impact": {"title": "Impacto con propósito", "desc": "Canaliza tus dones únicos hacia sistemas e iniciativas regenerativas."},
         "cta": "Tu contribución crea valor compartido para todos."
       },
-      "summary": {
-        "l1": "Esta es tu invitación — no solo para unirte a algo,",
-        "l2": "sino para convertirte en quien siempre sentiste posible."
-      }
-    },
-    "ecosystem": {
-      "title": "No ofrecemos servicios — construimos tu ecosistema",
-      "tools": [
-        {"title": "Evolution Life", "subtitle": "Despierta tus talentos esenciales", "desc": "Tus fortalezas internas, aclaradas. Tu dirección, iluminada. Un viaje de auto-descubrimiento — guiado por insights personalizados y herramientas diarias de crecimiento."},
-        {"title": "Business Evolution", "subtitle": "Forma el equipo correcto, no cualquier equipo", "desc": "Crea equipos alineados según roles naturales — no currículums. Aquí el propósito colectivo se convierte en resultados reales."},
-        {"title": "GTN Life", "subtitle": "Conecta con trabajo que se siente como hogar", "desc": "Haz match con proyectos, socios y caminos que encajan con tu esencia — no solo con tus habilidades."}
-      ],
-      "note": "Estas herramientas no definen tu camino. Lo amplifican — apoyando quién eres de verdad."
-    },
-    "stepInto": {
-      "title": "A qué entras cuando te unes a GTN",
-      "subtitle": "Es más que acceso. Es un nuevo marco para vivir, crear y prosperar — como tu yo más alineado.",
-      "cards": [
-        {"title": "Un pasaporte al auto-descubrimiento", "desc": "Descubrirás los talentos con los que naciste — y los roles donde floreces."},
-        {"title": "Herramientas para crecer con claridad", "desc": "Desde mentores de IA hasta rutas de desarrollo a medida, nunca estás solo en tu evolución."},
-        {"title": "Una comunidad que refleja tus valores", "desc": "Encontrarás personas que hablan tu idioma — y necesitan lo que tú aportas de forma única."},
-        {"title": "Proyectos, roles y propiedad", "desc": "Trabaja en equipos alineados. Lanza tu propia iniciativa. Gánate tu lugar y comparte resultados."},
-        {"title": "Un lugar al que pertenecer — online y en tierra", "desc": "Vive y co-crea en eco-comunidades diseñadas para vida consciente y colaboración."},
-        {"title": "Una voz en lo que construimos", "desc": "Nuestra gobernanza es colectiva. Tú defines la dirección, votas lo importante y cuidas los recursos compartidos."}
-      ],
-      "summary": {
-        "l1": "Esta es tu invitación — no solo para unirte a algo,",
-        "l2": "sino para convertirte en quien siempre sentiste posible."
-      }
-    },
+      "initiatives": {
+        "title": "Iniciativas actuales",
+        "subtitle": "Proyectos que dan forma a una nueva economía donde la tecnología y las personas evolucionan en armonía con la naturaleza.",
+        "heroTitle": "Construyendo iniciativas sostenibles",
+        "heroDesc": "Nuestras iniciativas van desde espacios comunitarios físicos hasta tecnología blockchain, diseñadas para crear impacto sostenible y alinear el aporte individual con la prosperidad colectiva.",
+        "statusLabel": {
+          "active": "Activo",
+          "building": "En desarrollo",
+          "partnership": "Alianza",
+          "future": "Futuro"
+        },
+        "ctaPropose": "Proponer un proyecto"
+      },
+      "stepInto": {
+        "title": "A qué accedes al unirte a GTN",
+        "subtitle": "Es más que acceso. Es un nuevo marco para vivir, crear y prosperar — como tu yo más alineado.",
+        "cards": [
+          {"title": "Un pasaporte al auto-descubrimiento", "desc": "Descubrirás los talentos con los que naciste — y los roles donde floreces."},
+          {"title": "Herramientas para crecer con claridad", "desc": "Desde mentores de IA hasta rutas de desarrollo a medida, nunca estás solo en tu evolución."},
+          {"title": "Una comunidad que refleja tus valores", "desc": "Encontrarás personas que hablan tu idioma — y necesitan lo que tú aportas de forma única."},
+          {"title": "Proyectos, roles y propiedad", "desc": "Trabaja en equipos alineados. Lanza tu propia iniciativa. Gánate tu lugar y comparte resultados."},
+          {"title": "Un lugar al que pertenecer — online y en tierra", "desc": "Vive y co-crea en eco-comunidades diseñadas para vida consciente y colaboración."},
+          {"title": "Una voz en lo que construimos", "desc": "Nuestra gobernanza es colectiva. Tú defines la dirección, votas lo importante y cuidas los recursos compartidos."}
+        ],
+        "summary": {
+          "l1": "Esta es tu invitación — no solo para unirte a algo,",
+          "l2": "sino para convertirte en quien siempre sentiste posible."
+        }
+      },
     "selection": {
       "title": "Cómo funciona la selección",
       "subtitle": "Un proceso cuidadoso diseñado para asegurar encaje mutuo y compromiso compartido.",

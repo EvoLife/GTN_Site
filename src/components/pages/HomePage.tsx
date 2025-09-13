@@ -725,37 +725,6 @@ export function HomePage({ onNavigate }: HomePageProps) {
         </div>
       </section>
 
-      {/* We Don't Offer Services - We Build Your Ecosystem */}
-      <section className="py-20 surface-1">
-        <div className="container">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl text-foreground mb-8">{t('home.ecosystem.title')}</h2>
-            <div className="space-y-6 text-lg text-foreground-secondary leading-relaxed mb-12">
-              <p>{t('home.ecosystem.lead')}</p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {(() => {
-                const feats = get<any>('home.ecosystem.features') || [];
-                return feats;
-              })().map((feature: any, index: number) => {
-                const IconComponent = feature.icon;
-                return (
-                  <Card key={index} className="p-6 surface-2 border-card-border rounded-gtn-lg text-center">
-                    <div className="mb-4 mx-auto w-12 h-12 bg-secondary/10 border border-secondary/20 rounded-full flex items-center justify-center">
-                      {/* Иконки остаются как в исходном дизайне, без локализации */}
-                      {IconComponent ? <IconComponent className="text-secondary" size={20} /> : <div className="w-5 h-5"/>}
-                    </div>
-                    <h3 className="font-semibold text-foreground mb-3 text-[16px]">{feature?.title}</h3>
-                    <p className="text-sm text-foreground-secondary leading-relaxed">{feature?.description}</p>
-                  </Card>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* How Selection Works */}
       <section className="py-20 surface-1">
         <div className="container">
