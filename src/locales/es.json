@@ -241,12 +241,12 @@
       "title": "Nuestros fundamentos",
       "subtitle": "Valores que guían nuestra red y definen cómo construimos juntos.",
       "items": [
-        {"title": "Verdad y autoconciencia", "desc": "Todos tenemos fortalezas innatas. Creamos espacios que te ayudan a ver las tuyas — y usarlas con propósito."},
-        {"title": "Apoyo por encima del estatus", "desc": "Valoramos la contribución, no las credenciales. Crecemos ayudándonos unos a otros a tener éxito."},
-        {"title": "Regeneración", "desc": "Todo lo que hacemos — desde nuestros hogares hasta nuestros hábitos — busca restaurar el equilibrio entre las personas y el planeta."},
-        {"title": "Tecnología al servicio", "desc": "La IA y la innovación son herramientas — pero la misión es humana. Usamos la tecnología para ampliar lo real, no para reemplazarlo."},
-        {"title": "Comunidad honesta", "desc": "GTN se basa en la confianza, la transparencia y la responsabilidad compartida. No hay jerarquía — solo resonancia."},
-        {"title": "Creación con propósito", "desc": "Creemos que la vida no es algo que se consume — es algo que se crea. En GTN, cada acción aporta a un mundo mejor."}
+        {"title": "Colaboración", "desc": "Alineamos esfuerzos, talentos y recursos para el crecimiento y la prosperidad compartidos."},
+        {"title": "Desarrollo de Talentos", "desc": "Cada persona despliega sus fortalezas y contribuye a través del trabajo que ama."},
+        {"title": "Sostenibilidad y Ecología", "desc": "Construimos proyectos donde la tecnología y la naturaleza conviven en armonía."},
+        {"title": "Meritocracia", "desc": "El éxito se define por la contribución y la competencia. Todos tienen igualdad de oportunidades para expresar talentos y decidir dentro de su ámbito."},
+        {"title": "Tecnologías Evolutivas", "desc": "La IA y las soluciones digitales potencian a las personas, aumentando la eficiencia y la transparencia."},
+        {"title": "Gobernanza DAO Transparente", "desc": "Las decisiones clave se toman de forma abierta — mediante votación descentralizada y asignación justa de recursos."}
       ]
     },
     "initiatives": {

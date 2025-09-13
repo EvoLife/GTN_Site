@@ -362,19 +362,19 @@
     },
     "whoWeAre": {
       "title": "Who We Are",
-      "p1": "We are a global network of builders, professionals, and creators — united by a shared mission to develop meaningful ventures, aligned teams, and regenerative communities. GTN connects people, knowledge, and tools to help you grow your ideas, build with others, and lead in a new kind of economy.",
+      "p1": "We are a community of entrepreneurs, experts, and visionaries who build the teams, companies, and spaces of the future.\nGTN connects people, knowledge, and AI tools so everyone can unfold their talents, launch collaborative projects, and shape the emerging economy.",
       "highlight": "This isn't just a platform. It's a working ecosystem — where purpose-driven talent creates real-world value."
     },
     "foundation": {
       "title": "Our Foundation",
       "subtitle": "Values that guide our network and define how we build together.",
       "items": [
-        {"title": "Truth & Self-Awareness", "desc": "Everyone carries innate strengths. We build spaces that help you see yours — and use them with purpose."},
-        {"title": "Support Over Status", "desc": "We value contribution, not credentials. We grow stronger by helping each other succeed."},
-        {"title": "Regeneration", "desc": "Everything we do — from our homes to our habits — aims to restore balance between people and the planet."},
-        {"title": "Technology That Serves", "desc": "AI and innovation are tools — but the mission is human. We use tech to expand what's real, not replace it."},
-        {"title": "Honest Community", "desc": "GTN is built on trust, transparency, and shared responsibility. There's no hierarchy — only resonance."},
-        {"title": "Purposeful Creation", "desc": "We believe life isn't something to consume — it's something to shape. At GTN, every action contributes to a better world."}
+        {"title": "Collaboration", "desc": "We align efforts, talents, and resources for shared growth and prosperity."},
+        {"title": "Talent Development", "desc": "Everyone unfolds their strengths and contributes through the work they love."},
+        {"title": "Sustainability & Ecology", "desc": "We build projects where technology and nature exist in harmony."},
+        {"title": "Meritocracy", "desc": "Success is defined by contribution and competence. Everyone has equal opportunity to express talents and make decisions within their domain."},
+        {"title": "Evolutionary Technologies", "desc": "AI and digital solutions augment people, increasing efficiency and transparency."},
+        {"title": "Transparent DAO Governance", "desc": "Key decisions are made openly — through decentralized voting and fair allocation of resources."}
       ]
     },
     "initiatives": {
