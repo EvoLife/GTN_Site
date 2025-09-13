@@ -393,7 +393,6 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
               {/* Call to Action Below Video */}
               <div className="text-center mt-8">
-                <p className="text-foreground-secondary mb-4">{t('home.video.desc')}</p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button 
                     onClick={() => onNavigate('join')}
