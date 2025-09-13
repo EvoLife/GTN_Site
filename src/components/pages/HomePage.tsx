@@ -116,7 +116,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
     {
       icon: Users,
       title: "Global Community Network",
-      description: "Connect with 158K+ members across 127 countries working on regenerative solutions."
+      description: "Connect with 158K+ members across 60+ countries working on sustainable solutions."
     },
     {
       icon: Building,
@@ -281,7 +281,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
                 <div className="text-center p-3 md:p-4 rounded-lg bg-gradient-to-br from-ink-700/80 to-ink-800/60 border border-ink-600/40 shadow-md backdrop-blur-sm">
                   <div className="text-xl md:text-2xl lg:text-3xl font-bold text-ivory mb-1" style={{ fontFamily: 'var(--font-mono)' }}>
-                    158K
+                    158K+
                   </div>
                   <div className="text-xs md:text-sm text-ivory/60">
                     {t('home.stats.members')}
@@ -289,7 +289,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 </div>
                 <div className="text-center p-3 md:p-4 rounded-lg bg-gradient-to-br from-ink-600/80 to-ink-700/60 border border-ink-500/40 shadow-md backdrop-blur-sm">
                   <div className="text-xl md:text-2xl lg:text-3xl font-bold text-ivory mb-1" style={{ fontFamily: 'var(--font-mono)' }}>
-                    127
+                    60+
                   </div>
                   <div className="text-xs md:text-sm text-ivory/60">
                     {t('home.stats.countries')}
@@ -297,7 +297,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 </div>
                 <div className="text-center p-3 md:p-4 rounded-lg bg-gradient-to-br from-ink-800/80 to-ink-900/60 border border-ink-700/40 shadow-md backdrop-blur-sm">
                   <div className="text-xl md:text-2xl lg:text-3xl font-bold text-ivory mb-1" style={{ fontFamily: 'var(--font-mono)' }}>
-                    800K+
+                    95%
                   </div>
                   <div className="text-xs md:text-sm text-ivory/60">
                     {t('home.stats.talents')}
@@ -305,7 +305,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 </div>
                 <div className="text-center p-3 md:p-4 rounded-lg bg-gradient-to-br from-ink-700/80 to-ink-800/60 border border-ink-600/40 shadow-md backdrop-blur-sm">
                   <div className="text-xl md:text-2xl lg:text-3xl font-bold text-ivory mb-1" style={{ fontFamily: 'var(--font-mono)' }}>
-                    208+
+                    3000
                   </div>
                   <div className="text-xs md:text-sm text-ivory/60">
                     {t('home.stats.events')}

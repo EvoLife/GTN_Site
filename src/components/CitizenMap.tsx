@@ -59,7 +59,7 @@ export function CitizenMap() {
             Global Hub Network
           </h2>
           <p className="text-lg text-foreground-secondary max-w-3xl mx-auto leading-relaxed">
-            158K+ citizens building regenerative ventures across 7 strategic hub locations worldwide.
+            158K+ citizens building sustainable ventures across 7 strategic hub locations worldwide.
           </p>
         </div>
 

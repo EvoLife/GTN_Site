@@ -37,7 +37,7 @@
       "p1": "GTN is actively aligning with the core criteria outlined by The Network State and the Montevideo Convention on the rights and duties of states.",
       "p2": "We're building the structure, tools, and participation needed to function as a globally distributed, purpose-aligned civilization.",
       "cards": [
-        {"stdTitle": "International Standard", "itemTitle": "Permanent Population", "stdDesc": "A stable community of people with ongoing ties to the state.", "implTitle": "GTN Implementation", "implDesc": "155K+ members in 127 countries, digital onboarding live", "badge": "Active & Growing"},
+        {"stdTitle": "International Standard", "itemTitle": "Permanent Population", "stdDesc": "A stable community of people with ongoing ties to the state.", "implTitle": "GTN Implementation", "implDesc": "158K+ members in 60+ countries, digital onboarding live", "badge": "Active & Growing"},
         {"stdTitle": "International Standard", "itemTitle": "Defined Territory", "stdDesc": "Physical space with clear boundaries and jurisdiction.", "implTitle": "GTN Implementation", "implDesc": "Evo Living pilots in different countries worldwide", "badge": "Physical Hubs Established"},
         {"stdTitle": "International Standard", "itemTitle": "Governing Structure", "stdDesc": "Organized system of governance and law.", "implTitle": "GTN Implementation", "implDesc": "GTN Passports, DAO governance, project-based roles", "badge": "Currently Developing"},
         {"stdTitle": "International Standard", "itemTitle": "Capacity for Diplomacy", "stdDesc": "Ability to engage in relations with other states.", "implTitle": "GTN Implementation", "implDesc": "Presenting at global summits; seeking strategic alliances", "badge": "Actively Engaging"}
@@ -274,6 +274,17 @@
         "error": "❌ Error submitting application. Please try again.",
         "submitting": "Submitting..."
       }
+    }
+  },
+  "home": {
+    "cta": {
+      "startApplication": "Apply Now"
+    },
+    "stats": {
+      "members": "Registered users in Evolution",
+      "countries": "Countries",
+      "talents": "Say they better understand their talents and feel their potential",
+      "events": "users in Business Evolution AI team formation system. Average revenue growth for companies using Evo-technologies 20–80% in the first year."
     }
   },
   "contact": {

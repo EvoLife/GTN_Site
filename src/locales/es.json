@@ -123,7 +123,7 @@
       "p1": "GTN se alinea activamente con los criterios de The Network State y la Convención de Montevideo sobre derechos y deberes de los estados.",
       "p2": "Construimos la estructura, herramientas y participación necesarias para funcionar como una civilización distribuida y alineada por propósito.",
       "cards": [
-        {"stdTitle": "Estándar internacional", "itemTitle": "Población permanente", "stdDesc": "Comunidad estable con vínculo continuo con el estado.", "implTitle": "Implementación GTN", "implDesc": "155K+ miembros en 127 países, onboarding digital activo", "badge": "Activo y en crecimiento"},
+        {"stdTitle": "Estándar internacional", "itemTitle": "Población permanente", "stdDesc": "Comunidad estable con vínculo continuo con el estado.", "implTitle": "Implementación GTN", "implDesc": "158K+ miembros en 60+ países, onboarding digital activo", "badge": "Activo y en crecimiento"},
         {"stdTitle": "Estándar internacional", "itemTitle": "Territorio definido", "stdDesc": "Espacio físico con límites y jurisdicción claros.", "implTitle": "Implementación GTN", "implDesc": "Pilotos Evo Living en diferentes países del mundo", "badge": "Hubs físicos establecidos"},
         {"stdTitle": "Estándar internacional", "itemTitle": "Estructura de gobierno", "stdDesc": "Sistema organizado de gobernanza y ley.", "implTitle": "Implementación GTN", "implDesc": "Pasaportes GTN, gobernanza DAO, roles por proyecto", "badge": "En desarrollo"},
         {"stdTitle": "Estándar internacional", "itemTitle": "Capacidad diplomática", "stdDesc": "Habilidad para relacionarse con otros estados.", "implTitle": "Implementación GTN", "implDesc": "Presencia en cumbres globales; alianzas estratégicas", "badge": "Compromiso activo"}
@@ -283,7 +283,7 @@
       ]
     },
     "cta": {
-      "startApplication": "Comenzar solicitud"
+      "startApplication": "Enviar solicitud"
     },
     "possibilities": {
       "title": "Posibilidades",
@@ -316,6 +316,14 @@
       {"name": "GTN DAO", "description": "$GTN — token utilitario para pagar servicios y acceder a oportunidades del ecosistema.\n$TALENT — token de gobernanza para decisión y dirección en el DAO.\nNFT‑pasaporte — identidad digital del miembro con talentos, roles y contribución.", "statusCode": "building"},
       {"name": "GTN Life Platform", "description": "Ecosistema con IA para el desarrollo personal y de equipos: Avatar IA, diagnóstico de talento y herramientas para crecimiento basado en roles.", "statusCode": "building"}
     ]
+  },
+  "home": {
+    "stats": {
+      "members": "Usuarios registrados en Evolution",
+      "countries": "Países",
+      "talents": "Afirman que entienden mejor sus talentos y sienten su potencial",
+      "events": "usuarios en el sistema de formación de equipos Business Evolution AI. Crecimiento promedio de ingresos para empresas que usan tecnologías Evo 20–80% en el primer año."
+    }
   },
   "join": {
     "hero": {
