@@ -131,12 +131,12 @@ export function JoinPage() {
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <div className="relative w-full" style={{ aspectRatio: '16/9' }}>
-              <iframe
-                src="https://www.youtube.com/embed/Yj7Zkcdy-8Y"
-                title="GTN Introduction Video"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
+              <video
+                src="https://elhcqyzbqyfwewemhfwh.supabase.co/storage/v1/object/public/GTN/GTN%20Life%20Client%20Journey.mp4"
                 className="absolute inset-0 w-full h-full rounded-gtn-lg border border-card-border shadow-brand-dark"
+                controls
+                playsInline
+                preload="metadata"
               />
             </div>
           </div>
