@@ -219,7 +219,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
           <div className="max-w-4xl mx-auto space-y-8 pt-20 md:pt-32 lg:pt-40 pb-56 sm:pb-64 md:pb-72 lg:pb-80">
             {/* Main Headline - Business Focused */}
             <div className="space-y-6">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight" style={{ fontFamily: 'var(--font-headline)' }}>
+              <h1 className="text-xl md:text-2xl lg:text-3xl leading-tight tracking-tight" style={{ fontFamily: 'var(--font-headline)' }}>
                 <span className="block mb-3">
                   {t('home.hero.title1')}
                 </span>
