@@ -20,10 +20,16 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
   // YouTube video state management
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
-  const iframeRef = useRef<HTMLIFrameElement>(null);
+  const iframeRef = useRef<HTMLVideoElement | null>(null);
 
   const handleVideoToggle = () => {
-    setIsVideoPlaying(!isVideoPlaying);
+    if (iframeRef.current) {
+      if (isVideoPlaying) {
+        iframeRef.current.pause();
+      } else {
+        iframeRef.current.play();
+      }
+    }
   };
 
   const journeyFromI18n = get<any>('home.journey.steps') || [];
@@ -338,13 +344,16 @@ export function HomePage({ onNavigate }: HomePageProps) {
               <div className="relative bg-surface-2 rounded-gtn-lg overflow-hidden shadow-brand-dark border border-card-border">
                 {/* Video Element with 16:9 Aspect Ratio */}
                 <div className="relative aspect-video">
-                  <iframe
+                  <video
                     ref={iframeRef}
-                    src={`https://www.youtube.com/embed/DeZNSd_8Plc?autoplay=${isVideoPlaying ? 1 : 0}&controls=1&modestbranding=1&rel=0`}
+                    src="https://elhcqyzbqyfwewemhfwh.supabase.co/storage/v1/object/public/GTN/GTN_Intro.mp4"
                     className="absolute inset-0 w-full h-full"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+                    controls={isVideoPlaying}
+                    playsInline
+                    preload="metadata"
+                    onPlay={() => setIsVideoPlaying(true)}
+                    onPause={() => setIsVideoPlaying(false)}
+                  />
 
                   {/* Video Thumbnail/Poster */}
                   <div className={`absolute inset-0 bg-gradient-to-br from-ink-700 to-ink-800 transition-opacity duration-500 ${
