@@ -419,9 +419,9 @@
       "subtitle": "Our invitation-only process ensures alignment with our values and mission while identifying how you can best contribute to the network.",
       "steps": [
         {"title": "Application Review", "description": "We review your background, values alignment, and potential contribution to the network."},
-        {"title": "Values Interview", "description": "Deep conversation about your vision, goals, and how they align with regenerative principles."},
+        {"title": "Values Interview", "description": "Deep conversation about your vision, goals, and how they align with GTN principles."},
         {"title": "Skill Assessment", "description": "Understanding your unique talents and how they can contribute to our ecosystem."},
-        {"title": "Community Integration", "description": "Gradual onboarding with mentorship to ensure successful integration into the network."}
+        {"title": "Community Integration", "description": "Integration into projects and teams according to your level and talents."}
       ],
       "closing": "Ready to begin your application? The process typically takes 2-3 weeks from submission to decision.",
       "ctaBegin": "Begin Application Process"

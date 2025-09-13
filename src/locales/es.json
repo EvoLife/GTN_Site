@@ -303,9 +303,9 @@
       "subtitle": "Nuestro proceso por invitación asegura alineación con nuestros valores y misión, y revela dónde puedes aportar mayor valor a la red.",
       "steps": [
         {"title": "Revisión de solicitud", "description": "Evaluamos tu experiencia, alineación de valores y potencial de contribución a la red."},
-        {"title": "Entrevista de valores", "description": "Conversación profunda sobre tu visión y objetivos, y su alineación con principios regenerativos."},
+        {"title": "Entrevista de valores", "description": "Conversación profunda sobre tu visión y objetivos, y su alineación con principios GTN."},
         {"title": "Evaluación de habilidades", "description": "Comprendemos tus talentos únicos y cómo pueden aportar a nuestro ecosistema."},
-        {"title": "Integración a la comunidad", "description": "Onboarding gradual con mentoría para asegurar una integración exitosa a la red."}
+        {"title": "Integración a la comunidad", "description": "Integración en proyectos y equipos según tu nivel y talentos."}
       ],
       "closing": "¿Listo para comenzar? El proceso suele tardar 2–3 semanas desde el envío hasta la decisión.",
       "ctaBegin": "Iniciar proceso de solicitud"
