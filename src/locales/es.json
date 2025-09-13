@@ -273,13 +273,13 @@
     },
     "journey": {
       "title": "Ruta de desarrollo",
-      "subtitle": "Progresión estructurada desde la solicitud hasta el liderazgo organizacional.",
+      "subtitle": "Progresión estructurada desde la solicitud hasta el equipo central de GTN.",
       "steps": [
-        {"title": "Solicitud y onboarding", "items": ["Enviar solicitud","Recibir GTN Passport","Completar perfil de talento y diagnósticos","Identificar el nivel actual de desarrollo"]},
-        {"title": "Elegir tu ruta de crecimiento", "items": ["Elegir dirección de desarrollo","Unirse a un equipo, proyecto o ruta experta","Definir metas y hitos"]},
-        {"title": "Contribución al proyecto", "items": ["Asumir roles en proyectos activos de GTN","Desarrollar habilidades en equipos reales","Demostrar valor con resultados"]},
-        {"title": "Liderazgo y mentoría", "items": ["Liderar equipos de proyecto","Apoyar el crecimiento de otros","Participar en el desarrollo mutuo"]},
-        {"title": "Liderazgo organizacional", "items": ["Asumir roles estratégicos en el desarrollo de GTN","Co-crear nuevas iniciativas","Contribuir al crecimiento y la gobernanza del ecosistema"]}
+        {"title": "Solicitud y onboarding", "items": ["Enviar solicitud","Completar perfil de talento y diagnósticos","Identificar el nivel actual de desarrollo"]},
+        {"title": "Elegir tu ruta de crecimiento", "items": ["Elegir dirección de desarrollo","Recibir pasaporte de talentos","Conectar mentor AI‑avatar para desbloquear tu potencial","Definir metas y hitos"]},
+        {"title": "Contribución al proyecto", "items": ["Asumir roles en proyectos activos de GTN","Ganar recompensas en $GTN por tu contribución","Demostrar valor con resultados"]},
+        {"title": "Residente GTN", "items": ["Participar en el desarrollo del ecosistema","Apoyar el crecimiento de otros","Participar en votaciones DAO y gobernanza de proyectos"]},
+        {"title": "Consejo Estratégico GTN", "items": ["Asumir roles estratégicos en el desarrollo de GTN","Co‑crear nuevas iniciativas","Contribuir al crecimiento y la gobernanza del ecosistema"]}
       ]
     },
     "cta": {
@@ -323,7 +323,7 @@
     "initiativesCards": [
       {"name": "Sistema de Gestión de Talentos", "description": "Estructuración de equipos según roles naturales — no currículums. Sistema para identificar, alinear y desplegar talento en iniciativas de GTN.", "statusCode": "active"},
       {"name": "Evo Living", "description": "Diseño y prototipado de comunidades evolutivas y espacios alineados con la naturaleza para una vida consciente y colaborativa.", "statusCode": "building"},
-      {"name": "Tokenomía GTN", "description": "$GTN — token utilitario para pagar servicios y acceder a oportunidades del ecosistema.\n$TALENT — token de gobernanza para decisión y dirección en el DAO.\nNFT‑pasaporte — identidad digital del miembro con talentos, roles y contribución.", "statusCode": "building"},
+      {"name": "GTN DAO", "description": "$GTN — token utilitario para pagar servicios y acceder a oportunidades del ecosistema.\n$TALENT — token de gobernanza para decisión y dirección en el DAO.\nNFT‑pasaporte — identidad digital del miembro con talentos, roles y contribución.", "statusCode": "building"},
       {"name": "GTN Life Platform", "description": "Ecosistema con IA para el desarrollo personal y de equipos: Avatar IA, diagnóstico de talento y herramientas para crecimiento basado en roles.", "statusCode": "building"}
     ]
   },

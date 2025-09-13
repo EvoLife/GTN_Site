@@ -401,13 +401,13 @@
     },
     "journey": {
       "title": "Development Path",
-      "subtitle": "Structured progression from application to organizational leadership.",
+      "subtitle": "Structured progression from application to GTN Core Team.",
       "steps": [
-        {"title": "Application & Onboarding", "items": ["Submit application","Receive GTN Passport","Complete talent profile & diagnostics","Identify current level of development"]},
-        {"title": "Select Your Growth Track", "items": ["Choose development direction","Join a team, project, or expert track","Define goals & milestones"]},
-        {"title": "Project Contribution", "items": ["Take roles in active GTN projects","Build skills in real team settings","Demonstrate value through results"]},
-        {"title": "Team Leadership & Mentorship", "items": ["Lead project teams","Support others in skill and project growth","Participate in peer development"]},
-        {"title": "Organizational Leadership", "items": ["Take strategic roles in GTN development","Co-create new ventures","Contribute to ecosystem growth & governance"]}
+        {"title": "Application & Onboarding", "items": ["Submit application","Complete talent profile & diagnostics","Identify current level of development"]},
+        {"title": "Select Your Growth Track", "items": ["Choose development direction","Receive talent passport","Connect AI‑avatar mentor to unlock your potential","Define goals & milestones"]},
+        {"title": "Project Contribution", "items": ["Take roles in active GTN projects","Earn $GTN rewards for your contribution","Demonstrate value through results"]},
+        {"title": "GTN Resident", "items": ["Participate in ecosystem development","Support others' growth","Participate in DAO voting and project governance"]},
+        {"title": "GTN Strategic Council", "items": ["Take strategic roles in GTN development","Co‑create new initiatives","Contribute to ecosystem growth & governance"]}
       ]
     },
     "possibilities": {
@@ -448,7 +448,7 @@
     "initiativesCards": [
       {"name": "Talent Management System", "description": "Structuring teams by natural roles — not résumés. A system to identify, align, and deploy talent across GTN initiatives.", "statusCode": "active"},
       {"name": "Evo Living", "description": "Design and prototyping of evolutionary communities and nature‑aligned spaces for conscious, collaborative living.", "statusCode": "building"},
-      {"name": "GTN Tokenomics", "description": "$GTN — a utility token for paying services and accessing ecosystem opportunities.\n$TALENT — a governance token for decision‑making in the DAO.\nNFT Passport — a digital member identity reflecting talents, roles, and contribution.", "statusCode": "building"},
+      {"name": "GTN DAO", "description": "$GTN — a utility token for paying services and accessing ecosystem opportunities.\n$TALENT — a governance token for decision‑making in the DAO.\nNFT Passport — a digital member identity reflecting talents, roles, and contribution.", "statusCode": "building"},
       {"name": "GTN Life Platform", "description": "AI‑powered ecosystem for personal and team development: AI Avatar, talent diagnostics, and role‑based growth tools.", "statusCode": "building"}
     ]
   }
