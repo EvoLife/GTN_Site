@@ -229,9 +229,11 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 <span className="block mb-3">
                   {t('home.hero.title1')}
                 </span>
-                <span className="block">
-                  {t('home.hero.title2')}
-                </span>
+                {t('home.hero.title2') && (
+                  <span className="block">
+                    {t('home.hero.title2')}
+                  </span>
+                )}
               </h1>
             </div>
 
