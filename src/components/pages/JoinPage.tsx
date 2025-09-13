@@ -5,15 +5,29 @@ import { Textarea } from '../ui/textarea';
 import { Label } from '../ui/label';
 import { Badge } from '../ui/badge';
 import { Separator } from '../ui/separator';
-import { Check, Users, Building2, BarChart3, Target, Clock, MessageSquare, Bot, Search, Wrench, HandHeart, Rocket, Home, Vote } from 'lucide-react';
+import { Check, Users, Building2, BarChart3, Target, Clock, MessageSquare, Bot, Search, Wrench, HandHeart, Rocket, Home, Vote, Play } from 'lucide-react';
 import { useLanguage } from '../i18n/LanguageContext';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 export function JoinPage() {
   const { t, get } = useLanguage();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [validationError, setValidationError] = useState<string | null>(null);
+  
+  // Video state management
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+
+  const handleVideoToggle = () => {
+    if (videoRef.current) {
+      if (isVideoPlaying) {
+        videoRef.current.pause();
+      } else {
+        videoRef.current.play();
+      }
+    }
+  };
 
   const sendToTelegram = async (type: string, data: any) => {
     const TELEGRAM_BOT_TOKEN = '7608359591:AAHf7uO_sdSblv4Dy3MoDquECHOyxEh8lzA';
@@ -130,14 +144,49 @@ export function JoinPage() {
       <section className="py-16 surface-1">
         <div className="container">
           <div className="max-w-4xl mx-auto">
-            <div className="relative w-full" style={{ aspectRatio: '16/9' }}>
-              <video
-                src="https://elhcqyzbqyfwewemhfwh.supabase.co/storage/v1/object/public/GTN/GTN%20Life%20Client%20Journey.mp4"
-                className="absolute inset-0 w-full h-full rounded-gtn-lg border border-card-border shadow-brand-dark"
-                controls
-                playsInline
-                preload="metadata"
-              />
+            <div className="relative bg-surface-2 rounded-gtn-lg overflow-hidden shadow-brand-dark border border-card-border">
+              <div className="relative aspect-video">
+                <video
+                  ref={videoRef}
+                  src="https://elhcqyzbqyfwewemhfwh.supabase.co/storage/v1/object/public/GTN/GTN%20Life%20Client%20Journey.mp4"
+                  className="absolute inset-0 w-full h-full"
+                  controls={isVideoPlaying}
+                  playsInline
+                  preload="metadata"
+                  onPlay={() => setIsVideoPlaying(true)}
+                  onPause={() => setIsVideoPlaying(false)}
+                />
+
+                {/* Video Thumbnail/Poster */}
+                <div className={`absolute inset-0 bg-gradient-to-br from-ink-700 to-ink-800 transition-opacity duration-500 ${
+                  isVideoPlaying ? 'opacity-0 pointer-events-none' : 'opacity-100'
+                }`}>
+                  {/* Background pattern for video poster */}
+                  <div className="absolute inset-0 opacity-30">
+                    <div className="absolute inset-0" style={{
+                      backgroundImage: `
+                        radial-gradient(ellipse at center, rgba(63, 163, 154, 0.2) 0%, transparent 70%),
+                        radial-gradient(ellipse at 20% 80%, rgba(197, 114, 58, 0.15) 0%, transparent 70%)
+                      `
+                    }}></div>
+                  </div>
+
+                  {/* Play Button */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <button
+                      onClick={handleVideoToggle}
+                      className="group relative inline-flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-full bg-ivory/20 border-2 border-ivory/40 backdrop-blur-sm hover:bg-ivory/30 hover:border-ivory/60 hover:scale-110 transition-all duration-300 shadow-glow-dark hover:shadow-glow-copper"
+                      aria-label="Play GTN video"
+                    >
+                      <Play className="w-8 h-8 md:w-10 md:h-10 text-ivory ml-1" />
+                      
+                      {/* Pulse animation rings */}
+                      <div className="absolute inset-0 rounded-full bg-ivory/20 animate-ping"></div>
+                      <div className="absolute inset-0 rounded-full bg-ivory/10 animate-pulse"></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
