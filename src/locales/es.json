@@ -264,11 +264,11 @@
     },
     "invite": {
       "title": "A quién invitamos",
-      "subtitle": "Buscamos personas comprometidas a crear soluciones regenerativas y contribuir al crecimiento colectivo.",
+      "subtitle": "GTN une a quienes piensan en grande, actúan conscientemente y quieren crear el futuro en lugar de simplemente observarlo.",
       "items": [
-        {"title": "Constructores regenerativos", "desc": "Emprendedores e innovadores que quieren crear iniciativas que restauran en lugar de extraer."},
-        {"title": "Profesionales con propósito", "desc": "Especialistas que buscan alinear sus habilidades con impacto real y crecimiento colaborativo."},
-        {"title": "Aprendices conscientes", "desc": "Personas comprometidas con el desarrollo personal, el pensamiento sistémico y la evolución colectiva."}
+        {"title": "Emprendedores y Visionarios", "desc": "Quienes construyen proyectos alineados con nuestros valores, listos para unir conexiones, recursos y propósito — para lanzar iniciativas sostenibles y escalables juntos."},
+        {"title": "Inversores y Socios Estratégicos", "desc": "Quienes no solo invierten capital, sino que aportan sabiduría, conexiones y energía de crecimiento. Quienes apoyan proyectos que cambian vidas y crean valor real para el mundo."},
+        {"title": "Profesionales", "desc": "Especialistas experimentados — ingenieros, diseñadores, desarrolladores, arquitectos y otros que están listos para participar en proyectos, desbloquear talentos, pensar como co‑fundadores y ser parte de algo verdaderamente grandioso."}
       ]
     },
     "journey": {
