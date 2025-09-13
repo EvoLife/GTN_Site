@@ -252,7 +252,7 @@
     "initiatives": {
       "title": "Iniciativas actuales",
       "subtitle": "Proyectos que dan forma a una nueva economía donde la tecnología y las personas evolucionan en armonía con la naturaleza.",
-      "heroTitle": "Construyendo iniciativas regenerativas",
+      "heroTitle": "Construyendo iniciativas sostenibles",
       "heroDesc": "Nuestras iniciativas van desde espacios comunitarios físicos hasta tecnología blockchain, diseñadas para crear impacto sostenible y alinear el aporte individual con la prosperidad colectiva.",
       "statusLabel": {
         "active": "Activo",
@@ -321,10 +321,10 @@
       "ctaBegin": "Iniciar proceso de solicitud"
     },
     "initiativesCards": [
-      {"name": "Evo Living", "description": "Diseño y prototipado de comunidades evolutivas y espacios alineados con la naturaleza para una vida consciente y colaborativa.", "statusCode": "active"},
-      {"name": "Tokenomía GTN", "description": "$GTN — moneda de la red para pagos y gobernanza. $TALENT — pasaporte NFT personal para identidad y contribución del miembro.", "statusCode": "building"},
-      {"name": "Sistema de Gestión de Talentos", "description": "Estructuración de equipos según roles naturales — no currículums. Sistema para identificar, alinear y desplegar talento en iniciativas de GTN.", "statusCode": "building"},
-      {"name": "Plataforma GTN Life", "description": "Ecosistema con IA para el desarrollo personal y de equipos: Avatar IA, diagnóstico de talento y herramientas para crecimiento basado en roles.", "statusCode": "building"}
+      {"name": "Sistema de Gestión de Talentos", "description": "Estructuración de equipos según roles naturales — no currículums. Sistema para identificar, alinear y desplegar talento en iniciativas de GTN.", "statusCode": "active"},
+      {"name": "Evo Living", "description": "Diseño y prototipado de comunidades evolutivas y espacios alineados con la naturaleza para una vida consciente y colaborativa.", "statusCode": "building"},
+      {"name": "Tokenomía GTN", "description": "$GTN — token utilitario para pagar servicios y acceder a oportunidades del ecosistema.\n$TALENT — token de gobernanza para decisión y dirección en el DAO.\nNFT‑pasaporte — identidad digital del miembro con talentos, roles y contribución.", "statusCode": "building"},
+      {"name": "GTN Life Platform", "description": "Ecosistema con IA para el desarrollo personal y de equipos: Avatar IA, diagnóstico de talento y herramientas para crecimiento basado en roles.", "statusCode": "building"}
     ]
   },
   "join": {
