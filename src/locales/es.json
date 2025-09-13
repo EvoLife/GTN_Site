@@ -322,9 +322,9 @@
     },
     "initiativesCards": [
       {"name": "Evo Living", "description": "Diseño y prototipado de comunidades evolutivas y espacios alineados con la naturaleza para una vida consciente y colaborativa.", "statusCode": "active"},
-      {"name": "GTN Tokenomics", "description": "$GTN — moneda de la red para pagos y gobernanza. $TALENT — pasaporte NFT personal para identidad y contribución del miembro.", "statusCode": "building"},
-      {"name": "Talent Management System", "description": "Estructuración de equipos según roles naturales — no currículums. Sistema para identificar, alinear y desplegar talento en iniciativas de GTN.", "statusCode": "building"},
-      {"name": "GTN Life Platform", "description": "Ecosistema con IA para el desarrollo personal y de equipos: Avatar IA, diagnóstico de talento y herramientas para crecimiento basado en roles.", "statusCode": "building"}
+      {"name": "Tokenomía GTN", "description": "$GTN — moneda de la red para pagos y gobernanza. $TALENT — pasaporte NFT personal para identidad y contribución del miembro.", "statusCode": "building"},
+      {"name": "Sistema de Gestión de Talentos", "description": "Estructuración de equipos según roles naturales — no currículums. Sistema para identificar, alinear y desplegar talento en iniciativas de GTN.", "statusCode": "building"},
+      {"name": "Plataforma GTN Life", "description": "Ecosistema con IA para el desarrollo personal y de equipos: Avatar IA, diagnóstico de talento y herramientas para crecimiento basado en roles.", "statusCode": "building"}
     ]
   },
   "join": {
