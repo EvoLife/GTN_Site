@@ -520,7 +520,7 @@ export function JoinPage() {
                     />
                   </div>
                 </div>
-                <p className="text-xs text-foreground-tertiary">{t('join.form.hintContact')}</p>
+                {/* Removed duplicate hintContact text per request */}
 
                 <div>
                   <Label htmlFor="location" className="text-foreground">{t('join.form.labels.location')}</Label>

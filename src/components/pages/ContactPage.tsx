@@ -177,10 +177,6 @@ export function ContactPage() {
                     <Label htmlFor="name">{t('contact.form.name')}</Label>
                     <Input id="name" name="name" required placeholder={t('contact.form.namePlaceholder')} />
                   </div>
-                  <div>
-                    <Label>{t('contact.form.hintContact')}</Label>
-                    <div className="text-xs text-foreground-tertiary">{t('contact.form.hintContact')}</div>
-                  </div>
                 </div>
 
                 {/* Contact Methods */}

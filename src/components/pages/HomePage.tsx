@@ -375,13 +375,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                       </button>
                     </div>
 
-                    {/* Video Info Overlay - hidden on mobile */}
-                    <div className="absolute bottom-6 left-6 right-6 hidden md:block">
-                      <div className="bg-ink/60 backdrop-blur-md rounded-lg px-4 py-3 border border-ivory/20">
-                        <h3 className="text-ivory font-semibold mb-1">{t('home.video.overlayTitle')}</h3>
-                        <p className="text-ivory/80 text-sm">{t('home.video.overlaySub')}</p>
-                      </div>
-                    </div>
+                    {/* Removed video info overlay as per request */}
                   </div>
 
                   {/* YouTube video handles its own controls when playing */}
