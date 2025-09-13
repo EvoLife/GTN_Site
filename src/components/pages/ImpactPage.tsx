@@ -243,19 +243,10 @@ export function ImpactPage({ onNavigate }: ImpactPageProps) {
             {/* Call to Action */}
             <div className="text-center">
               <h3 className="text-2xl font-semibold text-foreground mb-8">{t('impact.cta.title')}</h3>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-4xl mx-auto">
+              <div className="flex justify-center max-w-4xl mx-auto">
                 <Button 
                   variant="outline" 
                   className="border-accent text-accent hover:bg-accent hover:text-accent-foreground shadow-glow-copper"
-                  size="lg"
-                  onClick={() => onNavigate('investment-roadmap')}
-                >
-                  <ExternalLink className="mr-2" size={16} />
-                  {t('impact.cta.buttons.roadmap')}
-                </Button>
-                <Button 
-                  variant="outline" 
-                  className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground shadow-brand-dark"
                   size="lg"
                   onClick={() => onNavigate('contact')}
                 >
