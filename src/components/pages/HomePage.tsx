@@ -266,7 +266,8 @@ export function HomePage({ onNavigate }: HomePageProps) {
           </div>
         </div>
 
-        {/* Dark Stats Bar - Ink Theme */}
+        {/* Dark Stats Bar - Ink Theme - HIDDEN */}
+        {false && (
         <div className="absolute bottom-0 left-0 right-0 z-20">
           <div className="gradient-ink-complex border-t border-ink-600/30">
             <div className="container py-6 sm:py-8 md:py-12">
@@ -315,9 +316,11 @@ export function HomePage({ onNavigate }: HomePageProps) {
             </div>
           </div>
         </div>
+        )}
       </section>
 
-      {/* Video Presentation Section */}
+      {/* Video Presentation Section - HIDDEN */}
+      {false && (
       <section className="py-20 surface-1 relative overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-20">
@@ -416,6 +419,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
           </div>
         </div>
       </section>
+      )}
 
       {/* Who We Are Section - With Visual */}
       <section className="py-24 surface-1 relative overflow-hidden">
