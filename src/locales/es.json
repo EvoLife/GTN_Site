@@ -213,11 +213,11 @@
   },
   "home": {
     "hero": {
-      "title1": "Global Talent Nation — un ecosistema para la autorrealización y la colaboración.",
+      "title1": "Global Talent Nation — un ecosistema para la autorrealización y colaboración.",
       "title2": "",
-      "subtitle": "GTN — una comunidad y plataforma donde talentos, negocios y tecnologías se unen para crear un ecosistema próspero y eco‑ciudades en todo el mundo.",
-      "ctaApply": "Enviar solicitud",
-      "ctaPropose": "Proponer un proyecto"
+      "subtitle": "GTN es una comunidad y plataforma donde talentos, empresas y tecnologías se conectan para crear un ecosistema próspero y eco-ciudades alrededor del mundo.",
+      "ctaApply": "Aplicar a GTN",
+      "ctaPropose": "Proponer proyecto"
     },
     "stats": {
       "members": "Miembros de la comunidad Evolution",
@@ -226,90 +226,90 @@
       "events": "Eventos y diálogos de la comunidad"
     },
     "video": {
-      "title": "Mira el video y comprende la esencia de GTN en 1 minuto",
-      "desc": "GTN conecta a personas con propósito en todo el mundo para crear juntos y prosperar.",
+      "title": "Mirá el video y entendé la esencia de GTN en 1 minuto",
+      "desc": "GTN conecta personas con propósito alrededor del mundo para crear juntos y prosperar.",
       "overlayTitle": "Construyendo iniciativas regenerativas",
       "overlaySub": "Nuestra historia y la misión de GTN • 1 minuto",
-      "ctaApply": "Unirse a GTN",
-      "ctaLearn": "Saber más"
+      "ctaApply": "Unirme a GTN",
+      "ctaLearn": "Conocer más"
     },
     "whoWeAre": {
       "title": "Quiénes somos",
-      "p1": "Somos una comunidad de emprendedores, expertos y visionarios que construyen equipos, empresas y espacios del futuro.\nGTN conecta personas, conocimiento y herramientas de IA, gracias a las cuales cada uno desarrolla sus talentos, lanza proyectos conjuntos e influye en el desarrollo de la nueva economía.",
-      "highlight": "Esto no es solo una plataforma. Es un ecosistema en funcionamiento — donde el talento con propósito crea valor real."
+      "p1": "Somos una comunidad de emprendedores, expertos y visionarios que construimos equipos, empresas y espacios del futuro.\nGTN conecta personas, conocimiento y herramientas de IA, permitiendo que cada persona desarrolle sus talentos, lance proyectos colaborativos e influya en el desarrollo de la nueva economía.",
+      "highlight": "Esto no es solo una plataforma. Es un ecosistema funcionando — donde el talento con propósito crea valor real."
     },
     "foundation": {
       "title": "Nuestros fundamentos",
       "subtitle": "Valores que guían nuestra red y definen cómo construimos juntos.",
       "items": [
-        {"title": "Colaboración", "desc": "Alineamos esfuerzos, talentos y recursos para el crecimiento y la prosperidad compartidos."},
+        {"title": "Colaboración", "desc": "Alineamos esfuerzos, talentos y recursos para el crecimiento y prosperidad compartidos."},
         {"title": "Desarrollo de Talentos", "desc": "Cada persona despliega sus fortalezas y contribuye a través del trabajo que ama."},
-        {"title": "Sostenibilidad y Ecología", "desc": "Construimos proyectos donde la tecnología y la naturaleza conviven en armonía."},
-        {"title": "Meritocracia", "desc": "El éxito se define por la contribución y la competencia. Todos tienen igualdad de oportunidades para expresar talentos y decidir dentro de su ámbito."},
-        {"title": "Tecnologías Evolutivas", "desc": "La IA y las soluciones digitales potencian a las personas, aumentando la eficiencia y la transparencia."},
+        {"title": "Sustentabilidad y Ecología", "desc": "Construimos proyectos donde la tecnología y la naturaleza conviven en armonía."},
+        {"title": "Meritocracia", "desc": "El éxito se define por la contribución y competencia. Todos tienen igualdad de oportunidades para expresar talentos y decidir dentro de su ámbito."},
+        {"title": "Tecnologías Evolutivas", "desc": "La IA y soluciones digitales potencian a las personas, aumentando eficiencia y transparencia."},
         {"title": "Gobernanza DAO Transparente", "desc": "Las decisiones clave se toman de forma abierta — mediante votación descentralizada y asignación justa de recursos."}
       ]
     },
     "initiatives": {
       "title": "Iniciativas actuales",
       "subtitle": "Proyectos que dan forma a una nueva economía donde la tecnología y las personas evolucionan en armonía con la naturaleza.",
-      "heroTitle": "Construyendo iniciativas sostenibles",
-      "heroDesc": "Nuestras iniciativas van desde espacios comunitarios físicos hasta tecnología blockchain, diseñadas para crear impacto sostenible y alinear el aporte individual con la prosperidad colectiva.",
+      "heroTitle": "Construyendo iniciativas sustentables",
+      "heroDesc": "Nuestras iniciativas van desde espacios comunitarios físicos hasta tecnología blockchain, diseñadas para crear impacto sustentable y alinear el aporte individual con la prosperidad colectiva.",
       "statusLabel": {
         "active": "Activo",
         "building": "En desarrollo",
         "partnership": "Alianza",
         "future": "Futuro"
       },
-      "ctaPropose": "Proponer un proyecto"
+      "ctaPropose": "Proponer proyecto"
     },
     "invite": {
       "title": "A quién invitamos",
-      "subtitle": "GTN une a quienes piensan en grande, actúan conscientemente y quieren crear el futuro en lugar de simplemente observarlo.",
+      "subtitle": "GTN une a quienes piensan en grande, actúan conscientemente y quieren crear el futuro en lugar de solo observarlo.",
       "items": [
-        {"title": "Emprendedores y Visionarios", "desc": "Quienes construyen proyectos alineados con nuestros valores, listos para unir conexiones, recursos y propósito — para lanzar iniciativas sostenibles y escalables juntos."},
-        {"title": "Inversores y Socios Estratégicos", "desc": "Quienes no solo invierten capital, sino que aportan sabiduría, conexiones y energía de crecimiento. Quienes apoyan proyectos que cambian vidas y crean valor real para el mundo."},
-        {"title": "Profesionales", "desc": "Especialistas experimentados — ingenieros, diseñadores, desarrolladores, arquitectos y otros que están listos para participar en proyectos, desbloquear talentos, pensar como co‑fundadores y ser parte de algo verdaderamente grandioso."}
+        {"title": "Emprendedores y Visionarios", "desc": "Quienes comparten nuestros valores y están listos para unir conexiones, recursos y propósito — para lanzar iniciativas sustentables y escalables juntos."},
+        {"title": "Inversores y Socios Estratégicos", "desc": "Quienes no solo invierten capital, sino que aportan sabiduría, conexiones y energía de crecimiento. Quienes apoyan proyectos que transforman vidas y crean valor real para el mundo."},
+        {"title": "Profesionales", "desc": "Especialistas experimentados — ingenieros, diseñadores, desarrolladores, arquitectos y otros que están listos para participar en proyectos, desbloquear talentos, pensar como co-fundadores y ser parte de algo verdaderamente grandioso."}
       ]
     },
     "journey": {
-      "title": "Ruta de desarrollo",
-      "subtitle": "Progresión estructurada desde la solicitud hasta el equipo central de GTN.",
+      "title": "Camino de desarrollo",
+      "subtitle": "Progresión estructurada desde la aplicación hasta el equipo central de GTN.",
       "steps": [
-        {"title": "Solicitud y onboarding", "items": ["Enviar solicitud","Completar perfil de talento y diagnósticos","Identificar el nivel actual de desarrollo"]},
-        {"title": "Elegir tu ruta de crecimiento", "items": ["Elegir dirección de desarrollo","Recibir pasaporte de talentos","Conectar mentor AI‑avatar para desbloquear tu potencial","Definir metas y hitos"]},
+        {"title": "Aplicación y onboarding", "items": ["Enviar aplicación","Completar perfil de talento y diagnósticos","Identificar nivel actual de desarrollo"]},
+        {"title": "Elegí tu ruta de crecimiento", "items": ["Elegir dirección de desarrollo","Recibir pasaporte de talentos","Conectar mentor AI-avatar para desbloquear tu potencial","Definir metas y objetivos"]},
         {"title": "Contribución al proyecto", "items": ["Asumir roles en proyectos activos de GTN","Ganar recompensas en $GTN por tu contribución","Demostrar valor con resultados"]},
         {"title": "Residente GTN", "items": ["Participar en el desarrollo del ecosistema","Apoyar el crecimiento de otros","Participar en votaciones DAO y gobernanza de proyectos"]},
-        {"title": "Consejo Estratégico GTN", "items": ["Asumir roles estratégicos en el desarrollo de GTN","Co‑crear nuevas iniciativas","Contribuir al crecimiento y la gobernanza del ecosistema"]}
+        {"title": "Consejo Estratégico GTN", "items": ["Asumir roles estratégicos en el desarrollo de GTN","Co-crear nuevas iniciativas","Contribuir al crecimiento y gobernanza del ecosistema"]}
       ]
     },
     "cta": {
-      "startApplication": "Enviar solicitud"
+      "startApplication": "Aplicar a GTN"
     },
     "possibilities": {
       "title": "Posibilidades",
       "subtitle": "Lo que se vuelve posible al unirte a una red de creadores alineados por valores.",
-      "introTitle": "Desbloquea tu potencial",
+      "introTitle": "Desbloqueá tu potencial",
       "introP1": "GTN no es solo una red: es un catalizador de transformación. Cuando el talento con propósito se une con recursos compartidos y valores alineados, lo extraordinario se vuelve posible.",
       "introP2": "Desde co-crear iniciativas regenerativas hasta acceder a oportunidades globales, tu camino en GTN abre puertas que no imaginabas.",
       "cards": [
-        {"title": "Co-crear iniciativas regenerativas", "description": "Únete o lanza proyectos que generen impacto positivo con modelos de negocio sostenibles."},
-        {"title": "Construir equipos alineados", "description": "Conecta con profesionales afines que compartan tus valores y complementen tus habilidades."},
-        {"title": "Acceso a recursos y conocimiento", "description": "Aprovecha la experiencia colectiva, oportunidades de financiación e infraestructura para acelerar tu visión."},
-        {"title": "Desarrollar liderazgo", "description": "Sigue un camino de crecimiento — desde los primeros pasos como colaborador hasta líder de equipo y miembro del Consejo Estratégico GTN."}
+        {"title": "Co-crear iniciativas regenerativas", "description": "Unite o lanzá proyectos que generen impacto positivo con modelos de negocio sustentables."},
+        {"title": "Construir equipos alineados", "description": "Conectate con profesionales afines que compartan tus valores y complementen tus habilidades."},
+        {"title": "Acceso a recursos y conocimiento", "description": "Aprovechá la experiencia colectiva, oportunidades de financiación e infraestructura para acelerar tu visión."},
+        {"title": "Desarrollar liderazgo", "description": "Seguí un camino de crecimiento — desde los primeros pasos como colaborador hasta líder de equipo y miembro del Consejo Estratégico GTN."}
       ]
     },
     "selection": {
       "title": "Cómo funciona la selección",
       "subtitle": "Nuestro proceso de unión por invitación asegura alineación con nuestros valores y misión, e identifica dónde tu contribución será más significativa.",
       "steps": [
-        {"title": "Revisión de solicitud", "description": "Evaluamos tu experiencia, alineación de valores y potencial de contribución al desarrollo del ecosistema."},
+        {"title": "Revisión de aplicación", "description": "Evaluamos tu experiencia, alineación de valores y potencial de contribución al desarrollo del ecosistema."},
         {"title": "Entrevista de valores", "description": "Conversación profunda sobre tu visión y objetivos, y su alineación con principios GTN."},
-        {"title": "Evaluación de habilidades", "description": "Comprendemos tus talentos únicos y cómo pueden aportar a nuestro ecosistema."},
+        {"title": "Evaluación de habilidades", "description": "Entendemos tus talentos únicos y cómo pueden aportar a nuestro ecosistema."},
         {"title": "Integración a la comunidad", "description": "Integración en proyectos y equipos según tu nivel y talentos."}
       ],
-      "closing": "¿Listo para comenzar? El proceso suele tardar 2–3 semanas desde el envío hasta la decisión.",
-      "ctaBegin": "Iniciar proceso de solicitud"
+      "closing": "¿Listo para empezar? El proceso suele tardar 2-3 semanas desde el envío hasta la decisión.",
+      "ctaBegin": "Iniciar proceso de aplicación"
     },
     "initiativesCards": [
       {"name": "Sistema de Gestión de Talentos", "description": "Estructuración de equipos según roles naturales — no currículums. Sistema para identificar, alinear y desplegar talento en iniciativas de GTN.", "statusCode": "active"},
@@ -317,14 +317,6 @@
       {"name": "GTN DAO", "description": "$GTN — token utilitario para pagar servicios y acceder a oportunidades del ecosistema.\n$TALENT — token de gobernanza para decisión y dirección en el DAO.\nNFT‑pasaporte — identidad digital del miembro con talentos, roles y contribución.", "statusCode": "building"},
       {"name": "GTN Life Platform", "description": "Ecosistema con IA para el desarrollo personal y de equipos: Avatar IA, diagnóstico de talento y herramientas para crecimiento basado en roles.", "statusCode": "building"}
     ]
-  },
-  "home": {
-    "stats": {
-      "members": "Usuarios registrados en Evolution",
-      "countries": "Países",
-      "talents": "Afirman que entienden mejor sus talentos y sienten su potencial",
-      "events": "usuarios en el sistema de formación de equipos Business Evolution AI. Crecimiento promedio de ingresos para empresas que usan tecnologías Evo 20–80% en el primer año."
-    }
   },
   "join": {
     "hero": {
