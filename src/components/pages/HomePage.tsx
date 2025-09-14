@@ -319,8 +319,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
         )}
       </section>
 
-      {/* Video Presentation Section - HIDDEN */}
-      {false && (
+      {/* Video Presentation Section */}
       <section className="py-20 surface-1 relative overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-20">
@@ -419,7 +418,6 @@ export function HomePage({ onNavigate }: HomePageProps) {
           </div>
         </div>
       </section>
-      )}
 
       {/* Who We Are Section - With Visual */}
       <section className="py-24 surface-1 relative overflow-hidden">
