@@ -332,13 +332,15 @@ export function JoinPage() {
               </Card>
             </div>
 
-            {/* Summary Statement */}
+            {/* Summary Statement - HIDDEN */}
+            {false && (
             <div className="text-center">
               <div className="bg-gradient-to-br from-primary/10 to-accent/10 border border-primary/20 rounded-gtn-lg p-8 max-w-4xl mx-auto">
                 <p className="text-xl text-foreground-secondary leading-relaxed mb-4">{t('join.possibilities.summary.l1')}</p>
                 <p className="text-2xl text-primary font-semibold">{t('join.possibilities.summary.l2')}</p>
               </div>
             </div>
+            )}
           </div>
         </div>
       </section>
