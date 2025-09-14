@@ -343,7 +343,8 @@ export function JoinPage() {
         </div>
       </section>
 
-      {/* Ecosystem Tools */}
+      {/* Ecosystem Tools - HIDDEN */}
+      {false && (
       <section className="py-20 surface-1">
         <div className="container">
           <div className="max-w-7xl mx-auto">
@@ -379,6 +380,7 @@ export function JoinPage() {
           </div>
         </div>
       </section>
+      )}
 
       {/* What You Step Into */}
       <section className="py-20 surface-2">
