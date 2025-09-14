@@ -657,7 +657,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               onClick={() => onNavigate('join')}
               className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 shadow-glow-copper"
             >
-              {t('home.cta.startApplication')}
+              Apply to GTN
               <ArrowRight className="ml-2" size={16} />
             </Button>
           </div>
