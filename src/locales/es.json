@@ -373,19 +373,19 @@
         "ctaPropose": "Proponer un proyecto"
       },
       "stepInto": {
-        "title": "A qué accedes al unirte a GTN",
-        "subtitle": "Es más que acceso. Es un nuevo marco para vivir, crear y prosperar — como tu yo más alineado.",
+        "title": "Qué obtenés al unirte a GTN",
+        "subtitle": "Esto es más que acceso. Es un espacio para desbloquear potencial, crear con personas afines y vivir en armonía con vos mismo y el mundo.",
         "cards": [
-          {"title": "Un pasaporte al auto-descubrimiento", "desc": "Descubrirás los talentos con los que naciste — y los roles donde floreces."},
-          {"title": "Herramientas para crecer con claridad", "desc": "Desde mentores de IA hasta rutas de desarrollo a medida, nunca estás solo en tu evolución."},
-          {"title": "Una comunidad que refleja tus valores", "desc": "Encontrarás personas que hablan tu idioma — y necesitan lo que tú aportas de forma única."},
-          {"title": "Proyectos, roles y propiedad", "desc": "Trabaja en equipos alineados. Lanza tu propia iniciativa. Gánate tu lugar y comparte resultados."},
-          {"title": "Un lugar al que pertenecer — online y en tierra", "desc": "Vive y co-crea en eco-comunidades diseñadas para vida consciente y colaboración."},
-          {"title": "Una voz en lo que construimos", "desc": "Nuestra gobernanza es colectiva. Tú defines la dirección, votas lo importante y cuidas los recursos compartidos."}
+          {"title": "Pasaporte de Talentos", "desc": "Descubrís tus talentos innatos, roles y zonas de crecimiento — y los usás en proyectos que traen sentido y resultados."},
+          {"title": "Asistente AI", "desc": "Un mentor AI personal te ayuda a construir tu camino de realización en el ecosistema, identificar tus roles, tareas y socios con máxima sinergia."},
+          {"title": "Entorno Inspirador", "desc": "Una comunidad de emprendedores, inversores y expertos — con oportunidades para proyectos colaborativos y crecimiento."},
+          {"title": "Ciudadanía GTN", "desc": "Te convertís en co-fundador de una red de eco-hubs donde se combinan naturaleza, tecnología y estilo de vida equilibrado."},
+          {"title": "Participación en Gobernanza del Ecosistema", "desc": "Cada contribución importa: a través del DAO participás en la toma de decisiones y recibís una parte de lo creado juntos."},
+          {"title": "Propósitos Grandes", "desc": "GTN es un espacio donde se despliega tu escala. Acá crecés, creás valor para el mundo, realizás tu máximo potencial a nivel internacional."}
         ],
         "summary": {
-          "l1": "Esta es tu invitación — no solo para unirte a algo,",
-          "l2": "sino para convertirte en quien siempre sentiste posible."
+          "l1": "Esta es tu invitación — no solo a unirte a algo,",
+          "l2": "sino a convertirte en quien siempre sentiste posible."
         }
       }
     },

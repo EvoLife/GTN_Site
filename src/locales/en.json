@@ -205,15 +205,15 @@
       }
     },
     "stepInto": {
-      "title": "What You Step Into When You Join GTN",
-      "subtitle": "This is more than access. It's a new framework for living, creating, and thriving — as your most aligned self.",
+      "title": "What You Get by Joining GTN",
+      "subtitle": "This is more than access. This is a space for unlocking potential, creating with like-minded people, and living in harmony with yourself and the world.",
       "cards": [
-        {"title": "A Passport to Self-Discovery", "desc": "You'll uncover the talents you were born with — and the roles that allow you to thrive."},
-        {"title": "Tools to Grow with Clarity", "desc": "From AI mentors to tailored development paths, you're never alone in your evolution."},
-        {"title": "A Community that Mirrors Your Values", "desc": "You'll find people who speak your language — and need what you uniquely bring."},
-        {"title": "Projects, Roles, and Ownership", "desc": "Work in aligned teams. Launch your own initiative. Earn your place and share in the results."},
-        {"title": "A Place to Belong — Online and On Land", "desc": "Live and co-create in eco-communities designed for conscious living and collaboration."},
-        {"title": "A Voice in What We Build", "desc": "Our governance is collective. You shape the direction, vote on what matters, and help steward shared resources."}
+        {"title": "Talent Passport", "desc": "You'll discover your innate talents, roles, and growth zones — and use them in projects that bring meaning and results."},
+        {"title": "AI Assistant", "desc": "A personal AI mentor will help you build your path to realization in the ecosystem, identify your roles, tasks, and partners with maximum synergy."},
+        {"title": "Inspiring Environment", "desc": "A community of entrepreneurs, investors, and experts — with opportunities for collaborative projects and growth."},
+        {"title": "GTN Citizenship", "desc": "You become a co-founder of a network of eco-hubs where nature, technology, and balanced lifestyle combine."},
+        {"title": "Ecosystem Governance Participation", "desc": "Every contribution matters: through DAO you participate in decision-making and receive a share in what's created together."},
+        {"title": "Greater Purpose", "desc": "GTN is a space where your scale unfolds. Here you grow, create value for the world, and realize your maximum potential on an international level."}
       ],
       "summary": {
         "l1": "This is your invitation — not just to join something,",
