@@ -83,14 +83,14 @@
       "p2": "Every element is crafted to support deep focus, real connection, and sustainable growth, both personal and collective."
     },
     "howDesign": {
-      "title": "How We Design for Human Evolution",
+      "title": "Architecture and Design of Evolutionary Communities",
       "subtitle": "GTN spaces are consciously crafted to support your clarity, connection, and contribution. Every design decision is rooted in purpose.",
       "quote": "\"Architecture is guided by neuroaesthetics, rhythm, and calm — every detail helps you feel safe, present, and focused. The environment itself is never fixed, but grows with its people through modular design and community feedback loops.\""
     },
     "eco": {
       "title": "Evolutionary Cities",
       "subTitle": "Designed Around Human Wholeness",
-      "p1": "In GTN, every space is created with purpose - to support how you live, grow, and connect.",
+      "subtitle": "Every space is designed to support your way of life, growth, and connection with others.",
       "p2": "Because evolution is not just about building the future — it's about expressing the truth of who we are, together."
     },
     "buttons": {
@@ -104,12 +104,12 @@
       "learnMore": "Learn More"
     },
     "designPrinciples": [
-      {"title": "Talent-Centric Design", "desc": "Spaces organized by how people think, interact, and create — supporting different working rhythms and cognitive styles.", "color": "primary"},
+      {"title": "Talent-Based Design", "desc": "Spaces organized around how people think, interact, and create — supporting different work rhythms and cognitive styles.", "color": "primary"},
       {"title": "Eco-Friendly Materials", "desc": "We use wood, clay, stone, and hempcrete — materials that care for your health and the planet's ecology.", "color": "accent"},
       {"title": "Mindful Infrastructure", "desc": "Light, air, acoustics, and flow engineered for nervous system balance — every detail supports presence and focus.", "color": "secondary"},
-      {"title": "Adaptive Evolution", "desc": "Modular architecture and community feedback loops ensure spaces grow with their people — never fixed, always evolving.", "color": "primary"},
-      {"title": "Neuroaesthetic Design", "desc": "Architecture guided by how the brain responds to beauty, rhythm, and calm — spaces that feel intuitively right.", "color": "accent"},
-      {"title": "Conscious Craftsmanship", "desc": "Every element crafted with intention — from sacred geometry to sound frequencies that elevate human consciousness.", "color": "secondary"}
+      {"title": "Adaptive Architecture", "desc": "Modular architecture and community feedback loops — spaces transform, staying flexible rather than fixed.", "color": "accent"},
+      {"title": "Neuroarchitecture", "desc": "Architecture based on how the brain responds to beauty, rhythm, and calm — spaces that intuitively feel right.", "color": "secondary"},
+      {"title": "Conscious Craftsmanship", "desc": "Every detail designed with intention — from sacred geometry to sounds that awaken consciousness.", "color": "secondary"}
     ],
     "tech": {
       "title": "AI-Enabled Regenerative Wellness Technologies",
@@ -278,7 +278,7 @@
   },
   "home": {
     "cta": {
-      "startApplication": "Apply Now"
+      "startApplication": "Apply to GTN"
     },
     "stats": {
       "members": "Registered users in Evolution",
@@ -422,14 +422,14 @@
         {"title": "Co-create Regenerative Ventures", "description": "Join or launch projects that create positive impact while building sustainable business models."},
         {"title": "Build with Aligned Teams", "description": "Connect with like-minded professionals who share your values and complement your skills."},
         {"title": "Access Resources & Knowledge", "description": "Leverage collective expertise, funding opportunities, and infrastructure to accelerate your vision."},
-        {"title": "Develop Leadership Skills", "description": "Grow through structured progression from contributor to team leader to organizational steward."}
+        {"title": "Develop Leadership Skills", "description": "Follow a growth path — from first steps as a contributor to team leader and member of GTN Strategic Council."}
       ]
     },
     "selection": {
       "title": "How Selection Works",
-      "subtitle": "Our invitation-only process ensures alignment with our values and mission while identifying how you can best contribute to the network.",
+      "subtitle": "Our invitation-based joining process ensures alignment with our values and mission while identifying where your contribution will be most meaningful.",
       "steps": [
-        {"title": "Application Review", "description": "We review your background, values alignment, and potential contribution to the network."},
+        {"title": "Application Review", "description": "We assess your experience, values alignment, and potential contribution to ecosystem development."},
         {"title": "Values Interview", "description": "Deep conversation about your vision, goals, and how they align with GTN principles."},
         {"title": "Skill Assessment", "description": "Understanding your unique talents and how they can contribute to our ecosystem."},
         {"title": "Community Integration", "description": "Integration into projects and teams according to your level and talents."}

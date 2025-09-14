@@ -16,7 +16,7 @@
       "p2": "Cada elemento está creado para sostener foco profundo, conexión real y crecimiento sostenible — personal y colectivo."
     },
     "howDesign": {
-      "title": "Cómo diseñamos para la evolución humana",
+      "title": "Arquitectura y diseño de comunidades evolutivas",
       "subtitle": "Los espacios de GTN se crean conscientemente para apoyar tu claridad, conexión y contribución. Cada decisión de diseño tiene propósito.",
       "quote": "\"La arquitectura se guía por la neuroestética, el ritmo y la calma — cada detalle te ayuda a sentirte seguro, presente y enfocado. El entorno nunca es fijo; crece con su gente mediante diseño modular y ciclos de feedback comunitario.\""
     },
@@ -37,6 +37,7 @@
     "eco": {
       "title": "Ciudades Evolutivas",
       "subTitle": "Diseñada alrededor de la plenitud humana",
+      "subtitle": "Cada espacio está diseñado para apoyar tu forma de vida, crecimiento y conexión con otros.",
       "p1": "En GTN, cada espacio se crea con propósito — para apoyar cómo vives, creces y te conectas.",
       "p2": "Porque evolucionar no es solo construir el futuro — es expresar juntos quiénes somos de verdad."
     },
@@ -51,12 +52,12 @@
       "learnMore": "Saber más"
     },
     "designPrinciples": [
-      {"title": "Diseño centrado en talento", "desc": "Espacios organizados por cómo pensamos, interactuamos y creamos — apoyando ritmos de trabajo y estilos cognitivos distintos.", "color": "primary"},
+      {"title": "Diseño basado en talentos", "desc": "Espacios organizados en torno a cómo las personas piensan, interactúan y crean — apoyando diferentes ritmos de trabajo y estilos cognitivos.", "color": "primary"},
       {"title": "Materiales ecológicos", "desc": "Usamos madera, arcilla, piedra y hempcrete — materiales que cuidan tu salud y la ecología del planeta.", "color": "accent"},
       {"title": "Infraestructura consciente", "desc": "Luz, aire, acústica y flujos equilibrados para el sistema nervioso — cada detalle sostiene presencia y enfoque.", "color": "secondary"},
-      {"title": "Evolución adaptativa", "desc": "Arquitectura modular y bucles de feedback comunitario — espacios que crecen con su gente, nunca fijos.", "color": "primary"},
-      {"title": "Diseño neuroestético", "desc": "Arquitectura guiada por la respuesta del cerebro a la belleza, el ritmo y la calma — espacios que se sienten correctos de forma intuitiva.", "color": "accent"},
-      {"title": "Artesanía consciente", "desc": "Cada elemento hecho con intención — de geometría sagrada a frecuencias sonoras que elevan la conciencia.", "color": "secondary"}
+      {"title": "Arquitectura adaptativa", "desc": "Arquitectura modular y ciclos de retroalimentación comunitaria — los espacios se transforman, manteniéndose flexibles en lugar de fijos.", "color": "accent"},
+      {"title": "Neuroarquitectura", "desc": "Arquitectura basada en cómo el cerebro responde a la belleza, el ritmo y la calma — espacios que intuitivamente se sienten correctos.", "color": "secondary"},
+      {"title": "Artesanía consciente", "desc": "Cada detalle diseñado con intención — desde geometría sagrada hasta sonidos que despiertan la conciencia.", "color": "secondary"}
     ],
     "spaceCategories": [
       {"title": "Dónde vives", "spaces": [
@@ -295,14 +296,14 @@
         {"title": "Co-crear iniciativas regenerativas", "description": "Únete o lanza proyectos que generen impacto positivo con modelos de negocio sostenibles."},
         {"title": "Construir equipos alineados", "description": "Conecta con profesionales afines que compartan tus valores y complementen tus habilidades."},
         {"title": "Acceso a recursos y conocimiento", "description": "Aprovecha la experiencia colectiva, oportunidades de financiación e infraestructura para acelerar tu visión."},
-        {"title": "Desarrollar liderazgo", "description": "Crece con una progresión estructurada: de contribuidor a líder de equipo y referente organizacional."}
+        {"title": "Desarrollar liderazgo", "description": "Sigue un camino de crecimiento — desde los primeros pasos como colaborador hasta líder de equipo y miembro del Consejo Estratégico GTN."}
       ]
     },
     "selection": {
       "title": "Cómo funciona la selección",
-      "subtitle": "Nuestro proceso por invitación asegura alineación con nuestros valores y misión, y revela dónde puedes aportar mayor valor a la red.",
+      "subtitle": "Nuestro proceso de unión por invitación asegura alineación con nuestros valores y misión, e identifica dónde tu contribución será más significativa.",
       "steps": [
-        {"title": "Revisión de solicitud", "description": "Evaluamos tu experiencia, alineación de valores y potencial de contribución a la red."},
+        {"title": "Revisión de solicitud", "description": "Evaluamos tu experiencia, alineación de valores y potencial de contribución al desarrollo del ecosistema."},
         {"title": "Entrevista de valores", "description": "Conversación profunda sobre tu visión y objetivos, y su alineación con principios GTN."},
         {"title": "Evaluación de habilidades", "description": "Comprendemos tus talentos únicos y cómo pueden aportar a nuestro ecosistema."},
         {"title": "Integración a la comunidad", "description": "Integración en proyectos y equipos según tu nivel y talentos."}
@@ -335,7 +336,7 @@
       "title": "A quién invitamos",
       "subtitle": "Para personas listas para alinear su talento con un propósito",
       "cards": [
-        {"title": "Emprendedores visionarios", "desc": "Estás construyendo algo que importa — y buscas socios alineados, no solo capital. GTN te conecta con talento, recursos y co-propiedad."},
+        {"title": "Emprendedores visionarios", "desc": "Quienes comparten nuestros valores y buscan unir conexiones, recursos y propósitos para co-crear iniciativas sostenibles y escalables juntos."},
         {"title": "Inversionistas de impacto", "desc": "No vienes a financiar ideas — vienes a hacer crecer ecosistemas. GTN ofrece co-propiedad en iniciativas regenerativas con resultados medibles."},
         {"title": "Especialistas y creadores", "desc": "Eres diseñador, tecnólogo, sanador o arquitecto — y quieres que tu trabajo signifique más. GTN te ayuda a encontrar equipos y roles según tus talentos innatos."},
         {"title": "Fundadores de comunidades", "desc": "Construyes espacios, cultura o sistemas — y quieres prototipar el futuro. GTN te da personas, estructura y herramientas para crear tu versión de la evolución."},
