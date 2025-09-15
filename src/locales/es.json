@@ -326,12 +326,12 @@
     },
     "invite": {
       "title": "A quién invitamos",
-      "subtitle": "Para personas listas para alinear su talento con un propósito",
+      "subtitle": "Aquellos listos para alinear la fuerza de sus talentos con propósito y contribución al futuro.",
       "cards": [
         {"title": "Emprendedores visionarios", "desc": "Quienes comparten nuestros valores y buscan unir conexiones, recursos y propósitos para co-crear iniciativas sostenibles y escalables juntos."},
         {"title": "Inversionistas de impacto", "desc": "No vienes a financiar ideas — vienes a hacer crecer ecosistemas. GTN ofrece co-propiedad en iniciativas regenerativas con resultados medibles."},
         {"title": "Especialistas y creadores", "desc": "Eres diseñador, tecnólogo, sanador o arquitecto — y quieres que tu trabajo signifique más. GTN te ayuda a encontrar equipos y roles según tus talentos innatos."},
-        {"title": "Fundadores de comunidades", "desc": "Construyes espacios, cultura o sistemas — y quieres prototipar el futuro. GTN te da personas, estructura y herramientas para crear tu versión de la evolución."},
+        {"title": "Fundadores de comunidades", "desc": "Estás construyendo espacios, cultura o sistemas — y querés prototipar el futuro. GTN conecta personas, estructura y herramientas para crear tu versión de la evolución."},
         {"title": "Pioneros de vida consciente", "desc": "Quieres vivir y trabajar en alineación — en una eco-comunidad con valores compartidos. En GTN, la vida se convierte en tu proyecto más auténtico."}
       ]
     },
@@ -340,7 +340,7 @@
       "subtitle": "Acceso a pares, espacios y sistemas diseñados para acelerar el impacto regenerativo.",
       "inside": {
         "title": "Dentro de GTN, obtienes acceso a",
-        "clarity": {"title": "Claridad de dirección", "desc": "Descubre para qué estás construido naturalmente y por qué ciertos caminos se sienten alineados."},
+        "clarity": {"title": "Claridad de dirección", "desc": "Reconocé tus predisposiciones naturales y por qué ciertas direcciones te atraen más que otras."},
         "collab": {"title": "Colaboración alineada", "desc": "Únete a equipos según la resonancia del talento, no solo currículums."},
         "projects": {"title": "Proyectos regenerativos", "desc": "Trabaja en iniciativas significativas que generan impacto positivo duradero."},
         "cta": "Deja de preguntar «¿Dónde encajo?» y empieza a vivir en alineación."
@@ -348,7 +348,7 @@
       "growth": {
         "title": "Un sistema de crecimiento personalizado",
         "aiMentor": {"title": "Mentores de IA personales", "desc": "Acompañamiento 24/7 para auto-reflexión, toma de decisiones e integración en equipos."},
-        "matching": {"title": "Matching basado en talento", "desc": "Conecta con proyectos y personas según tus fortalezas naturales."},
+        "matching": {"title": "Matching basado en talentos", "desc": "Encontrá proyectos y personas que resuenen con tus fortalezas naturales."},
         "evolution": {"title": "Evolución continua", "desc": "Herramientas que se adaptan a medida que creces y contribuyes más a la comunidad."},
         "cta": "Crecimiento guiado por tu verdad interior, no por expectativas externas."
       },
@@ -377,7 +377,7 @@
         "subtitle": "Esto es más que acceso. Es un espacio para desbloquear potencial, crear con personas afines y vivir en armonía con vos mismo y el mundo.",
         "cards": [
           {"title": "Pasaporte de Talentos", "desc": "Descubrís tus talentos innatos, roles y zonas de crecimiento — y los usás en proyectos que traen sentido y resultados."},
-          {"title": "Asistente AI", "desc": "Un mentor AI personal te ayuda a construir tu camino de realización en el ecosistema, identificar tus roles, tareas y socios con máxima sinergia."},
+          {"title": "Mentor AI", "desc": "Un mentor AI personal te ayudará a construir tu camino de realización en el ecosistema, identificar tus roles, tareas y socios con máxima sinergia."},
           {"title": "Entorno Inspirador", "desc": "Una comunidad de emprendedores, inversores y expertos — con oportunidades para proyectos colaborativos y crecimiento."},
           {"title": "Ciudadanía GTN", "desc": "Te convertís en co-fundador de una red de eco-hubs donde se combinan naturaleza, tecnología y estilo de vida equilibrado."},
           {"title": "Participación en Gobernanza del Ecosistema", "desc": "Cada contribución importa: a través del DAO participás en la toma de decisiones y recibís una parte de lo creado juntos."},

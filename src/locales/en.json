@@ -167,12 +167,12 @@
     },
     "invite": {
       "title": "Who we invite",
-      "subtitle": "For People Who Are Ready to Align Their Talent with Purpose",
+      "subtitle": "Those ready to align the power of their talents with purpose and contribution to the future.",
       "cards": [
         {"title": "Visionary Entrepreneurs", "desc": "You're building something that matters — and want aligned partners, not just capital. GTN connects you with talent, resources, and shared ownership."},
         {"title": "Impact Investors", "desc": "You're not here to fund ideas — you're here to grow ecosystems. GTN offers co-ownership in regenerative ventures with measurable outcomes."},
         {"title": "Specialists & Creators", "desc": "You're a designer, technologist, healer, or architect — and want your work to mean more. GTN helps you find the right teams and roles based on your innate talents."},
-        {"title": "Community Founders", "desc": "You're a builder of space, culture, or systems — and seek to prototype the future. GTN gives you the people, structure, and tools to create your version of evolution."},
+        {"title": "Community Builders", "desc": "You're building spaces, culture, or systems — and want to prototype the future. GTN connects people, structure, and tools to create your version of evolution."},
         {"title": "Pioneers of Conscious Living", "desc": "You want to live and work in alignment — in an eco-community with shared values. GTN is where life becomes your most authentic project."}
       ]
     },
@@ -181,7 +181,7 @@
       "subtitle": "Access to peers, spaces, and systems designed to accelerate regenerative impact.",
       "inside": {
         "title": "Inside GTN, You Get Access To",
-        "clarity": {"title": "Clarity of Direction", "desc": "Find out what you're naturally built for and why certain paths feel aligned."},
+        "clarity": {"title": "Direction Clarity", "desc": "Recognize your natural predispositions and why certain directions appeal more strongly than others."},
         "collab": {"title": "Aligned Collaboration", "desc": "Join teams based on talent resonance, not just resumes."},
         "projects": {"title": "Regenerative Projects", "desc": "Work on meaningful ventures that create lasting positive impact."},
         "cta": "Stop asking \"Where do I fit?\" and start living in alignment."
@@ -189,7 +189,7 @@
       "growth": {
         "title": "A Personalized Growth System",
         "aiMentor": {"title": "Personal AI Mentors", "desc": "24/7 companion for self-reflection, decision-making, and team integration."},
-        "matching": {"title": "Talent-Based Matching", "desc": "Connect with projects and people based on your natural strengths."},
+        "matching": {"title": "Talent-Based Matching", "desc": "Find projects and people that resonate with your natural strengths."},
         "evolution": {"title": "Continuous Evolution", "desc": "Tools that adapt as you grow and contribute more to the community."},
         "cta": "Growth guided by your inner truth, not external expectations."
       },
@@ -210,7 +210,7 @@
       "subtitle": "This is more than access. This is a space for unlocking potential, creating with like-minded people, and living in harmony with yourself and the world.",
       "cards": [
         {"title": "Talent Passport", "desc": "You'll discover your innate talents, roles, and growth zones — and use them in projects that bring meaning and results."},
-        {"title": "AI Assistant", "desc": "A personal AI mentor will help you build your path to realization in the ecosystem, identify your roles, tasks, and partners with maximum synergy."},
+        {"title": "AI Mentor", "desc": "Personal AI mentor will help you build your path of realization in the ecosystem, identify your roles, tasks and partners with maximum synergy."},
         {"title": "Inspiring Environment", "desc": "A community of entrepreneurs, investors, and experts — with opportunities for collaborative projects and growth."},
         {"title": "GTN Citizenship", "desc": "You become a co-founder of a network of eco-hubs where nature, technology, and balanced lifestyle combine."},
         {"title": "Ecosystem Governance Participation", "desc": "Every contribution matters: through DAO you participate in decision-making and receive a share in what's created together."},
