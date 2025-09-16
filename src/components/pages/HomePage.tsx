@@ -223,9 +223,9 @@ export function HomePage({ onNavigate }: HomePageProps) {
         
         {/* Hero Content */}
         <div className="relative z-10 container text-center text-white">
-          <div className="max-w-4xl mx-auto space-y-8 pt-16 md:pt-24 lg:pt-32 pb-32 sm:pb-40 md:pb-48 lg:pb-56">
+          <div className="max-w-4xl mx-auto space-y-6 pt-12 md:pt-20 lg:pt-28 pb-24 sm:pb-32 md:pb-40 lg:pb-48">
             {/* Hero Logo - Clean Branding */}
-            <div className="flex flex-col items-center space-y-4 mb-8 md:mb-12">
+            <div className="flex flex-col items-center space-y-3 mb-6 md:mb-8">
               <img 
                 src={gtnLogo} 
                 alt="GTN Logo" 
