@@ -37,15 +37,15 @@ export function JoinPage() {
       if (data.whatsapp) contacts.push(`WhatsApp: ${data.whatsapp}`);
       if (data.linkedin) contacts.push(`LinkedIn: ${data.linkedin}`);
 
-      message = `Новая заявка на участие в GTN\n\n` +
-        `Имя: ${data.firstName} ${data.lastName}\n` +
+      message = `New GTN application\n\n` +
+        `Name: ${data.firstName} ${data.lastName}\n` +
         (contacts.length ? contacts.join('\n') + '\n' : '') +
-        `Местоположение: ${data.location}\n` +
-        `Роль: ${data.role}\n` +
-        `Портфолио: ${data.portfolio || 'Не указано'}\n\n` +
-        `Что хочет создавать:\n${data.build}\n\n` +
-        `Как будет способствовать:\n${data.contribute}\n\n` +
-        `Почему GTN:\n${data.why}`;
+        `Location: ${data.location}\n` +
+        `Role: ${data.role}\n` +
+        `Portfolio: ${data.portfolio || 'Not provided'}\n\n` +
+        `What they want to build:\n${data.build}\n\n` +
+        `How they will contribute:\n${data.contribute}\n\n` +
+        `Why GTN:\n${data.why}`;
     }
 
     // Используем Vercel API routes для отправки через серверную функцию
