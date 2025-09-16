@@ -221,10 +221,11 @@ export function HomePage({ onNavigate }: HomePageProps) {
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
         
-        {/* Hero Logo - Mobile Only - Positioned at top */}
-        <div className="relative z-10 md:hidden">
-          <div className="container text-center text-white pt-4">
-            <div className="flex flex-col items-center space-y-2">
+        {/* Hero Content */}
+        <div className="relative z-10 container text-center text-white">
+          <div className="max-w-4xl mx-auto space-y-4 pt-4 md:pt-16 lg:pt-24 pb-40 sm:pb-48 md:pb-24 lg:pb-32">
+            {/* Hero Logo - Mobile Only Branding */}
+            <div className="flex flex-col items-center space-y-2 mb-4 md:hidden">
               <img 
                 src={gtnLogo} 
                 alt="GTN Logo" 
@@ -234,12 +235,6 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 GTN
               </h2>
             </div>
-          </div>
-        </div>
-
-        {/* Hero Content */}
-        <div className="relative z-10 container text-center text-white">
-          <div className="max-w-4xl mx-auto space-y-4 pt-8 md:pt-16 lg:pt-24 pb-40 sm:pb-48 md:pb-24 lg:pb-32">
             
             {/* Main Headline - Business Focused */}
             <div className="space-y-6">
