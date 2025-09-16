@@ -223,7 +223,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
         
         {/* Hero Content */}
         <div className="relative z-10 container text-center text-white">
-          <div className="max-w-4xl mx-auto space-y-6 pt-12 md:pt-20 lg:pt-28 pb-24 sm:pb-32 md:pb-40 lg:pb-48">
+          <div className="max-w-4xl mx-auto space-y-6 pt-8 md:pt-16 lg:pt-24 pb-16 sm:pb-20 md:pb-24 lg:pb-32">
             {/* Hero Logo - Clean Branding */}
             <div className="flex flex-col items-center space-y-3 mb-6 md:mb-8">
               <img 
