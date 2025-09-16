@@ -192,6 +192,43 @@
       "submit": "Enviar mensaje"
     }
   },
+  "privacy": {
+    "logFiles": {
+      "title": "Archivos de registro",
+      "content": "Evolution.Life LLC sigue un procedimiento estándar de uso de archivos de registro. Estos archivos registran a los visitantes cuando visitan sitios web. Todas las empresas de hosting hacen esto como parte de los análisis de servicios de hosting. La información recopilada por los archivos de registro incluye direcciones de protocolo de internet (IP), tipo de navegador, proveedor de servicios de internet (ISP), fecha y hora, páginas de referencia/salida y posiblemente el número de clics."
+    },
+    "cookies": {
+      "title": "Cookies y balizas web",
+      "content": "Como cualquier otro sitio web, Evolution.Life LLC utiliza 'cookies'. Estas cookies se utilizan para almacenar información incluyendo las preferencias de los visitantes y las páginas del sitio web que el visitante accedió o visitó. La información se utiliza para optimizar la experiencia de los usuarios personalizando el contenido de nuestra página web basado en el tipo de navegador de los visitantes y/u otra información."
+    },
+    "thirdParty": {
+      "title": "Políticas de privacidad de terceros",
+      "content": "La Política de Privacidad de Evolution.Life LLC no se aplica a otros anunciantes o sitios web. Por lo tanto, le aconsejamos que consulte las respectivas Políticas de Privacidad de estos servidores de anuncios de terceros para obtener información más detallada. Puede incluir sus prácticas e instrucciones sobre cómo optar por no participar en ciertas opciones."
+    },
+    "children": {
+      "title": "Información de menores",
+      "content1": "Otra parte de nuestra prioridad es agregar protección para los niños mientras usan internet. Alentamos a los padres y tutores a observar, participar y/o monitorear y guiar su actividad en línea.",
+      "content2": "Evolution.Life LLC no recopila conscientemente ninguna Información de Identificación Personal de niños menores de 13 años. Si cree que su hijo proporcionó este tipo de información en nuestro sitio web, le recomendamos encarecidamente que se comunique con nosotros de inmediato y haremos nuestros mejores esfuerzos para eliminar rápidamente dicha información de nuestros registros."
+    },
+    "security": {
+      "title": "Seguridad de datos",
+      "content": "Implementamos medidas de seguridad apropiadas para proteger su información personal contra acceso no autorizado, alteración, divulgación o destrucción. Sin embargo, ningún método de transmisión por Internet o almacenamiento electrónico es 100% seguro, por lo que no podemos garantizar seguridad absoluta."
+    },
+    "rights": {
+      "title": "Sus derechos",
+      "intro": "Dependiendo de su ubicación, puede tener los siguientes derechos con respecto a sus datos personales:",
+      "access": "El derecho a acceder a sus datos personales",
+      "rectification": "El derecho a la rectificación de datos inexactos",
+      "erasure": "El derecho al borrado de sus datos",
+      "restrict": "El derecho a restringir el procesamiento",
+      "portability": "El derecho a la portabilidad de datos",
+      "object": "El derecho a objetar el procesamiento"
+    },
+    "changes": {
+      "title": "Cambios a esta Política de Privacidad",
+      "content": "Podemos actualizar nuestra Política de Privacidad de vez en cuando. Le notificaremos cualquier cambio publicando la nueva Política de Privacidad en esta página y actualizando la fecha de 'última actualización'."
+    }
+  },
   "cta": {
     "join": "Unirse"
   },

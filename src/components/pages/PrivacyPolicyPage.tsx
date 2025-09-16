@@ -57,76 +57,61 @@ export function PrivacyPolicyPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4 text-foreground">Log Files</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">{t('privacy.logFiles.title')}</h2>
               <p>
-                Evolution.Life LLC follows a standard procedure of using log files. These files log visitors when they 
-                visit websites. All hosting companies do this and a part of hosting services' analytics. The information 
-                collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), 
-                date and time stamp, referring/exit pages, and possibly the number of clicks.
+                {t('privacy.logFiles.content')}
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4 text-foreground">Cookies and Web Beacons</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">{t('privacy.cookies.title')}</h2>
               <p>
-                Like any other website, Evolution.Life LLC uses 'cookies'. These cookies are used to store information 
-                including visitors' preferences, and the pages on the website that the visitor accessed or visited. 
-                The information is used to optimize the users' experience by customizing our web page content based on 
-                visitors' browser type and/or other information.
+                {t('privacy.cookies.content')}
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4 text-foreground">Third-Party Privacy Policies</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">{t('privacy.thirdParty.title')}</h2>
               <p>
-                Evolution.Life LLC's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising 
-                you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. 
-                It may include their practices and instructions about how to opt-out of certain options.
+                {t('privacy.thirdParty.content')}
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4 text-foreground">Children's Information</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">{t('privacy.children.title')}</h2>
               <p>
-                Another part of our priority is adding protection for children while using the internet. We encourage 
-                parents and guardians to observe, participate in, and/or monitor and guide their online activity.
+                {t('privacy.children.content1')}
               </p>
               
               <p>
-                Evolution.Life LLC does not knowingly collect any Personal Identifiable Information from children under 
-                the age of 13. If you think that your child provided this kind of information on our website, we strongly 
-                encourage you to contact us immediately and we will do our best efforts to promptly remove such information 
-                from our records.
+                {t('privacy.children.content2')}
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4 text-foreground">Data Security</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">{t('privacy.security.title')}</h2>
               <p>
-                We implement appropriate security measures to protect your personal information against unauthorized access, 
-                alteration, disclosure, or destruction. However, no method of transmission over the Internet or electronic 
-                storage is 100% secure, so we cannot guarantee absolute security.
+                {t('privacy.security.content')}
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4 text-foreground">Your Rights</h2>
-              <p>Depending on your location, you may have the following rights regarding your personal data:</p>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">{t('privacy.rights.title')}</h2>
+              <p>{t('privacy.rights.intro')}</p>
               <ul className="list-disc pl-6 space-y-2">
-                <li>The right to access your personal data</li>
-                <li>The right to rectification of inaccurate data</li>
-                <li>The right to erasure of your data</li>
-                <li>The right to restrict processing</li>
-                <li>The right to data portability</li>
-                <li>The right to object to processing</li>
+                <li>{t('privacy.rights.access')}</li>
+                <li>{t('privacy.rights.rectification')}</li>
+                <li>{t('privacy.rights.erasure')}</li>
+                <li>{t('privacy.rights.restrict')}</li>
+                <li>{t('privacy.rights.portability')}</li>
+                <li>{t('privacy.rights.object')}</li>
               </ul>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4 text-foreground">Changes to This Privacy Policy</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">{t('privacy.changes.title')}</h2>
               <p>
-                We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new 
-                Privacy Policy on this page and updating the "last updated" date.
+                {t('privacy.changes.content')}
               </p>
             </section>
 

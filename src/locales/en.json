@@ -277,17 +277,6 @@
       }
     }
   },
-  "home": {
-    "cta": {
-      "startApplication": "Apply to GTN"
-    },
-    "stats": {
-      "members": "Registered users in Evolution",
-      "countries": "Countries",
-      "talents": "Say they better understand their talents and feel their potential",
-      "events": "users in Business Evolution AI team formation system. Average revenue growth for companies using Evo-technologies 20–80% in the first year."
-    }
-  },
   "contact": {
     "title": "Contact Us",
     "subtitle": "Get in touch with our team. We'd love to hear from you and explore how we can work together.",
@@ -320,6 +309,43 @@
       "message": "Message",
       "messagePlaceholder": "Tell us more about your inquiry...",
       "submit": "Send Message"
+    }
+  },
+  "privacy": {
+    "logFiles": {
+      "title": "Log Files",
+      "content": "Evolution.Life LLC follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks."
+    },
+    "cookies": {
+      "title": "Cookies and Web Beacons",
+      "content": "Like any other website, Evolution.Life LLC uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information."
+    },
+    "thirdParty": {
+      "title": "Third-Party Privacy Policies",
+      "content": "Evolution.Life LLC's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options."
+    },
+    "children": {
+      "title": "Children's Information",
+      "content1": "Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.",
+      "content2": "Evolution.Life LLC does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records."
+    },
+    "security": {
+      "title": "Data Security",
+      "content": "We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the Internet or electronic storage is 100% secure, so we cannot guarantee absolute security."
+    },
+    "rights": {
+      "title": "Your Rights",
+      "intro": "Depending on your location, you may have the following rights regarding your personal data:",
+      "access": "The right to access your personal data",
+      "rectification": "The right to rectification of inaccurate data",
+      "erasure": "The right to erasure of your data",
+      "restrict": "The right to restrict processing",
+      "portability": "The right to data portability",
+      "object": "The right to object to processing"
+    },
+    "changes": {
+      "title": "Changes to This Privacy Policy",
+      "content": "We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the 'last updated' date."
     }
   },
   "cta": {
