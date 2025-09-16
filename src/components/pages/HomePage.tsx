@@ -223,15 +223,15 @@ export function HomePage({ onNavigate }: HomePageProps) {
         
         {/* Hero Content */}
         <div className="relative z-10 container text-center text-white">
-          <div className="max-w-4xl mx-auto space-y-6 pt-8 md:pt-16 lg:pt-24 pb-16 sm:pb-20 md:pb-24 lg:pb-32">
-            {/* Hero Logo - Clean Branding */}
-            <div className="flex flex-col items-center space-y-3 mb-6 md:mb-8">
+          <div className="max-w-4xl mx-auto space-y-6 pt-2 md:pt-16 lg:pt-24 pb-20 sm:pb-24 md:pb-24 lg:pb-32">
+            {/* Hero Logo - Mobile Only Branding */}
+            <div className="flex flex-col items-center space-y-3 mb-6 md:hidden">
               <img 
                 src={gtnLogo} 
                 alt="GTN Logo" 
                 className="h-12 w-auto filter brightness-0 invert"
               />
-              <h2 className="text-3xl md:text-4xl font-bold tracking-wider" style={{ fontFamily: 'var(--font-headline)' }}>
+              <h2 className="text-3xl font-bold tracking-wider" style={{ fontFamily: 'var(--font-headline)' }}>
                 GTN
               </h2>
             </div>
