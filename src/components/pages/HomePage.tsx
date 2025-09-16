@@ -224,23 +224,16 @@ export function HomePage({ onNavigate }: HomePageProps) {
         {/* Hero Content */}
         <div className="relative z-10 container text-center text-white">
           <div className="max-w-4xl mx-auto space-y-8 pt-16 md:pt-24 lg:pt-32 pb-32 sm:pb-40 md:pb-48 lg:pb-56">
-            {/* Hero Logo - Mobile Branding */}
+            {/* Hero Logo - Clean Branding */}
             <div className="flex flex-col items-center space-y-4 mb-8 md:mb-12">
-              <div className="flex items-center justify-center p-4 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-2xl">
-                <img 
-                  src={gtnLogo} 
-                  alt="GTN Logo" 
-                  className="h-12 w-auto filter brightness-0 invert"
-                />
-              </div>
-              <div className="text-center">
-                <h2 className="text-3xl md:text-4xl font-bold tracking-wider" style={{ fontFamily: 'var(--font-headline)' }}>
-                  GTN
-                </h2>
-                <p className="text-sm md:text-base text-white/80 font-medium tracking-wide mt-1">
-                  Global Talent Nation
-                </p>
-              </div>
+              <img 
+                src={gtnLogo} 
+                alt="GTN Logo" 
+                className="h-12 w-auto filter brightness-0 invert"
+              />
+              <h2 className="text-3xl md:text-4xl font-bold tracking-wider" style={{ fontFamily: 'var(--font-headline)' }}>
+                GTN
+              </h2>
             </div>
             
             {/* Main Headline - Business Focused */}
