@@ -222,7 +222,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
         
         {/* Hero Content */}
         <div className="relative z-10 container text-center text-white">
-          <div className="max-w-4xl mx-auto space-y-8 pt-20 md:pt-32 lg:pt-40 pb-56 sm:pb-64 md:pb-72 lg:pb-80">
+          <div className="max-w-4xl mx-auto space-y-8 pt-16 md:pt-24 lg:pt-32 pb-32 sm:pb-40 md:pb-48 lg:pb-56">
             {/* Main Headline - Business Focused */}
             <div className="space-y-6">
               <h1 className="text-lg md:text-xl lg:text-2xl leading-tight tracking-tight" style={{ fontFamily: 'var(--font-headline)' }}>
@@ -245,7 +245,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             </div>
 
             {/* Hero CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8 mb-36 sm:mb-12">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12 mb-8">
               <Button 
                 size="lg"
                 onClick={() => onNavigate('join')}
