@@ -247,7 +247,8 @@
         "portfolio": "Portfolio/Work Link (Optional)",
         "build": "What do you want to build?",
         "contribute": "How will you contribute?",
-        "why": "Why GTN?"
+        "why": "Why GTN?",
+        "referral": "Who recommended GTN to you?"
       },
       "placeholders": {
         "firstName": "Enter your first name",
@@ -261,7 +262,8 @@
         "portfolio": "https://...",
         "build": "Describe the regenerative project or system you're passionate about creating...",
         "contribute": "What skills, resources, or perspectives will you bring to the community?",
-        "why": "What draws you to our community and approach?"
+        "why": "Why GTN?",
+        "referral": "Name or @username (optional)"
       },
       "hintContact": "Please provide at least one contact method: Telegram, WhatsApp, or LinkedIn.",
       "validation": {

@@ -42,8 +42,9 @@ export function JoinPage() {
         (contacts.length ? contacts.join('\n') + '\n' : '') +
         `Location: ${data.location}\n` +
         `Role: ${data.role}\n` +
-        `Portfolio: ${data.portfolio || 'Not provided'}\n\n` +
-        `What they want to build:\n${data.build}\n\n` +
+        `Portfolio: ${data.portfolio || 'Not provided'}\n` +
+        (data.referral && String(data.referral).trim() ? `Referred by: ${data.referral}\n` : '') +
+        `\nWhat they want to build:\n${data.build}\n\n` +
         `How they will contribute:\n${data.contribute}\n\n` +
         `Why GTN:\n${data.why}`;
     }
@@ -92,6 +93,7 @@ export function JoinPage() {
       telegram: formData.get('telegram'),
       whatsapp: formData.get('whatsapp'),
       linkedin: formData.get('linkedin'),
+      referral: formData.get('referral'),
     };
 
     // Validate at least one contact method
@@ -651,6 +653,16 @@ export function JoinPage() {
                     rows={3}
                     className="mt-1 surface-2 border-input-border focus:border-primary resize-none"
                     required
+                  />
+                </div>
+
+                <div>
+                  <Label htmlFor="referral" className="text-foreground">{t('join.form.labels.referral')}</Label>
+                  <Input 
+                    id="referral" 
+                    name="referral"
+                    placeholder={t('join.form.placeholders.referral')}
+                    className="mt-1 surface-2 border-input-border focus:border-primary"
                   />
                 </div>
 

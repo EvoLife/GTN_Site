@@ -452,7 +452,8 @@
         "portfolio": "Portafolio/Enlace de trabajo (opcional)",
         "build": "¿Qué quieres construir?",
         "contribute": "¿Cómo vas a contribuir?",
-        "why": "¿Por qué GTN?"
+        "why": "¿Por qué GTN?",
+        "referral": "¿Quién te recomendó GTN?"
       },
       "placeholders": {
         "firstName": "Escribe tu nombre",
@@ -464,9 +465,10 @@
         "location": "Ciudad, País",
         "role": "p. ej. Product Manager, Investigador, Emprendedor",
         "portfolio": "https://...",
-        "build": "Describe el proyecto o sistema regenerativo que quieres crear...",
+        "build": "Describe el proyecto regenerativo o sistema que te apasiona crear...",
         "contribute": "¿Qué habilidades, recursos o perspectivas aportarás a la comunidad?",
-        "why": "¿Qué te atrae de nuestro enfoque y comunidad?"
+        "why": "¿Qué te atrae de nuestro enfoque y comunidad?",
+        "referral": "Nombre o @usuario (opcional)"
       },
       "hintContact": "Indica al menos un medio de contacto: Telegram, WhatsApp o LinkedIn.",
       "validation": {
