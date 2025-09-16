@@ -30,39 +30,46 @@ export function JoinPage() {
   };
 
   const sendToTelegram = async (type: string, data: any) => {
-    const TELEGRAM_BOT_TOKEN = '7608359591:AAHf7uO_sdSblv4Dy3MoDquECHOyxEh8lzA';
-    const TELEGRAM_CHAT_ID = '48195187';
-    
     let message = '';
     if (type === 'application') {
       const contacts: string[] = [];
-      if (data.telegram) contacts.push(`💬 *Telegram:* ${data.telegram}`);
-      if (data.whatsapp) contacts.push(`📱 *WhatsApp:* ${data.whatsapp}`);
-      if (data.linkedin) contacts.push(`🔗 *LinkedIn:* ${data.linkedin}`);
+      if (data.telegram) contacts.push(`Telegram: ${data.telegram}`);
+      if (data.whatsapp) contacts.push(`WhatsApp: ${data.whatsapp}`);
+      if (data.linkedin) contacts.push(`LinkedIn: ${data.linkedin}`);
 
-      message = `🚀 *Новая заявка на участие в GTN*\n\n` +
-        `👤 *Имя:* ${data.firstName} ${data.lastName}\n` +
+      message = `Новая заявка на участие в GTN\n\n` +
+        `Имя: ${data.firstName} ${data.lastName}\n` +
         (contacts.length ? contacts.join('\n') + '\n' : '') +
-        `📍 *Местоположение:* ${data.location}\n` +
-        `💼 *Роль:* ${data.role}\n` +
-        `🔗 *Портфолио:* ${data.portfolio || 'Не указано'}\n\n` +
-        `🎯 *Что хочет создавать:*\n${data.build}\n\n` +
-        `💡 *Как будет способствовать:*\n${data.contribute}\n\n` +
-        `❓ *Почему GTN:*\n${data.why}`;
+        `Местоположение: ${data.location}\n` +
+        `Роль: ${data.role}\n` +
+        `Портфолио: ${data.portfolio || 'Не указано'}\n\n` +
+        `Что хочет создавать:\n${data.build}\n\n` +
+        `Как будет способствовать:\n${data.contribute}\n\n` +
+        `Почему GTN:\n${data.why}`;
     }
 
-    const response = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+    // Используем Netlify Functions для отправки через серверную функцию
+    const response = await fetch('/.netlify/functions/send-telegram', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
       body: JSON.stringify({
-        chat_id: TELEGRAM_CHAT_ID,
-        text: message,
-        parse_mode: 'Markdown',
+        message: message,
+        type: type
       }),
     });
 
     if (!response.ok) {
-      throw new Error('Failed to send message to Telegram');
+      const errorText = await response.text();
+      console.error('Server response:', errorText);
+      throw new Error(`Failed to send message: ${response.status} ${response.statusText}`);
+    }
+
+    const result = await response.json();
+    if (!result.success) {
+      throw new Error(result.error || 'Unknown error occurred');
     }
   };
 
