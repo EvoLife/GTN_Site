@@ -221,24 +221,27 @@ export function HomePage({ onNavigate }: HomePageProps) {
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
         
+        {/* Hero Logo - Mobile Only - Absolute positioning */}
+        <div className="absolute top-4 left-1/2 transform -translate-x-1/2 z-20 md:hidden">
+          <div className="flex flex-col items-center space-y-2">
+            <img 
+              src={gtnLogo} 
+              alt="GTN Logo" 
+              className="h-12 w-auto filter brightness-0 invert"
+            />
+            <h2 className="text-3xl font-bold tracking-wider text-white" style={{ fontFamily: 'var(--font-headline)' }}>
+              GTN
+            </h2>
+          </div>
+        </div>
+
         {/* Hero Content */}
         <div className="relative z-10 container text-center text-white">
-          <div className="max-w-4xl mx-auto space-y-4 pt-4 md:pt-16 lg:pt-24 pb-40 sm:pb-48 md:pb-24 lg:pb-32">
-            {/* Hero Logo - Mobile Only Branding */}
-            <div className="flex flex-col items-center space-y-2 mb-4 md:hidden">
-              <img 
-                src={gtnLogo} 
-                alt="GTN Logo" 
-                className="h-12 w-auto filter brightness-0 invert"
-              />
-              <h2 className="text-3xl font-bold tracking-wider" style={{ fontFamily: 'var(--font-headline)' }}>
-                GTN
-              </h2>
-            </div>
+          <div className="max-w-4xl mx-auto space-y-4 pt-24 md:pt-16 lg:pt-24 pb-40 sm:pb-48 md:pb-24 lg:pb-32">
             
             {/* Main Headline - Business Focused */}
             <div className="space-y-6">
-              <h1 className="text-lg md:text-xl lg:text-2xl leading-tight tracking-tight" style={{ fontFamily: 'var(--font-headline)' }}>
+              <h1 className="text-xl md:text-2xl lg:text-3xl leading-tight tracking-tight" style={{ fontFamily: 'var(--font-headline)' }}>
                 <span className="block mb-3">
                   {t('home.hero.title1')}
                 </span>

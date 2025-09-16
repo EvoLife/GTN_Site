@@ -16,10 +16,21 @@ export function ContactPage() {
   const sendToTelegram = async (type: string, data: any) => {
     let message = '';
     if (type === 'contact') {
-      message = `Новое сообщение с сайта\n\n` +
-        `Имя: ${data.name}\n` +
-        `Email: ${data.email}\n` +
-        `Сообщение:\n${data.message}`;
+      message = `New website message
+
+` +
+        `Name: ${data.name}
+` +
+        `Subject: ${data.subject}
+` +
+        `Telegram: ${data.telegram || 'Not provided'}
+` +
+        `WhatsApp: ${data.whatsapp || 'Not provided'}
+` +
+        `LinkedIn: ${data.linkedin || 'Not provided'}
+` +
+        `Message:
+${data.message}`;
     }
 
     const response = await fetch('/api/send-telegram', {
