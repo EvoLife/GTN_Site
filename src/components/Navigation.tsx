@@ -93,8 +93,26 @@ export function Navigation({ currentPage, onNavigate }: NavigationProps) {
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          {/* Mobile Language Selector + Menu Button */}
+          <div className="md:hidden flex items-center space-x-2">
+            {/* Compact Mobile Language Selector */}
+            <div className="flex items-center bg-ink-800 border border-border rounded-lg overflow-hidden">
+              {(['en','ru','es'] as const).map((code) => (
+                <button
+                  key={code}
+                  onClick={() => setLang(code)}
+                  className={`px-2 py-1 text-xs uppercase min-w-[32px] ${
+                    lang === code
+                      ? 'bg-primary/20 text-primary border-r border-border'
+                      : 'text-foreground-secondary hover:text-primary hover:bg-primary/5 border-r border-transparent hover:border-primary/20'
+                  }`}
+                  aria-pressed={lang === code}
+                  aria-label={`Switch language to ${code.toUpperCase()}`}
+                >
+                  {code}
+                </button>
+              ))}
+            </div>
             <Button
               variant="ghost"
               size="sm"
@@ -128,22 +146,6 @@ export function Navigation({ currentPage, onNavigate }: NavigationProps) {
                 </button>
               ))}
               <div className="pt-6 border-t border-border mt-4">
-                {/* Mobile language switcher */}
-                <div className="flex items-center justify-center space-x-2 mb-4">
-                  {(['en','ru','es'] as const).map((code) => (
-                    <button
-                      key={code}
-                      onClick={() => setLang(code)}
-                      className={`px-4 py-2 rounded-lg text-sm uppercase ${
-                        lang === code
-                          ? 'bg-primary/20 text-primary border border-primary/30'
-                          : 'text-foreground-secondary hover:text-primary hover:bg-primary/5 border border-transparent hover:border-primary/20'
-                      }`}
-                    >
-                      {code}
-                    </button>
-                  ))}
-                </div>
                 <Button 
                   onClick={() => {
                     onNavigate('join');
@@ -152,7 +154,7 @@ export function Navigation({ currentPage, onNavigate }: NavigationProps) {
                   className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-medium shadow-glow-copper"
                   style={{ minHeight: '44px' }}
                 >
-                  {t('mobile.apply')}
+                  {t('cta.join')}
                 </Button>
               </div>
             </div>

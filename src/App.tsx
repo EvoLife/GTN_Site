@@ -173,17 +173,6 @@ export default function App() {
                       </li>
                       <li>
                         <button 
-                          onClick={() => setCurrentPage('press')} 
-                          className="group flex items-center text-ivory/80 hover:text-secondary transition-all duration-300 text-sm"
-                        >
-                          <span className="group-hover:translate-x-2 transition-transform duration-300">{t('footer.pressMedia')}</span>
-                          <svg className="w-4 h-4 ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                          </svg>
-                        </button>
-                      </li>
-                      <li>
-                        <button 
                           onClick={() => setCurrentPage('privacy-policy')} 
                           className="group flex items-center text-ivory/80 hover:text-secondary transition-all duration-300 text-sm"
                         >

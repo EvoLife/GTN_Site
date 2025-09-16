@@ -48,8 +48,8 @@ export function JoinPage() {
         `Почему GTN:\n${data.why}`;
     }
 
-    // Используем Netlify Functions для отправки через серверную функцию
-    const response = await fetch('/.netlify/functions/send-telegram', {
+    // Используем Vercel API routes для отправки через серверную функцию
+    const response = await fetch('/api/send-telegram', {
       method: 'POST',
       headers: { 
         'Content-Type': 'application/json',
