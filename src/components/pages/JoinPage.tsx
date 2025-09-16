@@ -42,7 +42,7 @@ export function JoinPage() {
         (contacts.length ? contacts.join('\n') + '\n' : '') +
         `Location: ${data.location}\n` +
         `Role: ${data.role}\n` +
-        `Portfolio: ${data.portfolio || 'Not provided'}\n` +
+        `Portfolio: ${data.portfolio ? (data.portfolio.startsWith('http') ? data.portfolio : `https://${data.portfolio}`) : 'Not provided'}\n` +
         (data.referral && String(data.referral).trim() ? `Referred by: ${data.referral}\n` : '') +
         `\nWhat they want to build:\n${data.build}\n\n` +
         `How they will contribute:\n${data.contribute}\n\n` +
@@ -611,7 +611,6 @@ export function JoinPage() {
                   <Input 
                     id="portfolio" 
                     name="portfolio"
-                    type="url"
                     placeholder={t('join.form.placeholders.portfolio')}
                     className="mt-1 surface-2 border-input-border focus:border-primary"
                   />
