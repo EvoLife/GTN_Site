@@ -444,5 +444,37 @@
       {"name": "GTN DAO", "description": "$GTN — a utility token for paying services and accessing ecosystem opportunities.\n$TALENT — a governance token for decision‑making in the DAO.\nNFT Passport — a digital member identity reflecting talents, roles, and contribution.", "statusCode": "building"},
       {"name": "GTN Life Platform", "description": "AI‑powered ecosystem for personal and team development: AI Avatar, talent diagnostics, and role‑based growth tools.", "statusCode": "building"}
     ]
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "company": "Privacy Policy for Evolution.Life LLC",
+    "intro1": "At Evolution.Life LLC, accessible from https://www.evolution.life and https://gtn.life, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Evolution.Life LLC and how we use it.",
+    "intro2": "If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.",
+    "collect": {
+      "title": "Information We Collect",
+      "intro": "The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.",
+      "types": "We may collect the following types of information",
+      "personal": "Personal identification information (Name, email address, phone number, etc.)",
+      "professional": "Professional information (Skills, experience, portfolio links)",
+      "communication": "Communication preferences and interaction data",
+      "usage": "Usage data and analytics information",
+      "cookies": "Cookies and tracking technologies data"
+    },
+    "use": {
+      "title": "How We Use Your Information",
+      "intro": "We use the information we collect in various ways, including to",
+      "provide": "Provide, operate, and maintain our website and services",
+      "improve": "Improve, personalize, and expand our website and services",
+      "analyze": "Understand and analyze how you use our website and services",
+      "develop": "Develop new products, services, features, and functionality",
+      "communicate": "Communicate with you for customer service, updates, and marketing purposes",
+      "process": "Process applications and facilitate connections within our network",
+      "send": "Send you emails and notifications",
+      "prevent": "Find and prevent fraud"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "text": "If you have any questions about this Privacy Policy, please contact us"
+    }
   }
 }

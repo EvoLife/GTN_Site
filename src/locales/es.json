@@ -444,5 +444,37 @@
         "submitting": "Enviando..."
       }
     }
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "company": "Política de Privacidad para Evolution.Life LLC",
+    "intro1": "En Evolution.Life LLC, accesible desde https://www.evolution.life y https://gtn.life, una de nuestras principales prioridades es la privacidad de nuestros visitantes. Este documento de Política de Privacidad contiene tipos de información que es recopilada y registrada por Evolution.Life LLC y cómo la utilizamos.",
+    "intro2": "Si tienes preguntas adicionales o requieres más información sobre nuestra Política de Privacidad, no dudes en contactarnos.",
+    "collect": {
+      "title": "Información que Recopilamos",
+      "intro": "La información personal que se te solicita proporcionar, y las razones por las que se te solicita proporcionarla, se te aclarará en el momento en que te pidamos que proporciones tu información personal.",
+      "types": "Podemos recopilar los siguientes tipos de información",
+      "personal": "Información de identificación personal (Nombre, dirección de correo electrónico, número de teléfono, etc.)",
+      "professional": "Información profesional (Habilidades, experiencia, enlaces de portafolio)",
+      "communication": "Preferencias de comunicación y datos de interacción",
+      "usage": "Datos de uso e información analítica",
+      "cookies": "Datos de cookies y tecnologías de seguimiento"
+    },
+    "use": {
+      "title": "Cómo Utilizamos tu Información",
+      "intro": "Utilizamos la información que recopilamos de varias maneras, incluyendo para",
+      "provide": "Proporcionar, operar y mantener nuestro sitio web y servicios",
+      "improve": "Mejorar, personalizar y expandir nuestro sitio web y servicios",
+      "analyze": "Entender y analizar cómo utilizas nuestro sitio web y servicios",
+      "develop": "Desarrollar nuevos productos, servicios, características y funcionalidades",
+      "communicate": "Comunicarnos contigo para atención al cliente, actualizaciones y propósitos de marketing",
+      "process": "Procesar aplicaciones y facilitar conexiones dentro de nuestra red",
+      "send": "Enviarte correos electrónicos y notificaciones",
+      "prevent": "Encontrar y prevenir fraudes"
+    },
+    "contact": {
+      "title": "Contáctanos",
+      "text": "Si tienes alguna pregunta sobre esta Política de Privacidad, por favor contáctanos"
+    }
   }
 }

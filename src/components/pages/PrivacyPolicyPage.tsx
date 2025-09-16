@@ -9,54 +9,50 @@ export function PrivacyPolicyPage() {
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold mb-8 text-foreground">
-            Privacy Policy
+            {t('privacy.title')}
           </h1>
           
           <div className="prose prose-lg max-w-none text-foreground/80 space-y-6">
             <section>
-              <h2 className="text-2xl font-semibold mb-4 text-foreground">Privacy Policy for Evolution.Life LLC</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">{t('privacy.company')}</h2>
               
               <p>
-                At Evolution.Life LLC, accessible from https://www.evolution.life and https://gtn.life, 
-                one of our main priorities is the privacy of our visitors. This Privacy Policy document 
-                contains types of information that is collected and recorded by Evolution.Life LLC and how we use it.
+                {t('privacy.intro1')}
               </p>
               
               <p>
-                If you have additional questions or require more information about our Privacy Policy, 
-                do not hesitate to contact us.
+                {t('privacy.intro2')}
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4 text-foreground">Information We Collect</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">{t('privacy.collect.title')}</h2>
               <p>
-                The personal information that you are asked to provide, and the reasons why you are asked to provide it, 
-                will be made clear to you at the point we ask you to provide your personal information.
+                {t('privacy.collect.intro')}
               </p>
               
-              <p>We may collect the following types of information:</p>
+              <p>{t('privacy.collect.types')}:</p>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Personal identification information (Name, email address, phone number, etc.)</li>
-                <li>Professional information (Skills, experience, portfolio links)</li>
-                <li>Communication preferences and interaction data</li>
-                <li>Usage data and analytics information</li>
-                <li>Cookies and tracking technologies data</li>
+                <li>{t('privacy.collect.personal')}</li>
+                <li>{t('privacy.collect.professional')}</li>
+                <li>{t('privacy.collect.communication')}</li>
+                <li>{t('privacy.collect.usage')}</li>
+                <li>{t('privacy.collect.cookies')}</li>
               </ul>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4 text-foreground">How We Use Your Information</h2>
-              <p>We use the information we collect in various ways, including to:</p>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">{t('privacy.use.title')}</h2>
+              <p>{t('privacy.use.intro')}:</p>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Provide, operate, and maintain our website and services</li>
-                <li>Improve, personalize, and expand our website and services</li>
-                <li>Understand and analyze how you use our website and services</li>
-                <li>Develop new products, services, features, and functionality</li>
-                <li>Communicate with you for customer service, updates, and marketing purposes</li>
-                <li>Process applications and facilitate connections within our network</li>
-                <li>Send you emails and notifications</li>
-                <li>Find and prevent fraud</li>
+                <li>{t('privacy.use.provide')}</li>
+                <li>{t('privacy.use.improve')}</li>
+                <li>{t('privacy.use.analyze')}</li>
+                <li>{t('privacy.use.develop')}</li>
+                <li>{t('privacy.use.communicate')}</li>
+                <li>{t('privacy.use.process')}</li>
+                <li>{t('privacy.use.send')}</li>
+                <li>{t('privacy.use.prevent')}</li>
               </ul>
             </section>
 
@@ -135,9 +131,9 @@ export function PrivacyPolicyPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4 text-foreground">Contact Us</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">{t('privacy.contact.title')}</h2>
               <p>
-                If you have any questions about this Privacy Policy, please contact us:
+                {t('privacy.contact.text')}:
               </p>
               <div className="bg-muted p-4 rounded-lg">
                 <p><strong>Evolution.Life LLC</strong></p>
