@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { useLanguage } from './components/i18n/LanguageContext';
 import { Navigation } from './components/Navigation';
 import { HomePage } from './components/pages/HomePage';
@@ -232,6 +233,7 @@ export default function App() {
           </div>
         </footer>
       </div>
+      <Analytics />
     </div>
   );
 }
