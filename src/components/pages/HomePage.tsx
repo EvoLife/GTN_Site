@@ -17,7 +17,14 @@ interface HomePageProps {
 }
 
 export function HomePage({ onNavigate }: HomePageProps) {
-  const { t, get } = useLanguage();
+  const { t, get, lang } = useLanguage();
+
+  // Video URL based on language
+  const videoUrl = lang === 'ru' 
+    ? 'https://elhcqyzbqyfwewemhfwh.supabase.co/storage/v1/object/public/GTN/GTN%20About-russian.mp4'
+    : lang === 'es'
+    ? 'https://elhcqyzbqyfwewemhfwh.supabase.co/storage/v1/object/public/GTN/GTN%20About-Spanish.mp4'
+    : 'https://elhcqyzbqyfwewemhfwh.supabase.co/storage/v1/object/public/GTN/GTN_Intro.mp4';
 
   // YouTube video state management
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
@@ -366,7 +373,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 <div className="relative aspect-video">
                   <video
                     ref={iframeRef}
-                    src="https://elhcqyzbqyfwewemhfwh.supabase.co/storage/v1/object/public/GTN/GTN_Intro.mp4"
+                    src={videoUrl}
                     className="absolute inset-0 w-full h-full"
                     controls={isVideoPlaying}
                     playsInline
