@@ -10,10 +10,17 @@ import { useLanguage } from '../i18n/LanguageContext';
 import { useState, useRef } from 'react';
 
 export function JoinPage() {
-  const { t, get } = useLanguage();
+  const { t, get, lang } = useLanguage();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [validationError, setValidationError] = useState<string | null>(null);
+  
+  // Video URL based on language
+  const videoUrl = lang === 'ru' 
+    ? 'https://elhcqyzbqyfwewemhfwh.supabase.co/storage/v1/object/public/GTN/GTN%20Life%20Client%20Journey-russian.mp4'
+    : lang === 'es'
+    ? 'https://elhcqyzbqyfwewemhfwh.supabase.co/storage/v1/object/public/GTN/GTN%20Life%20Client%20Journey-spanish.mp4'
+    : 'https://elhcqyzbqyfwewemhfwh.supabase.co/storage/v1/object/public/GTN/GTN%20Life%20Client%20Journey.mp4';
   
   // Video state management
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
@@ -157,7 +164,7 @@ export function JoinPage() {
               <div className="relative aspect-video">
                 <video
                   ref={videoRef}
-                  src="https://elhcqyzbqyfwewemhfwh.supabase.co/storage/v1/object/public/GTN/GTN%20Life%20Client%20Journey.mp4"
+                  src={videoUrl}
                   className="absolute inset-0 w-full h-full"
                   controls={isVideoPlaying}
                   playsInline
