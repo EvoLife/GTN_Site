@@ -131,14 +131,15 @@ export function VideoHero({ onNavigate }: VideoHeroProps) {
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-6 items-center justify-center mb-12">
-              <Button 
-                size="lg" 
-                onClick={() => onNavigate('join')}
-                className="bg-accent hover:bg-accent/90 text-accent-foreground px-10 py-4 text-lg font-medium shadow-glow-copper hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-accent/30"
+              <a 
+                href="https://app.gtn.life"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center bg-accent hover:bg-accent/90 text-accent-foreground px-10 py-4 text-lg font-medium rounded-md shadow-glow-copper hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-accent/30"
               >
                 Apply to Join
                 <ArrowRight className="ml-2" size={20} />
-              </Button>
+              </a>
               
               <Button 
                 variant="outline" 

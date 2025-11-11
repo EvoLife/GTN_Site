@@ -545,14 +545,15 @@ export function EvoLivingPage({ onNavigate }: EvoLivingPageProps) {
             <h2 className="text-3xl md:text-4xl text-ivory mb-6">{t('evo.cta.title')}</h2>
             <p className="text-xl text-ivory/80 mb-8 leading-relaxed">{t('evo.cta.desc')}</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg"
-                className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 shadow-glow-copper"
-                onClick={() => onNavigate('join')}
+              <a 
+                href="https://app.gtn.life"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-3 text-lg rounded-md shadow-glow-copper transition-all duration-300"
               >
                 <Home className="mr-2" size={20} />
                 {t('evo.cta.apply')}
-              </Button>
+              </a>
               <Button 
                 size="lg"
                 variant="outline"
