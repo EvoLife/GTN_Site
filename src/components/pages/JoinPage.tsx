@@ -115,6 +115,11 @@ export function JoinPage() {
       await sendToTelegram('application', data);
       setSubmitStatus('success');
       (e.target as HTMLFormElement).reset();
+      
+      // Redirect to app.gtn.life after successful submission
+      setTimeout(() => {
+        window.open('https://app.gtn.life', '_blank');
+      }, 2000); // Wait 2 seconds to show success message
     } catch (error) {
       console.error('Error submitting form:', error);
       setSubmitStatus('error');
@@ -144,12 +149,10 @@ export function JoinPage() {
             <p className="text-xl text-foreground-secondary mb-8">
               {t('join.hero.subtitle')}
             </p>
-            <div className="inline-flex items-center gap-2">
+            <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-2">
               <a 
-                href="https://app.gtn.life"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center bg-accent hover:bg-accent/90 text-accent-foreground font-medium px-6 py-3 rounded-md shadow-glow-copper transition-all duration-300"
+                href="#apply"
+                className="text-sm text-primary font-medium hover:text-primary-light transition-colors duration-200"
               >
                 {t('join.hero.cta')}
               </a>

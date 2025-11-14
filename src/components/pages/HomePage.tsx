@@ -269,15 +269,14 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
             {/* Hero CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12 mb-8">
-              <a 
-                href="https://app.gtn.life"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-3 text-lg rounded-md shadow-glow-copper transition-all duration-300"
+              <Button 
+                size="lg"
+                onClick={() => onNavigate('join')}
+                className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 shadow-glow-copper"
               >
                 {t('home.hero.ctaApply')}
                 <ArrowRight className="ml-2" size={20} />
-              </a>
+              </Button>
               <Button 
                 size="lg"
                 variant="outline" 
@@ -422,15 +421,13 @@ export function HomePage({ onNavigate }: HomePageProps) {
               {/* Call to Action Below Video */}
               <div className="text-center mt-8">
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <a 
-                    href="https://app.gtn.life"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center bg-accent hover:bg-accent/90 text-accent-foreground px-6 py-2 rounded-md shadow-glow-copper transition-all duration-300"
+                  <Button 
+                    onClick={() => onNavigate('join')}
+                    className="bg-accent hover:bg-accent/90 text-accent-foreground px-6 shadow-glow-copper"
                   >
                     {t('home.video.ctaApply')}
                     <ArrowRight className="ml-2" size={16} />
-                  </a>
+                  </Button>
                   <Button 
                     variant="outline"
                     onClick={() => onNavigate('contact')}
@@ -679,15 +676,13 @@ export function HomePage({ onNavigate }: HomePageProps) {
           </div>
 
           <div className="text-center mt-10">
-            <a 
-              href="https://app.gtn.life"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-2 rounded-md shadow-glow-copper transition-all duration-300"
+            <Button 
+              onClick={() => onNavigate('join')}
+              className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 shadow-glow-copper"
             >
 {t('home.hero.ctaApply')}
               <ArrowRight className="ml-2" size={16} />
-            </a>
+            </Button>
           </div>
         </div>
       </section>
@@ -802,15 +797,14 @@ export function HomePage({ onNavigate }: HomePageProps) {
             <p className="text-foreground-secondary mb-6">
               {t('home.selection.closing')}
             </p>
-            <a 
-              href="https://app.gtn.life"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-3 text-lg rounded-md shadow-glow-copper transition-all duration-300"
+            <Button 
+              onClick={() => onNavigate('join')}
+              className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 shadow-glow-copper"
+              size="lg"
             >
               {t('home.selection.ctaBegin')}
               <ArrowRight className="ml-2" size={20} />
-            </a>
+            </Button>
           </div>
         </div>
       </section>

@@ -85,14 +85,12 @@ export function Navigation({ currentPage, onNavigate }: NavigationProps) {
                 </button>
               ))}
             </div>
-            <a 
-              href="https://app.gtn.life"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center bg-accent hover:bg-accent/90 text-accent-foreground font-medium px-6 py-2 rounded-md shadow-glow-copper hover:shadow-xl transition-all duration-300"
+            <Button 
+              onClick={() => onNavigate('join')}
+              className="bg-accent hover:bg-accent/90 text-accent-foreground font-medium px-6 shadow-glow-copper hover:shadow-xl transition-all duration-300"
             >
               {t('cta.join')}
-            </a>
+            </Button>
           </div>
 
           {/* Mobile Language Selector + Menu Button */}
@@ -148,16 +146,16 @@ export function Navigation({ currentPage, onNavigate }: NavigationProps) {
                 </button>
               ))}
               <div className="pt-6 border-t border-border mt-4">
-                <a 
-                  href="https://app.gtn.life"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="inline-flex items-center justify-center w-full bg-accent hover:bg-accent/90 text-accent-foreground font-medium shadow-glow-copper rounded-md"
-                  style={{ minHeight: '44px', padding: '0.5rem 1rem' }}
+                <Button 
+                  onClick={() => {
+                    onNavigate('join');
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-medium shadow-glow-copper"
+                  style={{ minHeight: '44px' }}
                 >
                   {t('cta.join')}
-                </a>
+                </Button>
               </div>
             </div>
           </div>
